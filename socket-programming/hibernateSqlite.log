@@ -1,0 +1,1001 @@
+23:39:17,177  INFO Environment:514 : Hibernate 3.2.6
+23:39:17,182  INFO Environment:547 : hibernate.properties not found
+23:39:17,185  INFO Environment:681 : Bytecode provider name : cglib
+23:39:17,187  INFO Environment:598 : using JDK 1.4 java.sql.Timestamp handling
+23:39:17,219  INFO Configuration:1432 : configuring from resource: /hibernate.cfg.xml
+23:39:17,219  INFO Configuration:1409 : Configuration resource: /hibernate.cfg.xml
+23:39:17,255 DEBUG DTDEntityResolver:38 : trying to resolve system-id [http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd]
+23:39:17,256 DEBUG DTDEntityResolver:40 : recognized hibernate namespace; attempting to resolve on classpath under org/hibernate/
+23:39:17,256 DEBUG DTDEntityResolver:50 : located [http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd] in classpath
+23:39:17,270 DEBUG Configuration:1393 : show_sql=true
+23:39:17,270 DEBUG Configuration:1393 : format_sql=true
+23:39:17,270 DEBUG Configuration:1393 : dialect=dialect.SQLiteDialect
+23:39:17,270 DEBUG Configuration:1393 : connection.driver_class=org.sqlite.JDBC
+23:39:17,271 DEBUG Configuration:1393 : connection.url=jdbc:sqlite:1.db
+23:39:17,271 DEBUG Configuration:1393 : connection.username=
+23:39:17,271 DEBUG Configuration:1393 : connection.password=
+23:39:17,271 DEBUG Configuration:1592 : null<-org.dom4j.tree.DefaultAttribute@7006c658 [Attribute: name resource value "User.hbm.xml"]
+23:39:17,272  INFO Configuration:559 : Reading mappings from resource : User.hbm.xml
+23:39:17,275 DEBUG DTDEntityResolver:38 : trying to resolve system-id [http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd]
+23:39:17,278 DEBUG DTDEntityResolver:40 : recognized hibernate namespace; attempting to resolve on classpath under org/hibernate/
+23:39:17,281 DEBUG DTDEntityResolver:50 : located [http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd] in classpath
+23:39:17,319  INFO HbmBinder:300 : Mapping class: model.User -> users
+23:39:17,323 DEBUG HbmBinder:1267 : Mapped property: id -> id
+23:39:17,327 DEBUG HbmBinder:1267 : Mapped property: name -> name
+23:39:17,327 DEBUG HbmBinder:1267 : Mapped property: password -> password
+23:39:17,328  INFO Configuration:1547 : Configured SessionFactory: null
+23:39:17,328 DEBUG Configuration:1548 : properties: {java.vendor=Oracle Corporation, show_sql=true, sun.java.launcher=SUN_STANDARD, hibernate.connection.url=jdbc:sqlite:1.db, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.name=Windows 8.1, sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_66\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_66\jre\classes, sun.desktop=windows, java.vm.specification.vendor=Oracle Corporation, java.runtime.version=1.8.0_66-b18, user.name=Alex, connection.driver_class=org.sqlite.JDBC, idea.launcher.bin.path=C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 15.0.2\bin, user.language=ru, sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_66\jre\bin, dialect=dialect.SQLiteDialect, java.version=1.8.0_66, user.timezone=Europe/Samara, sun.arch.data.model=64, java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_66\jre\lib\endorsed, sun.cpu.isalist=amd64, sun.jnu.encoding=Cp1251, file.encoding.pkg=sun.io, file.separator=\, java.specification.name=Java Platform API Specification, hibernate.format_sql=true, java.class.version=52.0, user.country=RU, connection.url=jdbc:sqlite:1.db, java.home=C:\Program Files\Java\jdk1.8.0_66\jre, java.vm.info=mixed mode, os.version=6.3, path.separator=;, connection.password=, java.vm.version=25.66-b18, hibernate.connection.password=, user.variant=, java.awt.printerjob=sun.awt.windows.WPrinterJob, sun.io.unicode.encoding=UnicodeLittle, awt.toolkit=sun.awt.windows.WToolkit, hibernate.connection.username=, user.script=, user.home=C:\Users\Alex, java.specification.vendor=Oracle Corporation, java.library.path=C:\Program Files\Java\jdk1.8.0_66\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Calibre2\;C:\Windows\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files (x86)\nodejs\;C:\apache-maven-3.3.3\bin;C:\Program Files (x86)\Java\jdk1.7.0_55\bin;C:\Program Files (x86)\Skype\Phone\;C:\Users\Alex\AppData\Roaming\npm;., java.vendor.url=http://java.oracle.com/, hibernate.connection.driver_class=org.sqlite.JDBC, connection.username=, java.vm.vendor=Oracle Corporation, hibernate.dialect=dialect.SQLiteDialect, java.runtime.name=Java(TM) SE Runtime Environment, sun.java.command=com.intellij.rt.execution.application.AppMain com.intellij.rt.execution.junit.JUnitStarter -ideVersion5 -junit3 test.TestSaveUser,testSave, java.class.path=C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 15.0.2\lib\idea_rt.jar;C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 15.0.2\plugins\junit\lib\junit-rt.jar;C:\Users\Alex\Documents\GitHub\managment\socket-programming\target\test-classes;C:\Users\Alex\Documents\GitHub\managment\socket-programming\target\classes;C:\Program Files\Java\jdk1.8.0_66\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\rt.jar;C:\Users\Alex\.m2\repository\junit\junit\4.5\junit-4.5.jar;C:\Users\Alex\.m2\repository\org\hibernate\hibernate\3.2.6.ga\hibernate-3.2.6.ga.jar;C:\Users\Alex\.m2\repository\asm\asm-attrs\1.5.3\asm-attrs-1.5.3.jar;C:\Users\Alex\.m2\repository\antlr\antlr\2.7.6\antlr-2.7.6.jar;C:\Users\Alex\.m2\repository\asm\asm\1.5.3\asm-1.5.3.jar;C:\Users\Alex\.m2\repository\c3p0\c3p0\0.9.1\c3p0-0.9.1.jar;C:\Users\Alex\.m2\repository\cglib\cglib\2.1_3\cglib-2.1_3.jar;C:\Users\Alex\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\Alex\.m2\repository\commons-collections\commons-collections\3.2\commons-collections-3.2.jar;C:\Users\Alex\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\Alex\.m2\repository\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar;C:\Users\Alex\.m2\repository\log4j\log4j\1.2.9\log4j-1.2.9.jar;C:\Users\Alex\.m2\repository\net\sf\ehcache\ehcache\1.2.3\ehcache-1.2.3.jar;C:\Users\Alex\.m2\repository\javax\transaction\jta\1.1\jta-1.1.jar;C:\Users\Alex\.m2\repository\org\xerial\sqlite-jdbc\3.6.0\sqlite-jdbc-3.6.0.jar, hibernate.bytecode.use_reflection_optimizer=false, idea.launcher.port=7536, java.vm.specification.name=Java Virtual Machine Specification, java.vm.specification.version=1.8, sun.cpu.endian=little, sun.os.patch.level=, java.io.tmpdir=C:\Users\Alex\AppData\Local\Temp\, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, os.arch=amd64, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, java.ext.dirs=C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext;C:\Windows\Sun\Java\lib\ext, user.dir=C:\Users\Alex\Documents\GitHub\managment\socket-programming, line.separator=
+, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding=UTF-8, idea.junit.sm_runner=, format_sql=true, java.specification.version=1.8, hibernate.show_sql=true}
+23:39:17,328 DEBUG Configuration:1291 : Preparing to build session factory with filters : {}
+23:39:17,328 DEBUG Configuration:1126 : processing extends queue
+23:39:17,329 DEBUG Configuration:1130 : processing collection mappings
+23:39:17,329 DEBUG Configuration:1141 : processing native query and ResultSetMapping mappings
+23:39:17,329 DEBUG Configuration:1149 : processing association property references
+23:39:17,329 DEBUG Configuration:1171 : processing foreign key constraints
+23:39:17,369  INFO DriverManagerConnectionProvider:41 : Using Hibernate built-in connection pool (not for production use!)
+23:39:17,369  INFO DriverManagerConnectionProvider:42 : Hibernate connection pool size: 20
+23:39:17,370  INFO DriverManagerConnectionProvider:45 : autocommit mode: false
+23:39:17,372  INFO DriverManagerConnectionProvider:80 : using driver: org.sqlite.JDBC at URL: jdbc:sqlite:1.db
+23:39:17,372  INFO DriverManagerConnectionProvider:83 : connection properties: {user=, password=}
+23:39:17,372 DEBUG DriverManagerConnectionProvider:93 : total checked-out connections: 0
+23:39:17,372 DEBUG DriverManagerConnectionProvider:109 : opening new JDBC connection
+23:39:17,975 DEBUG DriverManagerConnectionProvider:115 : created connection to: jdbc:sqlite:1.db, Isolation Level: 8
+23:39:17,977  INFO SettingsFactory:89 : RDBMS: SQLite, version: 3.6.0
+23:39:17,977  INFO SettingsFactory:90 : JDBC driver: SQLiteJDBC, version: pure
+23:39:17,984 DEBUG DriverManagerConnectionProvider:129 : returning connection to pool, pool size: 1
+23:39:17,995  INFO Dialect:152 : Using dialect: dialect.SQLiteDialect
+23:39:17,997  INFO TransactionFactoryFactory:31 : Using default transaction strategy (direct JDBC transactions)
+23:39:17,998  INFO TransactionManagerLookupFactory:33 : No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+23:39:17,999  INFO SettingsFactory:143 : Automatic flush during beforeCompletion(): disabled
+23:39:17,999  INFO SettingsFactory:147 : Automatic session close at end of transaction: disabled
+23:39:18,001  INFO SettingsFactory:162 : Scrollable result sets: disabled
+23:39:18,002 DEBUG SettingsFactory:166 : Wrap result sets: disabled
+23:39:18,002  INFO SettingsFactory:170 : JDBC3 getGeneratedKeys(): disabled
+23:39:18,003  INFO SettingsFactory:178 : Connection release mode: auto
+23:39:18,003  INFO SettingsFactory:205 : Default batch fetch size: 1
+23:39:18,004  INFO SettingsFactory:209 : Generate SQL with comments: disabled
+23:39:18,004  INFO SettingsFactory:213 : Order SQL updates by primary key: disabled
+23:39:18,004  INFO SettingsFactory:217 : Order SQL inserts for batching: disabled
+23:39:18,004  INFO SettingsFactory:386 : Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+23:39:18,005  INFO ASTQueryTranslatorFactory:24 : Using ASTQueryTranslatorFactory
+23:39:18,006  INFO SettingsFactory:225 : Query language substitutions: {}
+23:39:18,006  INFO SettingsFactory:230 : JPA-QL strict compliance: disabled
+23:39:18,006  INFO SettingsFactory:235 : Second-level cache: enabled
+23:39:18,006  INFO SettingsFactory:239 : Query cache: disabled
+23:39:18,006  INFO SettingsFactory:373 : Cache provider: org.hibernate.cache.NoCacheProvider
+23:39:18,006  INFO SettingsFactory:254 : Optimize cache for minimal puts: disabled
+23:39:18,006  INFO SettingsFactory:263 : Structured second-level cache entries: disabled
+23:39:18,007 DEBUG SQLExceptionConverterFactory:52 : Using dialect defined converter
+23:39:18,011  INFO SettingsFactory:283 : Echoing all SQL to stdout
+23:39:18,012  INFO SettingsFactory:290 : Statistics: disabled
+23:39:18,012  INFO SettingsFactory:294 : Deleted entity synthetic identifier rollback: disabled
+23:39:18,012  INFO SettingsFactory:309 : Default entity-mode: pojo
+23:39:18,012  INFO SettingsFactory:313 : Named query checking : enabled
+23:39:18,039  INFO SessionFactoryImpl:161 : building session factory
+23:39:18,040 DEBUG SessionFactoryImpl:173 : Session factory constructed with filter configurations : {}
+23:39:18,040 DEBUG SessionFactoryImpl:177 : instantiating session factory with properties: {java.vendor=Oracle Corporation, show_sql=true, sun.java.launcher=SUN_STANDARD, hibernate.connection.url=jdbc:sqlite:1.db, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.name=Windows 8.1, sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_66\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_66\jre\classes, sun.desktop=windows, java.vm.specification.vendor=Oracle Corporation, java.runtime.version=1.8.0_66-b18, user.name=Alex, connection.driver_class=org.sqlite.JDBC, idea.launcher.bin.path=C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 15.0.2\bin, user.language=ru, sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_66\jre\bin, dialect=dialect.SQLiteDialect, java.version=1.8.0_66, user.timezone=Europe/Samara, sun.arch.data.model=64, java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_66\jre\lib\endorsed, sun.cpu.isalist=amd64, sun.jnu.encoding=Cp1251, file.encoding.pkg=sun.io, file.separator=\, java.specification.name=Java Platform API Specification, hibernate.format_sql=true, java.class.version=52.0, user.country=RU, connection.url=jdbc:sqlite:1.db, java.home=C:\Program Files\Java\jdk1.8.0_66\jre, java.vm.info=mixed mode, os.version=6.3, path.separator=;, connection.password=, java.vm.version=25.66-b18, hibernate.connection.password=, user.variant=, java.awt.printerjob=sun.awt.windows.WPrinterJob, sun.io.unicode.encoding=UnicodeLittle, awt.toolkit=sun.awt.windows.WToolkit, hibernate.connection.username=, user.script=, user.home=C:\Users\Alex, java.specification.vendor=Oracle Corporation, java.library.path=C:\Program Files\Java\jdk1.8.0_66\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Calibre2\;C:\Windows\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files (x86)\nodejs\;C:\apache-maven-3.3.3\bin;C:\Program Files (x86)\Java\jdk1.7.0_55\bin;C:\Program Files (x86)\Skype\Phone\;C:\Users\Alex\AppData\Roaming\npm;., java.vendor.url=http://java.oracle.com/, hibernate.connection.driver_class=org.sqlite.JDBC, connection.username=, java.vm.vendor=Oracle Corporation, hibernate.dialect=dialect.SQLiteDialect, java.runtime.name=Java(TM) SE Runtime Environment, sun.java.command=com.intellij.rt.execution.application.AppMain com.intellij.rt.execution.junit.JUnitStarter -ideVersion5 -junit3 test.TestSaveUser,testSave, java.class.path=C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 15.0.2\lib\idea_rt.jar;C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 15.0.2\plugins\junit\lib\junit-rt.jar;C:\Users\Alex\Documents\GitHub\managment\socket-programming\target\test-classes;C:\Users\Alex\Documents\GitHub\managment\socket-programming\target\classes;C:\Program Files\Java\jdk1.8.0_66\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\rt.jar;C:\Users\Alex\.m2\repository\junit\junit\4.5\junit-4.5.jar;C:\Users\Alex\.m2\repository\org\hibernate\hibernate\3.2.6.ga\hibernate-3.2.6.ga.jar;C:\Users\Alex\.m2\repository\asm\asm-attrs\1.5.3\asm-attrs-1.5.3.jar;C:\Users\Alex\.m2\repository\antlr\antlr\2.7.6\antlr-2.7.6.jar;C:\Users\Alex\.m2\repository\asm\asm\1.5.3\asm-1.5.3.jar;C:\Users\Alex\.m2\repository\c3p0\c3p0\0.9.1\c3p0-0.9.1.jar;C:\Users\Alex\.m2\repository\cglib\cglib\2.1_3\cglib-2.1_3.jar;C:\Users\Alex\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\Alex\.m2\repository\commons-collections\commons-collections\3.2\commons-collections-3.2.jar;C:\Users\Alex\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\Alex\.m2\repository\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar;C:\Users\Alex\.m2\repository\log4j\log4j\1.2.9\log4j-1.2.9.jar;C:\Users\Alex\.m2\repository\net\sf\ehcache\ehcache\1.2.3\ehcache-1.2.3.jar;C:\Users\Alex\.m2\repository\javax\transaction\jta\1.1\jta-1.1.jar;C:\Users\Alex\.m2\repository\org\xerial\sqlite-jdbc\3.6.0\sqlite-jdbc-3.6.0.jar, hibernate.bytecode.use_reflection_optimizer=false, idea.launcher.port=7536, java.vm.specification.name=Java Virtual Machine Specification, java.vm.specification.version=1.8, sun.cpu.endian=little, sun.os.patch.level=, java.io.tmpdir=C:\Users\Alex\AppData\Local\Temp\, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, os.arch=amd64, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, java.ext.dirs=C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext;C:\Windows\Sun\Java\lib\ext, user.dir=C:\Users\Alex\Documents\GitHub\managment\socket-programming, line.separator=
+, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding=UTF-8, idea.junit.sm_runner=, format_sql=true, java.specification.version=1.8, hibernate.show_sql=true}
+23:39:18,183 DEBUG AbstractEntityPersister:2743 : Static SQL for entity: model.User
+23:39:18,184 DEBUG AbstractEntityPersister:2748 :  Version select: select id from users where id =?
+23:39:18,184 DEBUG AbstractEntityPersister:2751 :  Snapshot select: select user_.id, user_.name as name0_, user_.password as password0_ from users user_ where user_.id=?
+23:39:18,184 DEBUG AbstractEntityPersister:2754 :  Insert 0: insert into users (name, password, id) values (?, ?, ?)
+23:39:18,184 DEBUG AbstractEntityPersister:2755 :  Update 0: update users set name=?, password=? where id=?
+23:39:18,184 DEBUG AbstractEntityPersister:2756 :  Delete 0: delete from users where id=?
+23:39:18,184 DEBUG AbstractEntityPersister:2760 :  Identity insert: insert into users (name, password) values (?, ?)
+23:39:18,197 DEBUG EntityLoader:79 : Static select for entity model.User: select user0_.id as id0_0_, user0_.name as name0_0_, user0_.password as password0_0_ from users user0_ where user0_.id=?
+23:39:18,198 DEBUG EntityLoader:79 : Static select for entity model.User: select user0_.id as id0_0_, user0_.name as name0_0_, user0_.password as password0_0_ from users user0_ where user0_.id=?
+23:39:18,198 DEBUG EntityLoader:79 : Static select for entity model.User: select user0_.id as id0_0_, user0_.name as name0_0_, user0_.password as password0_0_ from users user0_ where user0_.id=?
+23:39:18,198 DEBUG EntityLoader:79 : Static select for entity model.User: select user0_.id as id0_0_, user0_.name as name0_0_, user0_.password as password0_0_ from users user0_ where user0_.id=?
+23:39:18,198 DEBUG EntityLoader:79 : Static select for entity model.User: select user0_.id as id0_0_, user0_.name as name0_0_, user0_.password as password0_0_ from users user0_ where user0_.id=?
+23:39:18,202 DEBUG EntityLoader:34 : Static select for action ACTION_MERGE on entity model.User: select user0_.id as id0_0_, user0_.name as name0_0_, user0_.password as password0_0_ from users user0_ where user0_.id=?
+23:39:18,202 DEBUG EntityLoader:34 : Static select for action ACTION_REFRESH on entity model.User: select user0_.id as id0_0_, user0_.name as name0_0_, user0_.password as password0_0_ from users user0_ where user0_.id=?
+23:39:18,204 DEBUG SessionFactoryObjectFactory:39 : initializing class SessionFactoryObjectFactory
+23:39:18,204 DEBUG SessionFactoryObjectFactory:76 : registered: 402881a651cb33f20151cb33f33a0000 (unnamed)
+23:39:18,204  INFO SessionFactoryObjectFactory:82 : Not binding factory to JNDI, no JNDI name configured
+23:39:18,204 DEBUG SessionFactoryImpl:308 : instantiated session factory
+23:39:18,204 DEBUG SessionFactoryImpl:392 : Checking 0 named HQL queries
+23:39:18,205 DEBUG SessionFactoryImpl:412 : Checking 0 named SQL queries
+23:39:18,223 DEBUG SessionImpl:220 : opened session at timestamp: 14508131582
+23:39:18,224 DEBUG JDBCTransaction:54 : begin
+23:39:18,224 DEBUG ConnectionManager:421 : opening JDBC connection
+23:39:18,224 DEBUG DriverManagerConnectionProvider:93 : total checked-out connections: 0
+23:39:18,224 DEBUG DriverManagerConnectionProvider:99 : using pooled JDBC connection, pool size: 0
+23:39:18,224 DEBUG JDBCTransaction:59 : current autocommit status: false
+23:39:18,224 DEBUG JDBCContext:214 : after transaction begin
+23:39:18,226 DEBUG DefaultSaveOrUpdateEventListener:158 : saving transient instance
+23:39:18,226 DEBUG AbstractSaveEventListener:153 : saving [model.User#<null>]
+23:39:18,226 DEBUG AbstractSaveEventListener:244 : executing insertions
+23:39:18,230 DEBUG AbstractSaveEventListener:297 : executing identity-insert immediately
+23:39:18,230 DEBUG AbstractEntityPersister:2149 : Inserting entity: model.User (native id)
+23:39:18,231 DEBUG AbstractBatcher:366 : about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+23:39:18,232 DEBUG SQL:401 : 
+    insert 
+    into
+        users
+        (name, password) 
+    values
+        (?, ?)
+23:39:18,232 DEBUG AbstractBatcher:484 : preparing statement
+23:39:18,244 DEBUG JDBCExceptionReporter:69 : could not insert: [model.User] [insert into users (name, password) values (?, ?)]
+java.sql.SQLException: no such table: users
+	at org.sqlite.DB.throwex(DB.java:288)
+	at org.sqlite.NestedDB.prepare(NestedDB.java:115)
+	at org.sqlite.DB.prepare(DB.java:114)
+	at org.sqlite.PrepStmt.<init>(PrepStmt.java:37)
+	at org.sqlite.Conn.prepareStatement(Conn.java:224)
+	at org.sqlite.Conn.prepareStatement(Conn.java:217)
+	at org.sqlite.Conn.prepareStatement(Conn.java:206)
+	at org.hibernate.jdbc.AbstractBatcher.getPreparedStatement(AbstractBatcher.java:505)
+	at org.hibernate.jdbc.AbstractBatcher.prepareStatement(AbstractBatcher.java:94)
+	at org.hibernate.id.insert.AbstractSelectingDelegate.performInsert(AbstractSelectingDelegate.java:30)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2163)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2643)
+	at org.hibernate.action.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:51)
+	at org.hibernate.engine.ActionQueue.execute(ActionQueue.java:279)
+	at org.hibernate.event.def.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:298)
+	at org.hibernate.event.def.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:181)
+	at org.hibernate.event.def.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:107)
+	at org.hibernate.event.def.DefaultSaveOrUpdateEventListener.saveWithGeneratedOrRequestedId(DefaultSaveOrUpdateEventListener.java:187)
+	at org.hibernate.event.def.DefaultSaveEventListener.saveWithGeneratedOrRequestedId(DefaultSaveEventListener.java:33)
+	at org.hibernate.event.def.DefaultSaveOrUpdateEventListener.entityIsTransient(DefaultSaveOrUpdateEventListener.java:172)
+	at org.hibernate.event.def.DefaultSaveEventListener.performSaveOrUpdate(DefaultSaveEventListener.java:27)
+	at org.hibernate.event.def.DefaultSaveOrUpdateEventListener.onSaveOrUpdate(DefaultSaveOrUpdateEventListener.java:70)
+	at org.hibernate.impl.SessionImpl.fireSave(SessionImpl.java:535)
+	at org.hibernate.impl.SessionImpl.save(SessionImpl.java:523)
+	at org.hibernate.impl.SessionImpl.save(SessionImpl.java:519)
+	at test.TestSaveUser.testSave(TestSaveUser.java:17)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.textui.TestRunner.doRun(TestRunner.java:116)
+	at com.intellij.junit3.JUnit3IdeaTestRunner.doRun(JUnit3IdeaTestRunner.java:145)
+	at junit.textui.TestRunner.doRun(TestRunner.java:109)
+	at com.intellij.junit3.JUnit3IdeaTestRunner.startRunnerWithArgs(JUnit3IdeaTestRunner.java:52)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:234)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+23:39:18,245  WARN JDBCExceptionReporter:77 : SQL Error: 0, SQLState: null
+23:39:18,246 ERROR JDBCExceptionReporter:78 : no such table: users
+23:39:36,698  INFO Environment:514 : Hibernate 3.2.6
+23:39:36,745  INFO Environment:547 : hibernate.properties not found
+23:39:36,765  INFO Environment:681 : Bytecode provider name : cglib
+23:39:36,795  INFO Environment:598 : using JDK 1.4 java.sql.Timestamp handling
+23:39:37,259  INFO Configuration:1432 : configuring from resource: /hibernate.cfg.xml
+23:39:37,265  INFO Configuration:1409 : Configuration resource: /hibernate.cfg.xml
+23:39:37,596 DEBUG DTDEntityResolver:38 : trying to resolve system-id [http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd]
+23:39:37,604 DEBUG DTDEntityResolver:40 : recognized hibernate namespace; attempting to resolve on classpath under org/hibernate/
+23:39:37,621 DEBUG DTDEntityResolver:50 : located [http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd] in classpath
+23:39:37,754 DEBUG Configuration:1393 : show_sql=true
+23:39:37,760 DEBUG Configuration:1393 : format_sql=true
+23:39:37,765 DEBUG Configuration:1393 : dialect=dialect.SQLiteDialect
+23:39:37,771 DEBUG Configuration:1393 : connection.driver_class=org.sqlite.JDBC
+23:39:37,777 DEBUG Configuration:1393 : connection.url=jdbc:sqlite:1.db
+23:39:37,783 DEBUG Configuration:1393 : connection.username=
+23:39:37,789 DEBUG Configuration:1393 : connection.password=
+23:39:37,796 DEBUG Configuration:1592 : null<-org.dom4j.tree.DefaultAttribute@516be40f [Attribute: name resource value "User.hbm.xml"]
+23:39:37,802  INFO Configuration:559 : Reading mappings from resource : User.hbm.xml
+23:39:37,817 DEBUG DTDEntityResolver:38 : trying to resolve system-id [http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd]
+23:39:37,827 DEBUG DTDEntityResolver:40 : recognized hibernate namespace; attempting to resolve on classpath under org/hibernate/
+23:39:37,844 DEBUG DTDEntityResolver:50 : located [http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd] in classpath
+23:39:38,560  INFO HbmBinder:300 : Mapping class: model.User -> users
+23:39:38,603 DEBUG HbmBinder:1267 : Mapped property: id -> id
+23:39:38,685 DEBUG HbmBinder:1267 : Mapped property: name -> name
+23:39:38,694 DEBUG HbmBinder:1267 : Mapped property: password -> password
+23:39:38,701  INFO Configuration:1547 : Configured SessionFactory: null
+23:39:38,709 DEBUG Configuration:1548 : properties: {hibernate.connection.password=, java.runtime.name=Java(TM) SE Runtime Environment, sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_66\jre\bin, java.vm.version=25.66-b18, hibernate.connection.username=, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=;, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding.pkg=sun.io, user.script=, user.country=RU, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=, java.vm.specification.name=Java Virtual Machine Specification, user.dir=C:\Users\Alex\Documents\GitHub\managment\socket-programming, java.runtime.version=1.8.0_66-b18, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_66\jre\lib\endorsed, os.arch=amd64, java.io.tmpdir=C:\Users\Alex\AppData\Local\Temp\, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, user.variant=, os.name=Windows 8.1, sun.jnu.encoding=Cp1251, java.library.path=C:\Program Files\Java\jdk1.8.0_66\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Calibre2\;C:\Windows\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files (x86)\nodejs\;C:\apache-maven-3.3.3\bin;C:\Program Files (x86)\Java\jdk1.7.0_55\bin;C:\Program Files (x86)\Skype\Phone\;C:\Users\Alex\AppData\Roaming\npm;., java.specification.name=Java Platform API Specification, java.class.version=52.0, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.version=6.3, connection.password=, user.home=C:\Users\Alex, user.timezone=Europe/Samara, connection.username=, java.awt.printerjob=sun.awt.windows.WPrinterJob, file.encoding=UTF-8, java.specification.version=1.8, hibernate.format_sql=true, hibernate.connection.driver_class=org.sqlite.JDBC, show_sql=true, java.class.path=C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 15.0.2\lib\idea_rt.jar;C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 15.0.2\plugins\junit\lib\junit-rt.jar;C:\Users\Alex\Documents\GitHub\managment\socket-programming\target\test-classes;C:\Users\Alex\Documents\GitHub\managment\socket-programming\target\classes;C:\Program Files\Java\jdk1.8.0_66\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\rt.jar;C:\Users\Alex\.m2\repository\junit\junit\4.5\junit-4.5.jar;C:\Users\Alex\.m2\repository\org\hibernate\hibernate\3.2.6.ga\hibernate-3.2.6.ga.jar;C:\Users\Alex\.m2\repository\asm\asm-attrs\1.5.3\asm-attrs-1.5.3.jar;C:\Users\Alex\.m2\repository\antlr\antlr\2.7.6\antlr-2.7.6.jar;C:\Users\Alex\.m2\repository\asm\asm\1.5.3\asm-1.5.3.jar;C:\Users\Alex\.m2\repository\c3p0\c3p0\0.9.1\c3p0-0.9.1.jar;C:\Users\Alex\.m2\repository\cglib\cglib\2.1_3\cglib-2.1_3.jar;C:\Users\Alex\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\Alex\.m2\repository\commons-collections\commons-collections\3.2\commons-collections-3.2.jar;C:\Users\Alex\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\Alex\.m2\repository\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar;C:\Users\Alex\.m2\repository\log4j\log4j\1.2.9\log4j-1.2.9.jar;C:\Users\Alex\.m2\repository\net\sf\ehcache\ehcache\1.2.3\ehcache-1.2.3.jar;C:\Users\Alex\.m2\repository\javax\transaction\jta\1.1\jta-1.1.jar;C:\Users\Alex\.m2\repository\org\xerial\sqlite-jdbc\3.6.0\sqlite-jdbc-3.6.0.jar, user.name=Alex, format_sql=true, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, java.vm.specification.version=1.8, sun.java.command=com.intellij.rt.execution.junit.JUnitStarter -ideVersion5 -junit3 test.TestSaveUser,testSave, java.home=C:\Program Files\Java\jdk1.8.0_66\jre, sun.arch.data.model=64, hibernate.connection.url=jdbc:sqlite:1.db, hibernate.dialect=dialect.SQLiteDialect, user.language=ru, java.specification.vendor=Oracle Corporation, awt.toolkit=sun.awt.windows.WToolkit, java.vm.info=mixed mode, java.version=1.8.0_66, java.ext.dirs=C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext;C:\Windows\Sun\Java\lib\ext, sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_66\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_66\jre\classes, idea.junit.sm_runner=, java.vendor=Oracle Corporation, connection.driver_class=org.sqlite.JDBC, file.separator=\, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, sun.io.unicode.encoding=UnicodeLittle, sun.cpu.endian=little, sun.desktop=windows, connection.url=jdbc:sqlite:1.db, dialect=dialect.SQLiteDialect, sun.cpu.isalist=amd64}
+23:39:38,721 DEBUG Configuration:1291 : Preparing to build session factory with filters : {}
+23:39:38,726 DEBUG Configuration:1126 : processing extends queue
+23:39:38,732 DEBUG Configuration:1130 : processing collection mappings
+23:39:38,738 DEBUG Configuration:1141 : processing native query and ResultSetMapping mappings
+23:39:38,743 DEBUG Configuration:1149 : processing association property references
+23:39:38,748 DEBUG Configuration:1171 : processing foreign key constraints
+23:39:39,137  INFO DriverManagerConnectionProvider:41 : Using Hibernate built-in connection pool (not for production use!)
+23:39:39,144  INFO DriverManagerConnectionProvider:42 : Hibernate connection pool size: 20
+23:39:39,151  INFO DriverManagerConnectionProvider:45 : autocommit mode: false
+23:39:39,177  INFO DriverManagerConnectionProvider:80 : using driver: org.sqlite.JDBC at URL: jdbc:sqlite:1.db
+23:39:39,184  INFO DriverManagerConnectionProvider:83 : connection properties: {user=, password=}
+23:39:39,191 DEBUG DriverManagerConnectionProvider:93 : total checked-out connections: 0
+23:39:39,197 DEBUG DriverManagerConnectionProvider:109 : opening new JDBC connection
+23:39:40,459 DEBUG DriverManagerConnectionProvider:115 : created connection to: jdbc:sqlite:1.db, Isolation Level: 8
+23:39:40,472  INFO SettingsFactory:89 : RDBMS: SQLite, version: 3.6.0
+23:39:40,479  INFO SettingsFactory:90 : JDBC driver: SQLiteJDBC, version: pure
+23:39:40,485 DEBUG DriverManagerConnectionProvider:129 : returning connection to pool, pool size: 1
+23:39:40,669  INFO Dialect:152 : Using dialect: dialect.SQLiteDialect
+23:39:40,714  INFO TransactionFactoryFactory:31 : Using default transaction strategy (direct JDBC transactions)
+23:39:40,739  INFO TransactionManagerLookupFactory:33 : No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+23:39:40,746  INFO SettingsFactory:143 : Automatic flush during beforeCompletion(): disabled
+23:39:40,752  INFO SettingsFactory:147 : Automatic session close at end of transaction: disabled
+23:39:40,763  INFO SettingsFactory:162 : Scrollable result sets: disabled
+23:39:40,769 DEBUG SettingsFactory:166 : Wrap result sets: disabled
+23:39:40,775  INFO SettingsFactory:170 : JDBC3 getGeneratedKeys(): disabled
+23:39:40,781  INFO SettingsFactory:178 : Connection release mode: auto
+23:39:40,792  INFO SettingsFactory:205 : Default batch fetch size: 1
+23:39:40,798  INFO SettingsFactory:209 : Generate SQL with comments: disabled
+23:39:40,805  INFO SettingsFactory:213 : Order SQL updates by primary key: disabled
+23:39:40,810  INFO SettingsFactory:217 : Order SQL inserts for batching: disabled
+23:39:40,816  INFO SettingsFactory:386 : Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+23:39:40,845  INFO ASTQueryTranslatorFactory:24 : Using ASTQueryTranslatorFactory
+23:39:40,852  INFO SettingsFactory:225 : Query language substitutions: {}
+23:39:40,858  INFO SettingsFactory:230 : JPA-QL strict compliance: disabled
+23:39:40,864  INFO SettingsFactory:235 : Second-level cache: enabled
+23:39:40,870  INFO SettingsFactory:239 : Query cache: disabled
+23:39:40,876  INFO SettingsFactory:373 : Cache provider: org.hibernate.cache.NoCacheProvider
+23:39:40,883  INFO SettingsFactory:254 : Optimize cache for minimal puts: disabled
+23:39:40,889  INFO SettingsFactory:263 : Structured second-level cache entries: disabled
+23:39:40,903 DEBUG SQLExceptionConverterFactory:52 : Using dialect defined converter
+23:39:40,954  INFO SettingsFactory:283 : Echoing all SQL to stdout
+23:39:40,960  INFO SettingsFactory:290 : Statistics: disabled
+23:39:40,966  INFO SettingsFactory:294 : Deleted entity synthetic identifier rollback: disabled
+23:39:40,973  INFO SettingsFactory:309 : Default entity-mode: pojo
+23:39:40,978  INFO SettingsFactory:313 : Named query checking : enabled
+23:39:41,350  INFO SessionFactoryImpl:161 : building session factory
+23:39:41,364 DEBUG SessionFactoryImpl:173 : Session factory constructed with filter configurations : {}
+23:39:41,371 DEBUG SessionFactoryImpl:177 : instantiating session factory with properties: {java.runtime.name=Java(TM) SE Runtime Environment, hibernate.connection.password=, sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_66\jre\bin, java.vm.version=25.66-b18, hibernate.connection.username=, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=;, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding.pkg=sun.io, user.script=, user.country=RU, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=, java.vm.specification.name=Java Virtual Machine Specification, user.dir=C:\Users\Alex\Documents\GitHub\managment\socket-programming, java.runtime.version=1.8.0_66-b18, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_66\jre\lib\endorsed, os.arch=amd64, java.io.tmpdir=C:\Users\Alex\AppData\Local\Temp\, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, user.variant=, os.name=Windows 8.1, sun.jnu.encoding=Cp1251, java.library.path=C:\Program Files\Java\jdk1.8.0_66\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Calibre2\;C:\Windows\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files (x86)\nodejs\;C:\apache-maven-3.3.3\bin;C:\Program Files (x86)\Java\jdk1.7.0_55\bin;C:\Program Files (x86)\Skype\Phone\;C:\Users\Alex\AppData\Roaming\npm;., java.specification.name=Java Platform API Specification, java.class.version=52.0, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.version=6.3, user.home=C:\Users\Alex, connection.password=, user.timezone=Europe/Samara, java.awt.printerjob=sun.awt.windows.WPrinterJob, connection.username=, java.specification.version=1.8, file.encoding=UTF-8, hibernate.format_sql=true, hibernate.connection.driver_class=org.sqlite.JDBC, show_sql=true, user.name=Alex, java.class.path=C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 15.0.2\lib\idea_rt.jar;C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 15.0.2\plugins\junit\lib\junit-rt.jar;C:\Users\Alex\Documents\GitHub\managment\socket-programming\target\test-classes;C:\Users\Alex\Documents\GitHub\managment\socket-programming\target\classes;C:\Program Files\Java\jdk1.8.0_66\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\rt.jar;C:\Users\Alex\.m2\repository\junit\junit\4.5\junit-4.5.jar;C:\Users\Alex\.m2\repository\org\hibernate\hibernate\3.2.6.ga\hibernate-3.2.6.ga.jar;C:\Users\Alex\.m2\repository\asm\asm-attrs\1.5.3\asm-attrs-1.5.3.jar;C:\Users\Alex\.m2\repository\antlr\antlr\2.7.6\antlr-2.7.6.jar;C:\Users\Alex\.m2\repository\asm\asm\1.5.3\asm-1.5.3.jar;C:\Users\Alex\.m2\repository\c3p0\c3p0\0.9.1\c3p0-0.9.1.jar;C:\Users\Alex\.m2\repository\cglib\cglib\2.1_3\cglib-2.1_3.jar;C:\Users\Alex\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\Alex\.m2\repository\commons-collections\commons-collections\3.2\commons-collections-3.2.jar;C:\Users\Alex\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\Alex\.m2\repository\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar;C:\Users\Alex\.m2\repository\log4j\log4j\1.2.9\log4j-1.2.9.jar;C:\Users\Alex\.m2\repository\net\sf\ehcache\ehcache\1.2.3\ehcache-1.2.3.jar;C:\Users\Alex\.m2\repository\javax\transaction\jta\1.1\jta-1.1.jar;C:\Users\Alex\.m2\repository\org\xerial\sqlite-jdbc\3.6.0\sqlite-jdbc-3.6.0.jar, hibernate.bytecode.use_reflection_optimizer=false, format_sql=true, hibernate.show_sql=true, java.vm.specification.version=1.8, sun.arch.data.model=64, java.home=C:\Program Files\Java\jdk1.8.0_66\jre, sun.java.command=com.intellij.rt.execution.junit.JUnitStarter -ideVersion5 -junit3 test.TestSaveUser,testSave, hibernate.dialect=dialect.SQLiteDialect, hibernate.connection.url=jdbc:sqlite:1.db, java.specification.vendor=Oracle Corporation, user.language=ru, awt.toolkit=sun.awt.windows.WToolkit, java.vm.info=mixed mode, java.version=1.8.0_66, java.ext.dirs=C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext;C:\Windows\Sun\Java\lib\ext, sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_66\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_66\jre\classes, java.vendor=Oracle Corporation, idea.junit.sm_runner=, file.separator=\, connection.driver_class=org.sqlite.JDBC, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, sun.cpu.endian=little, sun.io.unicode.encoding=UnicodeLittle, sun.desktop=windows, connection.url=jdbc:sqlite:1.db, sun.cpu.isalist=amd64, dialect=dialect.SQLiteDialect}
+23:39:42,882 DEBUG AbstractEntityPersister:2743 : Static SQL for entity: model.User
+23:39:42,888 DEBUG AbstractEntityPersister:2748 :  Version select: select id from users where id =?
+23:39:42,895 DEBUG AbstractEntityPersister:2751 :  Snapshot select: select user_.id, user_.name as name0_, user_.password as password0_ from users user_ where user_.id=?
+23:39:42,901 DEBUG AbstractEntityPersister:2754 :  Insert 0: insert into users (name, password, id) values (?, ?, ?)
+23:39:42,907 DEBUG AbstractEntityPersister:2755 :  Update 0: update users set name=?, password=? where id=?
+23:39:42,914 DEBUG AbstractEntityPersister:2756 :  Delete 0: delete from users where id=?
+23:39:42,920 DEBUG AbstractEntityPersister:2760 :  Identity insert: insert into users (name, password) values (?, ?)
+23:39:43,015 DEBUG EntityLoader:79 : Static select for entity model.User: select user0_.id as id0_0_, user0_.name as name0_0_, user0_.password as password0_0_ from users user0_ where user0_.id=?
+23:39:43,024 DEBUG EntityLoader:79 : Static select for entity model.User: select user0_.id as id0_0_, user0_.name as name0_0_, user0_.password as password0_0_ from users user0_ where user0_.id=?
+23:39:43,032 DEBUG EntityLoader:79 : Static select for entity model.User: select user0_.id as id0_0_, user0_.name as name0_0_, user0_.password as password0_0_ from users user0_ where user0_.id=?
+23:39:43,041 DEBUG EntityLoader:79 : Static select for entity model.User: select user0_.id as id0_0_, user0_.name as name0_0_, user0_.password as password0_0_ from users user0_ where user0_.id=?
+23:39:43,049 DEBUG EntityLoader:79 : Static select for entity model.User: select user0_.id as id0_0_, user0_.name as name0_0_, user0_.password as password0_0_ from users user0_ where user0_.id=?
+23:39:43,130 DEBUG EntityLoader:34 : Static select for action ACTION_MERGE on entity model.User: select user0_.id as id0_0_, user0_.name as name0_0_, user0_.password as password0_0_ from users user0_ where user0_.id=?
+23:39:43,137 DEBUG EntityLoader:34 : Static select for action ACTION_REFRESH on entity model.User: select user0_.id as id0_0_, user0_.name as name0_0_, user0_.password as password0_0_ from users user0_ where user0_.id=?
+23:39:43,152 DEBUG SessionFactoryObjectFactory:39 : initializing class SessionFactoryObjectFactory
+23:39:43,164 DEBUG SessionFactoryObjectFactory:76 : registered: 402881a651cb344c0151cb3454a80000 (unnamed)
+23:39:43,170  INFO SessionFactoryObjectFactory:82 : Not binding factory to JNDI, no JNDI name configured
+23:39:43,176 DEBUG SessionFactoryImpl:308 : instantiated session factory
+23:39:43,181 DEBUG SessionFactoryImpl:392 : Checking 0 named HQL queries
+23:39:43,187 DEBUG SessionFactoryImpl:412 : Checking 0 named SQL queries
+23:39:43,242 DEBUG SessionImpl:220 : opened session at timestamp: 14508131832
+23:39:45,257 DEBUG JDBCTransaction:54 : begin
+23:39:45,260 DEBUG ConnectionManager:421 : opening JDBC connection
+23:39:45,263 DEBUG DriverManagerConnectionProvider:93 : total checked-out connections: 0
+23:39:45,267 DEBUG DriverManagerConnectionProvider:99 : using pooled JDBC connection, pool size: 0
+23:39:45,270 DEBUG JDBCTransaction:59 : current autocommit status: false
+23:39:45,273 DEBUG JDBCContext:214 : after transaction begin
+23:40:44,076 DEBUG DefaultSaveOrUpdateEventListener:158 : saving transient instance
+23:40:44,080 DEBUG AbstractSaveEventListener:153 : saving [model.User#<null>]
+23:40:44,082 DEBUG AbstractSaveEventListener:244 : executing insertions
+23:40:44,101 DEBUG AbstractSaveEventListener:297 : executing identity-insert immediately
+23:40:44,103 DEBUG AbstractEntityPersister:2149 : Inserting entity: model.User (native id)
+23:40:44,107 DEBUG AbstractBatcher:366 : about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+23:40:44,113 DEBUG SQL:401 : 
+    insert 
+    into
+        users
+        (name, password) 
+    values
+        (?, ?)
+23:40:44,116 DEBUG AbstractBatcher:484 : preparing statement
+23:40:44,150 DEBUG JDBCExceptionReporter:69 : could not insert: [model.User] [insert into users (name, password) values (?, ?)]
+java.sql.SQLException: no such table: users
+	at org.sqlite.DB.throwex(DB.java:288)
+	at org.sqlite.NestedDB.prepare(NestedDB.java:115)
+	at org.sqlite.DB.prepare(DB.java:114)
+	at org.sqlite.PrepStmt.<init>(PrepStmt.java:37)
+	at org.sqlite.Conn.prepareStatement(Conn.java:224)
+	at org.sqlite.Conn.prepareStatement(Conn.java:217)
+	at org.sqlite.Conn.prepareStatement(Conn.java:206)
+	at org.hibernate.jdbc.AbstractBatcher.getPreparedStatement(AbstractBatcher.java:505)
+	at org.hibernate.jdbc.AbstractBatcher.prepareStatement(AbstractBatcher.java:94)
+	at org.hibernate.id.insert.AbstractSelectingDelegate.performInsert(AbstractSelectingDelegate.java:30)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2163)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2643)
+	at org.hibernate.action.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:51)
+	at org.hibernate.engine.ActionQueue.execute(ActionQueue.java:279)
+	at org.hibernate.event.def.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:298)
+	at org.hibernate.event.def.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:181)
+	at org.hibernate.event.def.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:107)
+	at org.hibernate.event.def.DefaultSaveOrUpdateEventListener.saveWithGeneratedOrRequestedId(DefaultSaveOrUpdateEventListener.java:187)
+	at org.hibernate.event.def.DefaultSaveEventListener.saveWithGeneratedOrRequestedId(DefaultSaveEventListener.java:33)
+	at org.hibernate.event.def.DefaultSaveOrUpdateEventListener.entityIsTransient(DefaultSaveOrUpdateEventListener.java:172)
+	at org.hibernate.event.def.DefaultSaveEventListener.performSaveOrUpdate(DefaultSaveEventListener.java:27)
+	at org.hibernate.event.def.DefaultSaveOrUpdateEventListener.onSaveOrUpdate(DefaultSaveOrUpdateEventListener.java:70)
+	at org.hibernate.impl.SessionImpl.fireSave(SessionImpl.java:535)
+	at org.hibernate.impl.SessionImpl.save(SessionImpl.java:523)
+	at org.hibernate.impl.SessionImpl.save(SessionImpl.java:519)
+	at test.TestSaveUser.testSave(TestSaveUser.java:17)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.textui.TestRunner.doRun(TestRunner.java:116)
+	at com.intellij.junit3.JUnit3IdeaTestRunner.doRun(JUnit3IdeaTestRunner.java:145)
+	at junit.textui.TestRunner.doRun(TestRunner.java:109)
+	at com.intellij.junit3.JUnit3IdeaTestRunner.startRunnerWithArgs(JUnit3IdeaTestRunner.java:52)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:234)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:74)
+23:40:44,157  WARN JDBCExceptionReporter:77 : SQL Error: 0, SQLState: null
+23:40:44,160 ERROR JDBCExceptionReporter:78 : no such table: users
+23:40:52,216  INFO Environment:514 : Hibernate 3.2.6
+23:40:52,263  INFO Environment:547 : hibernate.properties not found
+23:40:52,282  INFO Environment:681 : Bytecode provider name : cglib
+23:40:52,312  INFO Environment:598 : using JDK 1.4 java.sql.Timestamp handling
+23:40:52,778  INFO Configuration:1432 : configuring from resource: /hibernate.cfg.xml
+23:40:52,784  INFO Configuration:1409 : Configuration resource: /hibernate.cfg.xml
+23:40:53,115 DEBUG DTDEntityResolver:38 : trying to resolve system-id [http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd]
+23:40:53,123 DEBUG DTDEntityResolver:40 : recognized hibernate namespace; attempting to resolve on classpath under org/hibernate/
+23:40:53,140 DEBUG DTDEntityResolver:50 : located [http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd] in classpath
+23:40:53,273 DEBUG Configuration:1393 : show_sql=true
+23:40:53,279 DEBUG Configuration:1393 : format_sql=true
+23:40:53,285 DEBUG Configuration:1393 : dialect=dialect.SQLiteDialect
+23:40:53,290 DEBUG Configuration:1393 : connection.driver_class=org.sqlite.JDBC
+23:40:53,297 DEBUG Configuration:1393 : connection.url=jdbc:sqlite:1.db
+23:40:53,302 DEBUG Configuration:1393 : connection.username=
+23:40:53,308 DEBUG Configuration:1393 : connection.password=
+23:40:53,315 DEBUG Configuration:1592 : null<-org.dom4j.tree.DefaultAttribute@516be40f [Attribute: name resource value "User.hbm.xml"]
+23:40:53,321  INFO Configuration:559 : Reading mappings from resource : User.hbm.xml
+23:40:53,337 DEBUG DTDEntityResolver:38 : trying to resolve system-id [http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd]
+23:40:53,346 DEBUG DTDEntityResolver:40 : recognized hibernate namespace; attempting to resolve on classpath under org/hibernate/
+23:40:53,363 DEBUG DTDEntityResolver:50 : located [http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd] in classpath
+23:40:54,079  INFO HbmBinder:300 : Mapping class: model.User -> users
+23:40:54,121 DEBUG HbmBinder:1267 : Mapped property: id -> id
+23:40:54,203 DEBUG HbmBinder:1267 : Mapped property: name -> name
+23:40:54,212 DEBUG HbmBinder:1267 : Mapped property: password -> password
+23:40:54,220  INFO Configuration:1547 : Configured SessionFactory: null
+23:40:54,228 DEBUG Configuration:1548 : properties: {hibernate.connection.password=, java.runtime.name=Java(TM) SE Runtime Environment, sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_66\jre\bin, java.vm.version=25.66-b18, hibernate.connection.username=, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=;, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding.pkg=sun.io, user.script=, user.country=RU, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=, java.vm.specification.name=Java Virtual Machine Specification, user.dir=C:\Users\Alex\Documents\GitHub\managment\socket-programming, java.runtime.version=1.8.0_66-b18, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_66\jre\lib\endorsed, os.arch=amd64, java.io.tmpdir=C:\Users\Alex\AppData\Local\Temp\, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, user.variant=, os.name=Windows 8.1, sun.jnu.encoding=Cp1251, java.library.path=C:\Program Files\Java\jdk1.8.0_66\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Calibre2\;C:\Windows\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files (x86)\nodejs\;C:\apache-maven-3.3.3\bin;C:\Program Files (x86)\Java\jdk1.7.0_55\bin;C:\Program Files (x86)\Skype\Phone\;C:\Users\Alex\AppData\Roaming\npm;., java.specification.name=Java Platform API Specification, java.class.version=52.0, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.version=6.3, connection.password=, user.home=C:\Users\Alex, user.timezone=Europe/Samara, connection.username=, java.awt.printerjob=sun.awt.windows.WPrinterJob, file.encoding=UTF-8, java.specification.version=1.8, hibernate.format_sql=true, hibernate.connection.driver_class=org.sqlite.JDBC, show_sql=true, java.class.path=C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 15.0.2\lib\idea_rt.jar;C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 15.0.2\plugins\junit\lib\junit-rt.jar;C:\Users\Alex\Documents\GitHub\managment\socket-programming\target\test-classes;C:\Users\Alex\Documents\GitHub\managment\socket-programming\target\classes;C:\Program Files\Java\jdk1.8.0_66\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\rt.jar;C:\Users\Alex\.m2\repository\junit\junit\4.5\junit-4.5.jar;C:\Users\Alex\.m2\repository\org\hibernate\hibernate\3.2.6.ga\hibernate-3.2.6.ga.jar;C:\Users\Alex\.m2\repository\asm\asm-attrs\1.5.3\asm-attrs-1.5.3.jar;C:\Users\Alex\.m2\repository\antlr\antlr\2.7.6\antlr-2.7.6.jar;C:\Users\Alex\.m2\repository\asm\asm\1.5.3\asm-1.5.3.jar;C:\Users\Alex\.m2\repository\c3p0\c3p0\0.9.1\c3p0-0.9.1.jar;C:\Users\Alex\.m2\repository\cglib\cglib\2.1_3\cglib-2.1_3.jar;C:\Users\Alex\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\Alex\.m2\repository\commons-collections\commons-collections\3.2\commons-collections-3.2.jar;C:\Users\Alex\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\Alex\.m2\repository\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar;C:\Users\Alex\.m2\repository\log4j\log4j\1.2.9\log4j-1.2.9.jar;C:\Users\Alex\.m2\repository\net\sf\ehcache\ehcache\1.2.3\ehcache-1.2.3.jar;C:\Users\Alex\.m2\repository\javax\transaction\jta\1.1\jta-1.1.jar;C:\Users\Alex\.m2\repository\org\xerial\sqlite-jdbc\3.6.0\sqlite-jdbc-3.6.0.jar, user.name=Alex, format_sql=true, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, java.vm.specification.version=1.8, sun.java.command=com.intellij.rt.execution.junit.JUnitStarter -ideVersion5 -junit3 test.TestSaveUser,testSave, java.home=C:\Program Files\Java\jdk1.8.0_66\jre, sun.arch.data.model=64, hibernate.connection.url=jdbc:sqlite:1.db, hibernate.dialect=dialect.SQLiteDialect, user.language=ru, java.specification.vendor=Oracle Corporation, awt.toolkit=sun.awt.windows.WToolkit, java.vm.info=mixed mode, java.version=1.8.0_66, java.ext.dirs=C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext;C:\Windows\Sun\Java\lib\ext, sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_66\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_66\jre\classes, idea.junit.sm_runner=, java.vendor=Oracle Corporation, connection.driver_class=org.sqlite.JDBC, file.separator=\, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, sun.io.unicode.encoding=UnicodeLittle, sun.cpu.endian=little, sun.desktop=windows, connection.url=jdbc:sqlite:1.db, dialect=dialect.SQLiteDialect, sun.cpu.isalist=amd64}
+23:40:54,240 DEBUG Configuration:1291 : Preparing to build session factory with filters : {}
+23:40:54,245 DEBUG Configuration:1126 : processing extends queue
+23:40:54,251 DEBUG Configuration:1130 : processing collection mappings
+23:40:54,256 DEBUG Configuration:1141 : processing native query and ResultSetMapping mappings
+23:40:54,261 DEBUG Configuration:1149 : processing association property references
+23:40:54,266 DEBUG Configuration:1171 : processing foreign key constraints
+23:40:54,650  INFO DriverManagerConnectionProvider:41 : Using Hibernate built-in connection pool (not for production use!)
+23:40:54,657  INFO DriverManagerConnectionProvider:42 : Hibernate connection pool size: 20
+23:40:54,664  INFO DriverManagerConnectionProvider:45 : autocommit mode: false
+23:40:54,690  INFO DriverManagerConnectionProvider:80 : using driver: org.sqlite.JDBC at URL: jdbc:sqlite:1.db
+23:40:54,697  INFO DriverManagerConnectionProvider:83 : connection properties: {user=, password=}
+23:40:54,704 DEBUG DriverManagerConnectionProvider:93 : total checked-out connections: 0
+23:40:54,709 DEBUG DriverManagerConnectionProvider:109 : opening new JDBC connection
+23:40:55,957 DEBUG DriverManagerConnectionProvider:115 : created connection to: jdbc:sqlite:1.db, Isolation Level: 8
+23:40:55,970  INFO SettingsFactory:89 : RDBMS: SQLite, version: 3.6.0
+23:40:55,976  INFO SettingsFactory:90 : JDBC driver: SQLiteJDBC, version: pure
+23:40:55,982 DEBUG DriverManagerConnectionProvider:129 : returning connection to pool, pool size: 1
+23:40:56,144  INFO Dialect:152 : Using dialect: dialect.SQLiteDialect
+23:40:56,187  INFO TransactionFactoryFactory:31 : Using default transaction strategy (direct JDBC transactions)
+23:40:56,211  INFO TransactionManagerLookupFactory:33 : No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+23:40:56,218  INFO SettingsFactory:143 : Automatic flush during beforeCompletion(): disabled
+23:40:56,224  INFO SettingsFactory:147 : Automatic session close at end of transaction: disabled
+23:40:56,234  INFO SettingsFactory:162 : Scrollable result sets: disabled
+23:40:56,240 DEBUG SettingsFactory:166 : Wrap result sets: disabled
+23:40:56,246  INFO SettingsFactory:170 : JDBC3 getGeneratedKeys(): disabled
+23:40:56,252  INFO SettingsFactory:178 : Connection release mode: auto
+23:40:56,263  INFO SettingsFactory:205 : Default batch fetch size: 1
+23:40:56,269  INFO SettingsFactory:209 : Generate SQL with comments: disabled
+23:40:56,275  INFO SettingsFactory:213 : Order SQL updates by primary key: disabled
+23:40:56,281  INFO SettingsFactory:217 : Order SQL inserts for batching: disabled
+23:40:56,287  INFO SettingsFactory:386 : Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+23:40:56,315  INFO ASTQueryTranslatorFactory:24 : Using ASTQueryTranslatorFactory
+23:40:56,322  INFO SettingsFactory:225 : Query language substitutions: {}
+23:40:56,328  INFO SettingsFactory:230 : JPA-QL strict compliance: disabled
+23:40:56,334  INFO SettingsFactory:235 : Second-level cache: enabled
+23:40:56,340  INFO SettingsFactory:239 : Query cache: disabled
+23:40:56,346  INFO SettingsFactory:373 : Cache provider: org.hibernate.cache.NoCacheProvider
+23:40:56,353  INFO SettingsFactory:254 : Optimize cache for minimal puts: disabled
+23:40:56,359  INFO SettingsFactory:263 : Structured second-level cache entries: disabled
+23:40:56,371 DEBUG SQLExceptionConverterFactory:52 : Using dialect defined converter
+23:40:56,421  INFO SettingsFactory:283 : Echoing all SQL to stdout
+23:40:56,428  INFO SettingsFactory:290 : Statistics: disabled
+23:40:56,433  INFO SettingsFactory:294 : Deleted entity synthetic identifier rollback: disabled
+23:40:56,439  INFO SettingsFactory:309 : Default entity-mode: pojo
+23:40:56,446  INFO SettingsFactory:313 : Named query checking : enabled
+23:40:56,822  INFO SessionFactoryImpl:161 : building session factory
+23:40:56,835 DEBUG SessionFactoryImpl:173 : Session factory constructed with filter configurations : {}
+23:40:56,842 DEBUG SessionFactoryImpl:177 : instantiating session factory with properties: {java.runtime.name=Java(TM) SE Runtime Environment, hibernate.connection.password=, sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_66\jre\bin, java.vm.version=25.66-b18, hibernate.connection.username=, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=;, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding.pkg=sun.io, user.script=, user.country=RU, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=, java.vm.specification.name=Java Virtual Machine Specification, user.dir=C:\Users\Alex\Documents\GitHub\managment\socket-programming, java.runtime.version=1.8.0_66-b18, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_66\jre\lib\endorsed, os.arch=amd64, java.io.tmpdir=C:\Users\Alex\AppData\Local\Temp\, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, user.variant=, os.name=Windows 8.1, sun.jnu.encoding=Cp1251, java.library.path=C:\Program Files\Java\jdk1.8.0_66\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Calibre2\;C:\Windows\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files (x86)\nodejs\;C:\apache-maven-3.3.3\bin;C:\Program Files (x86)\Java\jdk1.7.0_55\bin;C:\Program Files (x86)\Skype\Phone\;C:\Users\Alex\AppData\Roaming\npm;., java.specification.name=Java Platform API Specification, java.class.version=52.0, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.version=6.3, user.home=C:\Users\Alex, connection.password=, user.timezone=Europe/Samara, java.awt.printerjob=sun.awt.windows.WPrinterJob, connection.username=, java.specification.version=1.8, file.encoding=UTF-8, hibernate.format_sql=true, hibernate.connection.driver_class=org.sqlite.JDBC, show_sql=true, user.name=Alex, java.class.path=C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 15.0.2\lib\idea_rt.jar;C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 15.0.2\plugins\junit\lib\junit-rt.jar;C:\Users\Alex\Documents\GitHub\managment\socket-programming\target\test-classes;C:\Users\Alex\Documents\GitHub\managment\socket-programming\target\classes;C:\Program Files\Java\jdk1.8.0_66\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\rt.jar;C:\Users\Alex\.m2\repository\junit\junit\4.5\junit-4.5.jar;C:\Users\Alex\.m2\repository\org\hibernate\hibernate\3.2.6.ga\hibernate-3.2.6.ga.jar;C:\Users\Alex\.m2\repository\asm\asm-attrs\1.5.3\asm-attrs-1.5.3.jar;C:\Users\Alex\.m2\repository\antlr\antlr\2.7.6\antlr-2.7.6.jar;C:\Users\Alex\.m2\repository\asm\asm\1.5.3\asm-1.5.3.jar;C:\Users\Alex\.m2\repository\c3p0\c3p0\0.9.1\c3p0-0.9.1.jar;C:\Users\Alex\.m2\repository\cglib\cglib\2.1_3\cglib-2.1_3.jar;C:\Users\Alex\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\Alex\.m2\repository\commons-collections\commons-collections\3.2\commons-collections-3.2.jar;C:\Users\Alex\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\Alex\.m2\repository\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar;C:\Users\Alex\.m2\repository\log4j\log4j\1.2.9\log4j-1.2.9.jar;C:\Users\Alex\.m2\repository\net\sf\ehcache\ehcache\1.2.3\ehcache-1.2.3.jar;C:\Users\Alex\.m2\repository\javax\transaction\jta\1.1\jta-1.1.jar;C:\Users\Alex\.m2\repository\org\xerial\sqlite-jdbc\3.6.0\sqlite-jdbc-3.6.0.jar, hibernate.bytecode.use_reflection_optimizer=false, format_sql=true, hibernate.show_sql=true, java.vm.specification.version=1.8, sun.arch.data.model=64, java.home=C:\Program Files\Java\jdk1.8.0_66\jre, sun.java.command=com.intellij.rt.execution.junit.JUnitStarter -ideVersion5 -junit3 test.TestSaveUser,testSave, hibernate.dialect=dialect.SQLiteDialect, hibernate.connection.url=jdbc:sqlite:1.db, java.specification.vendor=Oracle Corporation, user.language=ru, awt.toolkit=sun.awt.windows.WToolkit, java.vm.info=mixed mode, java.version=1.8.0_66, java.ext.dirs=C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext;C:\Windows\Sun\Java\lib\ext, sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_66\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_66\jre\classes, java.vendor=Oracle Corporation, idea.junit.sm_runner=, file.separator=\, connection.driver_class=org.sqlite.JDBC, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, sun.cpu.endian=little, sun.io.unicode.encoding=UnicodeLittle, sun.desktop=windows, connection.url=jdbc:sqlite:1.db, sun.cpu.isalist=amd64, dialect=dialect.SQLiteDialect}
+23:40:58,349 DEBUG AbstractEntityPersister:2743 : Static SQL for entity: model.User
+23:40:58,355 DEBUG AbstractEntityPersister:2748 :  Version select: select id from users where id =?
+23:40:58,361 DEBUG AbstractEntityPersister:2751 :  Snapshot select: select user_.id, user_.name as name0_, user_.password as password0_ from users user_ where user_.id=?
+23:40:58,367 DEBUG AbstractEntityPersister:2754 :  Insert 0: insert into users (name, password, id) values (?, ?, ?)
+23:40:58,373 DEBUG AbstractEntityPersister:2755 :  Update 0: update users set name=?, password=? where id=?
+23:40:58,379 DEBUG AbstractEntityPersister:2756 :  Delete 0: delete from users where id=?
+23:40:58,385 DEBUG AbstractEntityPersister:2760 :  Identity insert: insert into users (name, password) values (?, ?)
+23:40:58,478 DEBUG EntityLoader:79 : Static select for entity model.User: select user0_.id as id0_0_, user0_.name as name0_0_, user0_.password as password0_0_ from users user0_ where user0_.id=?
+23:40:58,486 DEBUG EntityLoader:79 : Static select for entity model.User: select user0_.id as id0_0_, user0_.name as name0_0_, user0_.password as password0_0_ from users user0_ where user0_.id=?
+23:40:58,495 DEBUG EntityLoader:79 : Static select for entity model.User: select user0_.id as id0_0_, user0_.name as name0_0_, user0_.password as password0_0_ from users user0_ where user0_.id=?
+23:40:58,503 DEBUG EntityLoader:79 : Static select for entity model.User: select user0_.id as id0_0_, user0_.name as name0_0_, user0_.password as password0_0_ from users user0_ where user0_.id=?
+23:40:58,511 DEBUG EntityLoader:79 : Static select for entity model.User: select user0_.id as id0_0_, user0_.name as name0_0_, user0_.password as password0_0_ from users user0_ where user0_.id=?
+23:40:58,590 DEBUG EntityLoader:34 : Static select for action ACTION_MERGE on entity model.User: select user0_.id as id0_0_, user0_.name as name0_0_, user0_.password as password0_0_ from users user0_ where user0_.id=?
+23:40:58,598 DEBUG EntityLoader:34 : Static select for action ACTION_REFRESH on entity model.User: select user0_.id as id0_0_, user0_.name as name0_0_, user0_.password as password0_0_ from users user0_ where user0_.id=?
+23:40:58,613 DEBUG SessionFactoryObjectFactory:39 : initializing class SessionFactoryObjectFactory
+23:40:58,624 DEBUG SessionFactoryObjectFactory:76 : registered: 402881a651cb35730151cb357b6d0000 (unnamed)
+23:40:58,630  INFO SessionFactoryObjectFactory:82 : Not binding factory to JNDI, no JNDI name configured
+23:40:58,636 DEBUG SessionFactoryImpl:308 : instantiated session factory
+23:40:58,642 DEBUG SessionFactoryImpl:392 : Checking 0 named HQL queries
+23:40:58,647 DEBUG SessionFactoryImpl:412 : Checking 0 named SQL queries
+23:40:58,700 DEBUG SessionImpl:220 : opened session at timestamp: 14508132586
+23:40:59,635 DEBUG JDBCTransaction:54 : begin
+23:40:59,637 DEBUG ConnectionManager:421 : opening JDBC connection
+23:40:59,640 DEBUG DriverManagerConnectionProvider:93 : total checked-out connections: 0
+23:40:59,644 DEBUG DriverManagerConnectionProvider:99 : using pooled JDBC connection, pool size: 0
+23:40:59,647 DEBUG JDBCTransaction:59 : current autocommit status: false
+23:40:59,650 DEBUG JDBCContext:214 : after transaction begin
+23:41:45,110 DEBUG DefaultSaveOrUpdateEventListener:158 : saving transient instance
+23:41:45,117 DEBUG AbstractSaveEventListener:153 : saving [model.User#<null>]
+23:41:45,120 DEBUG AbstractSaveEventListener:244 : executing insertions
+23:41:45,154 DEBUG AbstractSaveEventListener:297 : executing identity-insert immediately
+23:41:45,159 DEBUG AbstractEntityPersister:2149 : Inserting entity: model.User (native id)
+23:41:45,165 DEBUG AbstractBatcher:366 : about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+23:41:45,175 DEBUG SQL:401 : 
+    insert 
+    into
+        users
+        (name, password) 
+    values
+        (?, ?)
+23:41:45,181 DEBUG AbstractBatcher:484 : preparing statement
+23:41:45,243 DEBUG JDBCExceptionReporter:69 : could not insert: [model.User] [insert into users (name, password) values (?, ?)]
+java.sql.SQLException: no such table: users
+	at org.sqlite.DB.throwex(DB.java:288)
+	at org.sqlite.NestedDB.prepare(NestedDB.java:115)
+	at org.sqlite.DB.prepare(DB.java:114)
+	at org.sqlite.PrepStmt.<init>(PrepStmt.java:37)
+	at org.sqlite.Conn.prepareStatement(Conn.java:224)
+	at org.sqlite.Conn.prepareStatement(Conn.java:217)
+	at org.sqlite.Conn.prepareStatement(Conn.java:206)
+	at org.hibernate.jdbc.AbstractBatcher.getPreparedStatement(AbstractBatcher.java:505)
+	at org.hibernate.jdbc.AbstractBatcher.prepareStatement(AbstractBatcher.java:94)
+	at org.hibernate.id.insert.AbstractSelectingDelegate.performInsert(AbstractSelectingDelegate.java:30)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2163)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2643)
+	at org.hibernate.action.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:51)
+	at org.hibernate.engine.ActionQueue.execute(ActionQueue.java:279)
+	at org.hibernate.event.def.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:298)
+	at org.hibernate.event.def.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:181)
+	at org.hibernate.event.def.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:107)
+	at org.hibernate.event.def.DefaultSaveOrUpdateEventListener.saveWithGeneratedOrRequestedId(DefaultSaveOrUpdateEventListener.java:187)
+	at org.hibernate.event.def.DefaultSaveEventListener.saveWithGeneratedOrRequestedId(DefaultSaveEventListener.java:33)
+	at org.hibernate.event.def.DefaultSaveOrUpdateEventListener.entityIsTransient(DefaultSaveOrUpdateEventListener.java:172)
+	at org.hibernate.event.def.DefaultSaveEventListener.performSaveOrUpdate(DefaultSaveEventListener.java:27)
+	at org.hibernate.event.def.DefaultSaveOrUpdateEventListener.onSaveOrUpdate(DefaultSaveOrUpdateEventListener.java:70)
+	at org.hibernate.impl.SessionImpl.fireSave(SessionImpl.java:535)
+	at org.hibernate.impl.SessionImpl.save(SessionImpl.java:523)
+	at org.hibernate.impl.SessionImpl.save(SessionImpl.java:519)
+	at test.TestSaveUser.testSave(TestSaveUser.java:17)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.textui.TestRunner.doRun(TestRunner.java:116)
+	at com.intellij.junit3.JUnit3IdeaTestRunner.doRun(JUnit3IdeaTestRunner.java:145)
+	at junit.textui.TestRunner.doRun(TestRunner.java:109)
+	at com.intellij.junit3.JUnit3IdeaTestRunner.startRunnerWithArgs(JUnit3IdeaTestRunner.java:52)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:234)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:74)
+23:41:45,255  WARN JDBCExceptionReporter:77 : SQL Error: 0, SQLState: null
+23:41:45,261 ERROR JDBCExceptionReporter:78 : no such table: users
+23:42:30,083  INFO Environment:514 : Hibernate 3.2.6
+23:42:30,087  INFO Environment:547 : hibernate.properties not found
+23:42:30,089  INFO Environment:681 : Bytecode provider name : cglib
+23:42:30,092  INFO Environment:598 : using JDK 1.4 java.sql.Timestamp handling
+23:42:30,126  INFO Configuration:1432 : configuring from resource: /hibernate.cfg.xml
+23:42:30,127  INFO Configuration:1409 : Configuration resource: /hibernate.cfg.xml
+23:42:30,167 DEBUG DTDEntityResolver:38 : trying to resolve system-id [http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd]
+23:42:30,167 DEBUG DTDEntityResolver:40 : recognized hibernate namespace; attempting to resolve on classpath under org/hibernate/
+23:42:30,168 DEBUG DTDEntityResolver:50 : located [http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd] in classpath
+23:42:30,182 DEBUG Configuration:1393 : show_sql=true
+23:42:30,182 DEBUG Configuration:1393 : format_sql=true
+23:42:30,183 DEBUG Configuration:1393 : dialect=dialect.SQLiteDialect
+23:42:30,183 DEBUG Configuration:1393 : connection.driver_class=org.sqlite.JDBC
+23:42:30,183 DEBUG Configuration:1393 : connection.url=jdbc:sqlite:1.db
+23:42:30,183 DEBUG Configuration:1393 : connection.username=
+23:42:30,183 DEBUG Configuration:1393 : connection.password=
+23:42:30,184 DEBUG Configuration:1592 : null<-org.dom4j.tree.DefaultAttribute@7006c658 [Attribute: name resource value "User.hbm.xml"]
+23:42:30,184  INFO Configuration:559 : Reading mappings from resource : User.hbm.xml
+23:42:30,185 DEBUG DTDEntityResolver:38 : trying to resolve system-id [http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd]
+23:42:30,185 DEBUG DTDEntityResolver:40 : recognized hibernate namespace; attempting to resolve on classpath under org/hibernate/
+23:42:30,187 DEBUG DTDEntityResolver:50 : located [http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd] in classpath
+23:42:30,240  INFO HbmBinder:300 : Mapping class: model.User -> users
+23:42:30,244 DEBUG HbmBinder:1267 : Mapped property: id -> id
+23:42:30,253 DEBUG HbmBinder:1267 : Mapped property: name -> name
+23:42:30,253 DEBUG HbmBinder:1267 : Mapped property: password -> password
+23:42:30,254  INFO Configuration:1547 : Configured SessionFactory: null
+23:42:30,254 DEBUG Configuration:1548 : properties: {java.vendor=Oracle Corporation, show_sql=true, sun.java.launcher=SUN_STANDARD, hibernate.connection.url=jdbc:sqlite:1.db, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.name=Windows 8.1, sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_66\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_66\jre\classes, sun.desktop=windows, java.vm.specification.vendor=Oracle Corporation, java.runtime.version=1.8.0_66-b18, user.name=Alex, connection.driver_class=org.sqlite.JDBC, idea.launcher.bin.path=C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 15.0.2\bin, user.language=ru, sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_66\jre\bin, dialect=dialect.SQLiteDialect, java.version=1.8.0_66, user.timezone=Europe/Samara, sun.arch.data.model=64, java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_66\jre\lib\endorsed, sun.cpu.isalist=amd64, sun.jnu.encoding=Cp1251, file.encoding.pkg=sun.io, file.separator=\, java.specification.name=Java Platform API Specification, hibernate.format_sql=true, java.class.version=52.0, user.country=RU, connection.url=jdbc:sqlite:1.db, java.home=C:\Program Files\Java\jdk1.8.0_66\jre, java.vm.info=mixed mode, os.version=6.3, path.separator=;, connection.password=, java.vm.version=25.66-b18, hibernate.connection.password=, user.variant=, java.awt.printerjob=sun.awt.windows.WPrinterJob, sun.io.unicode.encoding=UnicodeLittle, awt.toolkit=sun.awt.windows.WToolkit, hibernate.connection.username=, user.script=, user.home=C:\Users\Alex, java.specification.vendor=Oracle Corporation, java.library.path=C:\Program Files\Java\jdk1.8.0_66\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Calibre2\;C:\Windows\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files (x86)\nodejs\;C:\apache-maven-3.3.3\bin;C:\Program Files (x86)\Java\jdk1.7.0_55\bin;C:\Program Files (x86)\Skype\Phone\;C:\Users\Alex\AppData\Roaming\npm;., java.vendor.url=http://java.oracle.com/, hibernate.connection.driver_class=org.sqlite.JDBC, connection.username=, java.vm.vendor=Oracle Corporation, hibernate.dialect=dialect.SQLiteDialect, java.runtime.name=Java(TM) SE Runtime Environment, sun.java.command=com.intellij.rt.execution.application.AppMain com.intellij.rt.execution.junit.JUnitStarter -ideVersion5 -junit3 test.TestSaveUser,testSave, java.class.path=C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 15.0.2\lib\idea_rt.jar;C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 15.0.2\plugins\junit\lib\junit-rt.jar;C:\Users\Alex\Documents\GitHub\managment\socket-programming\target\test-classes;C:\Users\Alex\Documents\GitHub\managment\socket-programming\target\classes;C:\Program Files\Java\jdk1.8.0_66\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\rt.jar;C:\Users\Alex\.m2\repository\junit\junit\4.5\junit-4.5.jar;C:\Users\Alex\.m2\repository\org\hibernate\hibernate\3.2.6.ga\hibernate-3.2.6.ga.jar;C:\Users\Alex\.m2\repository\asm\asm-attrs\1.5.3\asm-attrs-1.5.3.jar;C:\Users\Alex\.m2\repository\antlr\antlr\2.7.6\antlr-2.7.6.jar;C:\Users\Alex\.m2\repository\asm\asm\1.5.3\asm-1.5.3.jar;C:\Users\Alex\.m2\repository\c3p0\c3p0\0.9.1\c3p0-0.9.1.jar;C:\Users\Alex\.m2\repository\cglib\cglib\2.1_3\cglib-2.1_3.jar;C:\Users\Alex\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\Alex\.m2\repository\commons-collections\commons-collections\3.2\commons-collections-3.2.jar;C:\Users\Alex\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\Alex\.m2\repository\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar;C:\Users\Alex\.m2\repository\log4j\log4j\1.2.9\log4j-1.2.9.jar;C:\Users\Alex\.m2\repository\net\sf\ehcache\ehcache\1.2.3\ehcache-1.2.3.jar;C:\Users\Alex\.m2\repository\javax\transaction\jta\1.1\jta-1.1.jar;C:\Users\Alex\.m2\repository\org\xerial\sqlite-jdbc\3.6.0\sqlite-jdbc-3.6.0.jar, hibernate.bytecode.use_reflection_optimizer=false, idea.launcher.port=7532, java.vm.specification.name=Java Virtual Machine Specification, java.vm.specification.version=1.8, sun.cpu.endian=little, sun.os.patch.level=, java.io.tmpdir=C:\Users\Alex\AppData\Local\Temp\, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, os.arch=amd64, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, java.ext.dirs=C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext;C:\Windows\Sun\Java\lib\ext, user.dir=C:\Users\Alex\Documents\GitHub\managment\socket-programming, line.separator=
+, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding=UTF-8, idea.junit.sm_runner=, format_sql=true, java.specification.version=1.8, hibernate.show_sql=true}
+23:42:30,254 DEBUG Configuration:1291 : Preparing to build session factory with filters : {}
+23:42:30,254 DEBUG Configuration:1126 : processing extends queue
+23:42:30,255 DEBUG Configuration:1130 : processing collection mappings
+23:42:30,255 DEBUG Configuration:1141 : processing native query and ResultSetMapping mappings
+23:42:30,255 DEBUG Configuration:1149 : processing association property references
+23:42:30,255 DEBUG Configuration:1171 : processing foreign key constraints
+23:42:30,289  INFO DriverManagerConnectionProvider:41 : Using Hibernate built-in connection pool (not for production use!)
+23:42:30,290  INFO DriverManagerConnectionProvider:42 : Hibernate connection pool size: 20
+23:42:30,290  INFO DriverManagerConnectionProvider:45 : autocommit mode: false
+23:42:30,293  INFO DriverManagerConnectionProvider:80 : using driver: org.sqlite.JDBC at URL: jdbc:sqlite:1.db
+23:42:30,294  INFO DriverManagerConnectionProvider:83 : connection properties: {user=, password=}
+23:42:30,294 DEBUG DriverManagerConnectionProvider:93 : total checked-out connections: 0
+23:42:30,294 DEBUG DriverManagerConnectionProvider:109 : opening new JDBC connection
+23:42:30,908 DEBUG DriverManagerConnectionProvider:115 : created connection to: jdbc:sqlite:1.db, Isolation Level: 8
+23:42:30,913  INFO SettingsFactory:89 : RDBMS: SQLite, version: 3.6.0
+23:42:30,913  INFO SettingsFactory:90 : JDBC driver: SQLiteJDBC, version: pure
+23:42:30,918 DEBUG DriverManagerConnectionProvider:129 : returning connection to pool, pool size: 1
+23:42:30,930  INFO Dialect:152 : Using dialect: dialect.SQLiteDialect
+23:42:30,933  INFO TransactionFactoryFactory:31 : Using default transaction strategy (direct JDBC transactions)
+23:42:30,934  INFO TransactionManagerLookupFactory:33 : No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+23:42:30,934  INFO SettingsFactory:143 : Automatic flush during beforeCompletion(): disabled
+23:42:30,934  INFO SettingsFactory:147 : Automatic session close at end of transaction: disabled
+23:42:30,936  INFO SettingsFactory:162 : Scrollable result sets: disabled
+23:42:30,936 DEBUG SettingsFactory:166 : Wrap result sets: disabled
+23:42:30,936  INFO SettingsFactory:170 : JDBC3 getGeneratedKeys(): disabled
+23:42:30,937  INFO SettingsFactory:178 : Connection release mode: auto
+23:42:30,938  INFO SettingsFactory:205 : Default batch fetch size: 1
+23:42:30,938  INFO SettingsFactory:209 : Generate SQL with comments: disabled
+23:42:30,938  INFO SettingsFactory:213 : Order SQL updates by primary key: disabled
+23:42:30,939  INFO SettingsFactory:217 : Order SQL inserts for batching: disabled
+23:42:30,939  INFO SettingsFactory:386 : Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+23:42:30,941  INFO ASTQueryTranslatorFactory:24 : Using ASTQueryTranslatorFactory
+23:42:30,941  INFO SettingsFactory:225 : Query language substitutions: {}
+23:42:30,941  INFO SettingsFactory:230 : JPA-QL strict compliance: disabled
+23:42:30,941  INFO SettingsFactory:235 : Second-level cache: enabled
+23:42:30,941  INFO SettingsFactory:239 : Query cache: disabled
+23:42:30,942  INFO SettingsFactory:373 : Cache provider: org.hibernate.cache.NoCacheProvider
+23:42:30,942  INFO SettingsFactory:254 : Optimize cache for minimal puts: disabled
+23:42:30,942  INFO SettingsFactory:263 : Structured second-level cache entries: disabled
+23:42:30,943 DEBUG SQLExceptionConverterFactory:52 : Using dialect defined converter
+23:42:30,945  INFO SettingsFactory:283 : Echoing all SQL to stdout
+23:42:30,946  INFO SettingsFactory:290 : Statistics: disabled
+23:42:30,946  INFO SettingsFactory:294 : Deleted entity synthetic identifier rollback: disabled
+23:42:30,946  INFO SettingsFactory:309 : Default entity-mode: pojo
+23:42:30,946  INFO SettingsFactory:313 : Named query checking : enabled
+23:42:30,970  INFO SessionFactoryImpl:161 : building session factory
+23:42:30,971 DEBUG SessionFactoryImpl:173 : Session factory constructed with filter configurations : {}
+23:42:30,971 DEBUG SessionFactoryImpl:177 : instantiating session factory with properties: {java.vendor=Oracle Corporation, show_sql=true, sun.java.launcher=SUN_STANDARD, hibernate.connection.url=jdbc:sqlite:1.db, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.name=Windows 8.1, sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_66\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_66\jre\classes, sun.desktop=windows, java.vm.specification.vendor=Oracle Corporation, java.runtime.version=1.8.0_66-b18, user.name=Alex, connection.driver_class=org.sqlite.JDBC, idea.launcher.bin.path=C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 15.0.2\bin, user.language=ru, sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_66\jre\bin, dialect=dialect.SQLiteDialect, java.version=1.8.0_66, user.timezone=Europe/Samara, sun.arch.data.model=64, java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_66\jre\lib\endorsed, sun.cpu.isalist=amd64, sun.jnu.encoding=Cp1251, file.encoding.pkg=sun.io, file.separator=\, java.specification.name=Java Platform API Specification, hibernate.format_sql=true, java.class.version=52.0, user.country=RU, connection.url=jdbc:sqlite:1.db, java.home=C:\Program Files\Java\jdk1.8.0_66\jre, java.vm.info=mixed mode, os.version=6.3, path.separator=;, connection.password=, java.vm.version=25.66-b18, hibernate.connection.password=, user.variant=, java.awt.printerjob=sun.awt.windows.WPrinterJob, sun.io.unicode.encoding=UnicodeLittle, awt.toolkit=sun.awt.windows.WToolkit, hibernate.connection.username=, user.script=, user.home=C:\Users\Alex, java.specification.vendor=Oracle Corporation, java.library.path=C:\Program Files\Java\jdk1.8.0_66\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Calibre2\;C:\Windows\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files (x86)\nodejs\;C:\apache-maven-3.3.3\bin;C:\Program Files (x86)\Java\jdk1.7.0_55\bin;C:\Program Files (x86)\Skype\Phone\;C:\Users\Alex\AppData\Roaming\npm;., java.vendor.url=http://java.oracle.com/, hibernate.connection.driver_class=org.sqlite.JDBC, connection.username=, java.vm.vendor=Oracle Corporation, hibernate.dialect=dialect.SQLiteDialect, java.runtime.name=Java(TM) SE Runtime Environment, sun.java.command=com.intellij.rt.execution.application.AppMain com.intellij.rt.execution.junit.JUnitStarter -ideVersion5 -junit3 test.TestSaveUser,testSave, java.class.path=C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 15.0.2\lib\idea_rt.jar;C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 15.0.2\plugins\junit\lib\junit-rt.jar;C:\Users\Alex\Documents\GitHub\managment\socket-programming\target\test-classes;C:\Users\Alex\Documents\GitHub\managment\socket-programming\target\classes;C:\Program Files\Java\jdk1.8.0_66\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\rt.jar;C:\Users\Alex\.m2\repository\junit\junit\4.5\junit-4.5.jar;C:\Users\Alex\.m2\repository\org\hibernate\hibernate\3.2.6.ga\hibernate-3.2.6.ga.jar;C:\Users\Alex\.m2\repository\asm\asm-attrs\1.5.3\asm-attrs-1.5.3.jar;C:\Users\Alex\.m2\repository\antlr\antlr\2.7.6\antlr-2.7.6.jar;C:\Users\Alex\.m2\repository\asm\asm\1.5.3\asm-1.5.3.jar;C:\Users\Alex\.m2\repository\c3p0\c3p0\0.9.1\c3p0-0.9.1.jar;C:\Users\Alex\.m2\repository\cglib\cglib\2.1_3\cglib-2.1_3.jar;C:\Users\Alex\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\Alex\.m2\repository\commons-collections\commons-collections\3.2\commons-collections-3.2.jar;C:\Users\Alex\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\Alex\.m2\repository\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar;C:\Users\Alex\.m2\repository\log4j\log4j\1.2.9\log4j-1.2.9.jar;C:\Users\Alex\.m2\repository\net\sf\ehcache\ehcache\1.2.3\ehcache-1.2.3.jar;C:\Users\Alex\.m2\repository\javax\transaction\jta\1.1\jta-1.1.jar;C:\Users\Alex\.m2\repository\org\xerial\sqlite-jdbc\3.6.0\sqlite-jdbc-3.6.0.jar, hibernate.bytecode.use_reflection_optimizer=false, idea.launcher.port=7532, java.vm.specification.name=Java Virtual Machine Specification, java.vm.specification.version=1.8, sun.cpu.endian=little, sun.os.patch.level=, java.io.tmpdir=C:\Users\Alex\AppData\Local\Temp\, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, os.arch=amd64, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, java.ext.dirs=C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext;C:\Windows\Sun\Java\lib\ext, user.dir=C:\Users\Alex\Documents\GitHub\managment\socket-programming, line.separator=
+, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding=UTF-8, idea.junit.sm_runner=, format_sql=true, java.specification.version=1.8, hibernate.show_sql=true}
+23:42:31,060 DEBUG AbstractEntityPersister:2743 : Static SQL for entity: model.User
+23:42:31,061 DEBUG AbstractEntityPersister:2748 :  Version select: select id from users where id =?
+23:42:31,061 DEBUG AbstractEntityPersister:2751 :  Snapshot select: select user_.id, user_.name as name0_, user_.password as password0_ from users user_ where user_.id=?
+23:42:31,061 DEBUG AbstractEntityPersister:2754 :  Insert 0: insert into users (name, password, id) values (?, ?, ?)
+23:42:31,061 DEBUG AbstractEntityPersister:2755 :  Update 0: update users set name=?, password=? where id=?
+23:42:31,061 DEBUG AbstractEntityPersister:2756 :  Delete 0: delete from users where id=?
+23:42:31,061 DEBUG AbstractEntityPersister:2760 :  Identity insert: insert into users (name, password) values (?, ?)
+23:42:31,070 DEBUG EntityLoader:79 : Static select for entity model.User: select user0_.id as id0_0_, user0_.name as name0_0_, user0_.password as password0_0_ from users user0_ where user0_.id=?
+23:42:31,070 DEBUG EntityLoader:79 : Static select for entity model.User: select user0_.id as id0_0_, user0_.name as name0_0_, user0_.password as password0_0_ from users user0_ where user0_.id=?
+23:42:31,070 DEBUG EntityLoader:79 : Static select for entity model.User: select user0_.id as id0_0_, user0_.name as name0_0_, user0_.password as password0_0_ from users user0_ where user0_.id=?
+23:42:31,070 DEBUG EntityLoader:79 : Static select for entity model.User: select user0_.id as id0_0_, user0_.name as name0_0_, user0_.password as password0_0_ from users user0_ where user0_.id=?
+23:42:31,071 DEBUG EntityLoader:79 : Static select for entity model.User: select user0_.id as id0_0_, user0_.name as name0_0_, user0_.password as password0_0_ from users user0_ where user0_.id=?
+23:42:31,074 DEBUG EntityLoader:34 : Static select for action ACTION_MERGE on entity model.User: select user0_.id as id0_0_, user0_.name as name0_0_, user0_.password as password0_0_ from users user0_ where user0_.id=?
+23:42:31,074 DEBUG EntityLoader:34 : Static select for action ACTION_REFRESH on entity model.User: select user0_.id as id0_0_, user0_.name as name0_0_, user0_.password as password0_0_ from users user0_ where user0_.id=?
+23:42:31,075 DEBUG SessionFactoryObjectFactory:39 : initializing class SessionFactoryObjectFactory
+23:42:31,076 DEBUG SessionFactoryObjectFactory:76 : registered: 402881a651cb36e40151cb36e4a20000 (unnamed)
+23:42:31,076  INFO SessionFactoryObjectFactory:82 : Not binding factory to JNDI, no JNDI name configured
+23:42:31,076 DEBUG SessionFactoryImpl:308 : instantiated session factory
+23:42:31,076 DEBUG SessionFactoryImpl:392 : Checking 0 named HQL queries
+23:42:31,076 DEBUG SessionFactoryImpl:412 : Checking 0 named SQL queries
+23:42:31,093 DEBUG SessionImpl:220 : opened session at timestamp: 14508133510
+23:42:31,094 DEBUG JDBCTransaction:54 : begin
+23:42:31,094 DEBUG ConnectionManager:421 : opening JDBC connection
+23:42:31,094 DEBUG DriverManagerConnectionProvider:93 : total checked-out connections: 0
+23:42:31,094 DEBUG DriverManagerConnectionProvider:99 : using pooled JDBC connection, pool size: 0
+23:42:31,094 DEBUG JDBCTransaction:59 : current autocommit status: false
+23:42:31,094 DEBUG JDBCContext:214 : after transaction begin
+23:42:31,095 DEBUG DefaultSaveOrUpdateEventListener:158 : saving transient instance
+23:42:31,096 DEBUG AbstractSaveEventListener:153 : saving [model.User#<null>]
+23:42:31,096 DEBUG AbstractSaveEventListener:244 : executing insertions
+23:42:31,100 DEBUG AbstractSaveEventListener:297 : executing identity-insert immediately
+23:42:31,101 DEBUG AbstractEntityPersister:2149 : Inserting entity: model.User (native id)
+23:42:31,101 DEBUG AbstractBatcher:366 : about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+23:42:31,102 DEBUG SQL:401 : 
+    insert 
+    into
+        users
+        (name, password) 
+    values
+        (?, ?)
+23:42:31,102 DEBUG AbstractBatcher:484 : preparing statement
+23:42:31,114 DEBUG JDBCExceptionReporter:69 : could not insert: [model.User] [insert into users (name, password) values (?, ?)]
+java.sql.SQLException: no such table: users
+	at org.sqlite.DB.throwex(DB.java:288)
+	at org.sqlite.NestedDB.prepare(NestedDB.java:115)
+	at org.sqlite.DB.prepare(DB.java:114)
+	at org.sqlite.PrepStmt.<init>(PrepStmt.java:37)
+	at org.sqlite.Conn.prepareStatement(Conn.java:224)
+	at org.sqlite.Conn.prepareStatement(Conn.java:217)
+	at org.sqlite.Conn.prepareStatement(Conn.java:206)
+	at org.hibernate.jdbc.AbstractBatcher.getPreparedStatement(AbstractBatcher.java:505)
+	at org.hibernate.jdbc.AbstractBatcher.prepareStatement(AbstractBatcher.java:94)
+	at org.hibernate.id.insert.AbstractSelectingDelegate.performInsert(AbstractSelectingDelegate.java:30)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2163)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2643)
+	at org.hibernate.action.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:51)
+	at org.hibernate.engine.ActionQueue.execute(ActionQueue.java:279)
+	at org.hibernate.event.def.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:298)
+	at org.hibernate.event.def.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:181)
+	at org.hibernate.event.def.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:107)
+	at org.hibernate.event.def.DefaultSaveOrUpdateEventListener.saveWithGeneratedOrRequestedId(DefaultSaveOrUpdateEventListener.java:187)
+	at org.hibernate.event.def.DefaultSaveEventListener.saveWithGeneratedOrRequestedId(DefaultSaveEventListener.java:33)
+	at org.hibernate.event.def.DefaultSaveOrUpdateEventListener.entityIsTransient(DefaultSaveOrUpdateEventListener.java:172)
+	at org.hibernate.event.def.DefaultSaveEventListener.performSaveOrUpdate(DefaultSaveEventListener.java:27)
+	at org.hibernate.event.def.DefaultSaveOrUpdateEventListener.onSaveOrUpdate(DefaultSaveOrUpdateEventListener.java:70)
+	at org.hibernate.impl.SessionImpl.fireSave(SessionImpl.java:535)
+	at org.hibernate.impl.SessionImpl.save(SessionImpl.java:523)
+	at org.hibernate.impl.SessionImpl.save(SessionImpl.java:519)
+	at test.TestSaveUser.testSave(TestSaveUser.java:17)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.textui.TestRunner.doRun(TestRunner.java:116)
+	at com.intellij.junit3.JUnit3IdeaTestRunner.doRun(JUnit3IdeaTestRunner.java:145)
+	at junit.textui.TestRunner.doRun(TestRunner.java:109)
+	at com.intellij.junit3.JUnit3IdeaTestRunner.startRunnerWithArgs(JUnit3IdeaTestRunner.java:52)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:234)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+23:42:31,115  WARN JDBCExceptionReporter:77 : SQL Error: 0, SQLState: null
+23:42:31,115 ERROR JDBCExceptionReporter:78 : no such table: users
+23:43:09,212  INFO Environment:514 : Hibernate 3.2.6
+23:43:09,216  INFO Environment:547 : hibernate.properties not found
+23:43:09,220  INFO Environment:681 : Bytecode provider name : cglib
+23:43:09,222  INFO Environment:598 : using JDK 1.4 java.sql.Timestamp handling
+23:43:09,272  INFO Configuration:1432 : configuring from resource: /hibernate.cfg.xml
+23:43:09,272  INFO Configuration:1409 : Configuration resource: /hibernate.cfg.xml
+23:43:09,307 DEBUG DTDEntityResolver:38 : trying to resolve system-id [http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd]
+23:43:09,307 DEBUG DTDEntityResolver:40 : recognized hibernate namespace; attempting to resolve on classpath under org/hibernate/
+23:43:09,308 DEBUG DTDEntityResolver:50 : located [http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd] in classpath
+23:43:09,323 DEBUG Configuration:1393 : show_sql=true
+23:43:09,324 DEBUG Configuration:1393 : format_sql=true
+23:43:09,324 DEBUG Configuration:1393 : dialect=dialect.SQLiteDialect
+23:43:09,324 DEBUG Configuration:1393 : connection.driver_class=org.sqlite.JDBC
+23:43:09,324 DEBUG Configuration:1393 : connection.url=jdbc:sqlite:1.db
+23:43:09,324 DEBUG Configuration:1393 : connection.username=
+23:43:09,324 DEBUG Configuration:1393 : connection.password=
+23:43:09,325 DEBUG Configuration:1592 : null<-org.dom4j.tree.DefaultAttribute@b684286 [Attribute: name resource value "User.hbm.xml"]
+23:43:09,325  INFO Configuration:559 : Reading mappings from resource : User.hbm.xml
+23:43:09,326 DEBUG DTDEntityResolver:38 : trying to resolve system-id [http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd]
+23:43:09,326 DEBUG DTDEntityResolver:40 : recognized hibernate namespace; attempting to resolve on classpath under org/hibernate/
+23:43:09,327 DEBUG DTDEntityResolver:50 : located [http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd] in classpath
+23:43:09,380  INFO HbmBinder:300 : Mapping class: model.User -> users
+23:43:09,383 DEBUG HbmBinder:1267 : Mapped property: id -> id
+23:43:09,389 DEBUG HbmBinder:1267 : Mapped property: name -> name
+23:43:09,389 DEBUG HbmBinder:1267 : Mapped property: password -> password
+23:43:09,390  INFO Configuration:1547 : Configured SessionFactory: null
+23:43:09,390 DEBUG Configuration:1548 : properties: {java.vendor=Oracle Corporation, show_sql=true, sun.java.launcher=SUN_STANDARD, hibernate.connection.url=jdbc:sqlite:1.db, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.name=Windows 8.1, sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_66\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_66\jre\classes, sun.desktop=windows, java.vm.specification.vendor=Oracle Corporation, java.runtime.version=1.8.0_66-b18, user.name=Alex, connection.driver_class=org.sqlite.JDBC, idea.launcher.bin.path=C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 15.0.2\bin, user.language=ru, sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_66\jre\bin, dialect=dialect.SQLiteDialect, java.version=1.8.0_66, user.timezone=Europe/Samara, sun.arch.data.model=64, java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_66\jre\lib\endorsed, sun.cpu.isalist=amd64, sun.jnu.encoding=Cp1251, file.encoding.pkg=sun.io, file.separator=\, java.specification.name=Java Platform API Specification, hibernate.format_sql=true, java.class.version=52.0, user.country=RU, connection.url=jdbc:sqlite:1.db, java.home=C:\Program Files\Java\jdk1.8.0_66\jre, java.vm.info=mixed mode, os.version=6.3, path.separator=;, connection.password=, java.vm.version=25.66-b18, hibernate.connection.password=, user.variant=, java.awt.printerjob=sun.awt.windows.WPrinterJob, sun.io.unicode.encoding=UnicodeLittle, awt.toolkit=sun.awt.windows.WToolkit, hibernate.connection.username=, user.script=, user.home=C:\Users\Alex, java.specification.vendor=Oracle Corporation, java.library.path=C:\Program Files\Java\jdk1.8.0_66\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Calibre2\;C:\Windows\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files (x86)\nodejs\;C:\apache-maven-3.3.3\bin;C:\Program Files (x86)\Java\jdk1.7.0_55\bin;C:\Program Files (x86)\Skype\Phone\;C:\Users\Alex\AppData\Roaming\npm;., java.vendor.url=http://java.oracle.com/, hibernate.connection.driver_class=org.sqlite.JDBC, connection.username=, java.vm.vendor=Oracle Corporation, hibernate.dialect=dialect.SQLiteDialect, java.runtime.name=Java(TM) SE Runtime Environment, sun.java.command=com.intellij.rt.execution.application.AppMain com.intellij.rt.execution.junit.JUnitStarter -ideVersion5 test.TestSaveUser, java.class.path=C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 15.0.2\lib\idea_rt.jar;C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 15.0.2\plugins\junit\lib\junit-rt.jar;C:\Users\Alex\Documents\GitHub\managment\socket-programming\target\test-classes;C:\Users\Alex\Documents\GitHub\managment\socket-programming\target\classes;C:\Program Files\Java\jdk1.8.0_66\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\rt.jar;C:\Users\Alex\.m2\repository\junit\junit\4.5\junit-4.5.jar;C:\Users\Alex\.m2\repository\org\hibernate\hibernate\3.2.6.ga\hibernate-3.2.6.ga.jar;C:\Users\Alex\.m2\repository\asm\asm-attrs\1.5.3\asm-attrs-1.5.3.jar;C:\Users\Alex\.m2\repository\antlr\antlr\2.7.6\antlr-2.7.6.jar;C:\Users\Alex\.m2\repository\asm\asm\1.5.3\asm-1.5.3.jar;C:\Users\Alex\.m2\repository\c3p0\c3p0\0.9.1\c3p0-0.9.1.jar;C:\Users\Alex\.m2\repository\cglib\cglib\2.1_3\cglib-2.1_3.jar;C:\Users\Alex\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\Alex\.m2\repository\commons-collections\commons-collections\3.2\commons-collections-3.2.jar;C:\Users\Alex\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\Alex\.m2\repository\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar;C:\Users\Alex\.m2\repository\log4j\log4j\1.2.9\log4j-1.2.9.jar;C:\Users\Alex\.m2\repository\net\sf\ehcache\ehcache\1.2.3\ehcache-1.2.3.jar;C:\Users\Alex\.m2\repository\javax\transaction\jta\1.1\jta-1.1.jar;C:\Users\Alex\.m2\repository\org\xerial\sqlite-jdbc\3.6.0\sqlite-jdbc-3.6.0.jar, hibernate.bytecode.use_reflection_optimizer=false, idea.launcher.port=7535, java.vm.specification.name=Java Virtual Machine Specification, java.vm.specification.version=1.8, sun.cpu.endian=little, sun.os.patch.level=, java.io.tmpdir=C:\Users\Alex\AppData\Local\Temp\, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, os.arch=amd64, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, java.ext.dirs=C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext;C:\Windows\Sun\Java\lib\ext, user.dir=C:\Users\Alex\Documents\GitHub\managment\socket-programming, line.separator=
+, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding=UTF-8, idea.junit.sm_runner=, format_sql=true, java.specification.version=1.8, hibernate.show_sql=true}
+23:43:09,391 DEBUG Configuration:1291 : Preparing to build session factory with filters : {}
+23:43:09,391 DEBUG Configuration:1126 : processing extends queue
+23:43:09,392 DEBUG Configuration:1130 : processing collection mappings
+23:43:09,392 DEBUG Configuration:1141 : processing native query and ResultSetMapping mappings
+23:43:09,392 DEBUG Configuration:1149 : processing association property references
+23:43:09,392 DEBUG Configuration:1171 : processing foreign key constraints
+23:43:09,423  INFO DriverManagerConnectionProvider:41 : Using Hibernate built-in connection pool (not for production use!)
+23:43:09,424  INFO DriverManagerConnectionProvider:42 : Hibernate connection pool size: 20
+23:43:09,424  INFO DriverManagerConnectionProvider:45 : autocommit mode: false
+23:43:09,426  INFO DriverManagerConnectionProvider:80 : using driver: org.sqlite.JDBC at URL: jdbc:sqlite:1.db
+23:43:09,426  INFO DriverManagerConnectionProvider:83 : connection properties: {user=, password=}
+23:43:09,426 DEBUG DriverManagerConnectionProvider:93 : total checked-out connections: 0
+23:43:09,427 DEBUG DriverManagerConnectionProvider:109 : opening new JDBC connection
+23:43:09,945 DEBUG DriverManagerConnectionProvider:115 : created connection to: jdbc:sqlite:1.db, Isolation Level: 8
+23:43:09,947  INFO SettingsFactory:89 : RDBMS: SQLite, version: 3.6.0
+23:43:09,948  INFO SettingsFactory:90 : JDBC driver: SQLiteJDBC, version: pure
+23:43:09,948 DEBUG DriverManagerConnectionProvider:129 : returning connection to pool, pool size: 1
+23:43:09,957  INFO Dialect:152 : Using dialect: dialect.SQLiteDialect
+23:43:09,959  INFO TransactionFactoryFactory:31 : Using default transaction strategy (direct JDBC transactions)
+23:43:09,960  INFO TransactionManagerLookupFactory:33 : No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+23:43:09,960  INFO SettingsFactory:143 : Automatic flush during beforeCompletion(): disabled
+23:43:09,960  INFO SettingsFactory:147 : Automatic session close at end of transaction: disabled
+23:43:09,961  INFO SettingsFactory:162 : Scrollable result sets: disabled
+23:43:09,962 DEBUG SettingsFactory:166 : Wrap result sets: disabled
+23:43:09,962  INFO SettingsFactory:170 : JDBC3 getGeneratedKeys(): disabled
+23:43:09,962  INFO SettingsFactory:178 : Connection release mode: auto
+23:43:09,962  INFO SettingsFactory:205 : Default batch fetch size: 1
+23:43:09,963  INFO SettingsFactory:209 : Generate SQL with comments: disabled
+23:43:09,963  INFO SettingsFactory:213 : Order SQL updates by primary key: disabled
+23:43:09,963  INFO SettingsFactory:217 : Order SQL inserts for batching: disabled
+23:43:09,963  INFO SettingsFactory:386 : Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+23:43:09,964  INFO ASTQueryTranslatorFactory:24 : Using ASTQueryTranslatorFactory
+23:43:09,964  INFO SettingsFactory:225 : Query language substitutions: {}
+23:43:09,964  INFO SettingsFactory:230 : JPA-QL strict compliance: disabled
+23:43:09,964  INFO SettingsFactory:235 : Second-level cache: enabled
+23:43:09,965  INFO SettingsFactory:239 : Query cache: disabled
+23:43:09,965  INFO SettingsFactory:373 : Cache provider: org.hibernate.cache.NoCacheProvider
+23:43:09,965  INFO SettingsFactory:254 : Optimize cache for minimal puts: disabled
+23:43:09,965  INFO SettingsFactory:263 : Structured second-level cache entries: disabled
+23:43:09,966 DEBUG SQLExceptionConverterFactory:52 : Using dialect defined converter
+23:43:09,967  INFO SettingsFactory:283 : Echoing all SQL to stdout
+23:43:09,967  INFO SettingsFactory:290 : Statistics: disabled
+23:43:09,968  INFO SettingsFactory:294 : Deleted entity synthetic identifier rollback: disabled
+23:43:09,968  INFO SettingsFactory:309 : Default entity-mode: pojo
+23:43:09,968  INFO SettingsFactory:313 : Named query checking : enabled
+23:43:09,989  INFO SessionFactoryImpl:161 : building session factory
+23:43:09,989 DEBUG SessionFactoryImpl:173 : Session factory constructed with filter configurations : {}
+23:43:09,989 DEBUG SessionFactoryImpl:177 : instantiating session factory with properties: {java.vendor=Oracle Corporation, show_sql=true, sun.java.launcher=SUN_STANDARD, hibernate.connection.url=jdbc:sqlite:1.db, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.name=Windows 8.1, sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_66\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_66\jre\classes, sun.desktop=windows, java.vm.specification.vendor=Oracle Corporation, java.runtime.version=1.8.0_66-b18, user.name=Alex, connection.driver_class=org.sqlite.JDBC, idea.launcher.bin.path=C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 15.0.2\bin, user.language=ru, sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_66\jre\bin, dialect=dialect.SQLiteDialect, java.version=1.8.0_66, user.timezone=Europe/Samara, sun.arch.data.model=64, java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_66\jre\lib\endorsed, sun.cpu.isalist=amd64, sun.jnu.encoding=Cp1251, file.encoding.pkg=sun.io, file.separator=\, java.specification.name=Java Platform API Specification, hibernate.format_sql=true, java.class.version=52.0, user.country=RU, connection.url=jdbc:sqlite:1.db, java.home=C:\Program Files\Java\jdk1.8.0_66\jre, java.vm.info=mixed mode, os.version=6.3, path.separator=;, connection.password=, java.vm.version=25.66-b18, hibernate.connection.password=, user.variant=, java.awt.printerjob=sun.awt.windows.WPrinterJob, sun.io.unicode.encoding=UnicodeLittle, awt.toolkit=sun.awt.windows.WToolkit, hibernate.connection.username=, user.script=, user.home=C:\Users\Alex, java.specification.vendor=Oracle Corporation, java.library.path=C:\Program Files\Java\jdk1.8.0_66\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Calibre2\;C:\Windows\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files (x86)\nodejs\;C:\apache-maven-3.3.3\bin;C:\Program Files (x86)\Java\jdk1.7.0_55\bin;C:\Program Files (x86)\Skype\Phone\;C:\Users\Alex\AppData\Roaming\npm;., java.vendor.url=http://java.oracle.com/, hibernate.connection.driver_class=org.sqlite.JDBC, connection.username=, java.vm.vendor=Oracle Corporation, hibernate.dialect=dialect.SQLiteDialect, java.runtime.name=Java(TM) SE Runtime Environment, sun.java.command=com.intellij.rt.execution.application.AppMain com.intellij.rt.execution.junit.JUnitStarter -ideVersion5 test.TestSaveUser, java.class.path=C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 15.0.2\lib\idea_rt.jar;C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 15.0.2\plugins\junit\lib\junit-rt.jar;C:\Users\Alex\Documents\GitHub\managment\socket-programming\target\test-classes;C:\Users\Alex\Documents\GitHub\managment\socket-programming\target\classes;C:\Program Files\Java\jdk1.8.0_66\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\rt.jar;C:\Users\Alex\.m2\repository\junit\junit\4.5\junit-4.5.jar;C:\Users\Alex\.m2\repository\org\hibernate\hibernate\3.2.6.ga\hibernate-3.2.6.ga.jar;C:\Users\Alex\.m2\repository\asm\asm-attrs\1.5.3\asm-attrs-1.5.3.jar;C:\Users\Alex\.m2\repository\antlr\antlr\2.7.6\antlr-2.7.6.jar;C:\Users\Alex\.m2\repository\asm\asm\1.5.3\asm-1.5.3.jar;C:\Users\Alex\.m2\repository\c3p0\c3p0\0.9.1\c3p0-0.9.1.jar;C:\Users\Alex\.m2\repository\cglib\cglib\2.1_3\cglib-2.1_3.jar;C:\Users\Alex\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\Alex\.m2\repository\commons-collections\commons-collections\3.2\commons-collections-3.2.jar;C:\Users\Alex\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\Alex\.m2\repository\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar;C:\Users\Alex\.m2\repository\log4j\log4j\1.2.9\log4j-1.2.9.jar;C:\Users\Alex\.m2\repository\net\sf\ehcache\ehcache\1.2.3\ehcache-1.2.3.jar;C:\Users\Alex\.m2\repository\javax\transaction\jta\1.1\jta-1.1.jar;C:\Users\Alex\.m2\repository\org\xerial\sqlite-jdbc\3.6.0\sqlite-jdbc-3.6.0.jar, hibernate.bytecode.use_reflection_optimizer=false, idea.launcher.port=7535, java.vm.specification.name=Java Virtual Machine Specification, java.vm.specification.version=1.8, sun.cpu.endian=little, sun.os.patch.level=, java.io.tmpdir=C:\Users\Alex\AppData\Local\Temp\, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, os.arch=amd64, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, java.ext.dirs=C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext;C:\Windows\Sun\Java\lib\ext, user.dir=C:\Users\Alex\Documents\GitHub\managment\socket-programming, line.separator=
+, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding=UTF-8, idea.junit.sm_runner=, format_sql=true, java.specification.version=1.8, hibernate.show_sql=true}
+23:43:10,076 DEBUG AbstractEntityPersister:2743 : Static SQL for entity: model.User
+23:43:10,077 DEBUG AbstractEntityPersister:2748 :  Version select: select id from users where id =?
+23:43:10,077 DEBUG AbstractEntityPersister:2751 :  Snapshot select: select user_.id, user_.name as name0_, user_.password as password0_ from users user_ where user_.id=?
+23:43:10,077 DEBUG AbstractEntityPersister:2754 :  Insert 0: insert into users (name, password, id) values (?, ?, ?)
+23:43:10,077 DEBUG AbstractEntityPersister:2755 :  Update 0: update users set name=?, password=? where id=?
+23:43:10,077 DEBUG AbstractEntityPersister:2756 :  Delete 0: delete from users where id=?
+23:43:10,077 DEBUG AbstractEntityPersister:2760 :  Identity insert: insert into users (name, password) values (?, ?)
+23:43:10,086 DEBUG EntityLoader:79 : Static select for entity model.User: select user0_.id as id0_0_, user0_.name as name0_0_, user0_.password as password0_0_ from users user0_ where user0_.id=?
+23:43:10,087 DEBUG EntityLoader:79 : Static select for entity model.User: select user0_.id as id0_0_, user0_.name as name0_0_, user0_.password as password0_0_ from users user0_ where user0_.id=?
+23:43:10,087 DEBUG EntityLoader:79 : Static select for entity model.User: select user0_.id as id0_0_, user0_.name as name0_0_, user0_.password as password0_0_ from users user0_ where user0_.id=?
+23:43:10,087 DEBUG EntityLoader:79 : Static select for entity model.User: select user0_.id as id0_0_, user0_.name as name0_0_, user0_.password as password0_0_ from users user0_ where user0_.id=?
+23:43:10,087 DEBUG EntityLoader:79 : Static select for entity model.User: select user0_.id as id0_0_, user0_.name as name0_0_, user0_.password as password0_0_ from users user0_ where user0_.id=?
+23:43:10,091 DEBUG EntityLoader:34 : Static select for action ACTION_MERGE on entity model.User: select user0_.id as id0_0_, user0_.name as name0_0_, user0_.password as password0_0_ from users user0_ where user0_.id=?
+23:43:10,091 DEBUG EntityLoader:34 : Static select for action ACTION_REFRESH on entity model.User: select user0_.id as id0_0_, user0_.name as name0_0_, user0_.password as password0_0_ from users user0_ where user0_.id=?
+23:43:10,092 DEBUG SessionFactoryObjectFactory:39 : initializing class SessionFactoryObjectFactory
+23:43:10,092 DEBUG SessionFactoryObjectFactory:76 : registered: 402881a651cb377c0151cb377d0b0000 (unnamed)
+23:43:10,092  INFO SessionFactoryObjectFactory:82 : Not binding factory to JNDI, no JNDI name configured
+23:43:10,093 DEBUG SessionFactoryImpl:308 : instantiated session factory
+23:43:10,093 DEBUG SessionFactoryImpl:392 : Checking 0 named HQL queries
+23:43:10,093 DEBUG SessionFactoryImpl:412 : Checking 0 named SQL queries
+23:43:10,108 DEBUG SessionImpl:220 : opened session at timestamp: 14508133900
+23:43:10,109 DEBUG JDBCTransaction:54 : begin
+23:43:10,109 DEBUG ConnectionManager:421 : opening JDBC connection
+23:43:10,109 DEBUG DriverManagerConnectionProvider:93 : total checked-out connections: 0
+23:43:10,109 DEBUG DriverManagerConnectionProvider:99 : using pooled JDBC connection, pool size: 0
+23:43:10,109 DEBUG JDBCTransaction:59 : current autocommit status: false
+23:43:10,109 DEBUG JDBCContext:214 : after transaction begin
+23:43:10,111 DEBUG DefaultSaveOrUpdateEventListener:158 : saving transient instance
+23:43:10,111 DEBUG AbstractSaveEventListener:153 : saving [model.User#<null>]
+23:43:10,111 DEBUG AbstractSaveEventListener:244 : executing insertions
+23:43:10,116 DEBUG AbstractSaveEventListener:297 : executing identity-insert immediately
+23:43:10,116 DEBUG AbstractEntityPersister:2149 : Inserting entity: model.User (native id)
+23:43:10,117 DEBUG AbstractBatcher:366 : about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+23:43:10,118 DEBUG SQL:401 : 
+    insert 
+    into
+        users
+        (name, password) 
+    values
+        (?, ?)
+23:43:10,118 DEBUG AbstractBatcher:484 : preparing statement
+23:43:10,130 DEBUG JDBCExceptionReporter:69 : could not insert: [model.User] [insert into users (name, password) values (?, ?)]
+java.sql.SQLException: no such table: users
+	at org.sqlite.DB.throwex(DB.java:288)
+	at org.sqlite.NestedDB.prepare(NestedDB.java:115)
+	at org.sqlite.DB.prepare(DB.java:114)
+	at org.sqlite.PrepStmt.<init>(PrepStmt.java:37)
+	at org.sqlite.Conn.prepareStatement(Conn.java:224)
+	at org.sqlite.Conn.prepareStatement(Conn.java:217)
+	at org.sqlite.Conn.prepareStatement(Conn.java:206)
+	at org.hibernate.jdbc.AbstractBatcher.getPreparedStatement(AbstractBatcher.java:505)
+	at org.hibernate.jdbc.AbstractBatcher.prepareStatement(AbstractBatcher.java:94)
+	at org.hibernate.id.insert.AbstractSelectingDelegate.performInsert(AbstractSelectingDelegate.java:30)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2163)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2643)
+	at org.hibernate.action.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:51)
+	at org.hibernate.engine.ActionQueue.execute(ActionQueue.java:279)
+	at org.hibernate.event.def.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:298)
+	at org.hibernate.event.def.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:181)
+	at org.hibernate.event.def.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:107)
+	at org.hibernate.event.def.DefaultSaveOrUpdateEventListener.saveWithGeneratedOrRequestedId(DefaultSaveOrUpdateEventListener.java:187)
+	at org.hibernate.event.def.DefaultSaveEventListener.saveWithGeneratedOrRequestedId(DefaultSaveEventListener.java:33)
+	at org.hibernate.event.def.DefaultSaveOrUpdateEventListener.entityIsTransient(DefaultSaveOrUpdateEventListener.java:172)
+	at org.hibernate.event.def.DefaultSaveEventListener.performSaveOrUpdate(DefaultSaveEventListener.java:27)
+	at org.hibernate.event.def.DefaultSaveOrUpdateEventListener.onSaveOrUpdate(DefaultSaveOrUpdateEventListener.java:70)
+	at org.hibernate.impl.SessionImpl.fireSave(SessionImpl.java:535)
+	at org.hibernate.impl.SessionImpl.save(SessionImpl.java:523)
+	at org.hibernate.impl.SessionImpl.save(SessionImpl.java:519)
+	at test.TestSaveUser.testSave(TestSaveUser.java:17)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:232)
+	at junit.framework.TestSuite.run(TestSuite.java:227)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:79)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:234)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:144)
+23:43:10,131  WARN JDBCExceptionReporter:77 : SQL Error: 0, SQLState: null
+23:43:10,131 ERROR JDBCExceptionReporter:78 : no such table: users
+23:51:54,921  INFO Environment:514 : Hibernate 3.2.6
+23:51:54,927  INFO Environment:547 : hibernate.properties not found
+23:51:54,929  INFO Environment:681 : Bytecode provider name : cglib
+23:51:54,932  INFO Environment:598 : using JDK 1.4 java.sql.Timestamp handling
+23:51:54,989  INFO Configuration:1432 : configuring from resource: /hibernate.cfg.xml
+23:51:54,989  INFO Configuration:1409 : Configuration resource: /hibernate.cfg.xml
+23:51:55,032 DEBUG DTDEntityResolver:38 : trying to resolve system-id [http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd]
+23:51:55,033 DEBUG DTDEntityResolver:40 : recognized hibernate namespace; attempting to resolve on classpath under org/hibernate/
+23:51:55,033 DEBUG DTDEntityResolver:50 : located [http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd] in classpath
+23:51:55,055 DEBUG Configuration:1393 : show_sql=true
+23:51:55,056 DEBUG Configuration:1393 : format_sql=true
+23:51:55,056 DEBUG Configuration:1393 : dialect=dialect.SQLiteDialect
+23:51:55,057 DEBUG Configuration:1393 : connection.driver_class=org.sqlite.JDBC
+23:51:55,058 DEBUG Configuration:1393 : connection.url=jdbc:sqlite:1.db
+23:51:55,058 DEBUG Configuration:1393 : connection.username=
+23:51:55,059 DEBUG Configuration:1393 : connection.password=
+23:51:55,059 DEBUG Configuration:1592 : null<-org.dom4j.tree.DefaultAttribute@16aa0a0a [Attribute: name resource value "User.hbm.xml"]
+23:51:55,060  INFO Configuration:559 : Reading mappings from resource : User.hbm.xml
+23:51:55,062 DEBUG DTDEntityResolver:38 : trying to resolve system-id [http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd]
+23:51:55,062 DEBUG DTDEntityResolver:40 : recognized hibernate namespace; attempting to resolve on classpath under org/hibernate/
+23:51:55,063 DEBUG DTDEntityResolver:50 : located [http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd] in classpath
+23:51:55,164  INFO HbmBinder:300 : Mapping class: model.User -> users
+23:51:55,169 DEBUG HbmBinder:1267 : Mapped property: id -> id
+23:51:55,174 DEBUG HbmBinder:1267 : Mapped property: name -> name
+23:51:55,175 DEBUG HbmBinder:1267 : Mapped property: password -> password
+23:51:55,176  INFO Configuration:1547 : Configured SessionFactory: null
+23:51:55,176 DEBUG Configuration:1548 : properties: {hibernate.connection.password=, java.runtime.name=Java(TM) SE Runtime Environment, sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_66\jre\bin, java.vm.version=25.66-b18, hibernate.connection.username=, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=;, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding.pkg=sun.io, user.script=, user.country=RU, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=, java.vm.specification.name=Java Virtual Machine Specification, user.dir=C:\Users\Alex\Documents\GitHub\managment\socket-programming, java.runtime.version=1.8.0_66-b18, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_66\jre\lib\endorsed, os.arch=amd64, java.io.tmpdir=C:\Users\Alex\AppData\Local\Temp\, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, user.variant=, os.name=Windows 8.1, sun.jnu.encoding=Cp1251, java.library.path=C:\Program Files\Java\jdk1.8.0_66\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Calibre2\;C:\Windows\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files (x86)\nodejs\;C:\apache-maven-3.3.3\bin;C:\Program Files (x86)\Java\jdk1.7.0_55\bin;C:\Program Files (x86)\Skype\Phone\;C:\Users\Alex\AppData\Roaming\npm;., java.specification.name=Java Platform API Specification, java.class.version=52.0, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.version=6.3, connection.password=, user.home=C:\Users\Alex, user.timezone=Europe/Samara, connection.username=, java.awt.printerjob=sun.awt.windows.WPrinterJob, file.encoding=UTF-8, java.specification.version=1.8, hibernate.format_sql=true, hibernate.connection.driver_class=org.sqlite.JDBC, show_sql=true, java.class.path=C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 15.0.2\lib\idea_rt.jar;C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 15.0.2\plugins\junit\lib\junit-rt.jar;C:\Users\Alex\Documents\GitHub\managment\socket-programming\target\test-classes;C:\Users\Alex\Documents\GitHub\managment\socket-programming\target\classes;C:\Program Files\Java\jdk1.8.0_66\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\rt.jar;C:\Users\Alex\.m2\repository\junit\junit\4.5\junit-4.5.jar;C:\Users\Alex\.m2\repository\org\hibernate\hibernate\3.2.6.ga\hibernate-3.2.6.ga.jar;C:\Users\Alex\.m2\repository\asm\asm-attrs\1.5.3\asm-attrs-1.5.3.jar;C:\Users\Alex\.m2\repository\antlr\antlr\2.7.6\antlr-2.7.6.jar;C:\Users\Alex\.m2\repository\asm\asm\1.5.3\asm-1.5.3.jar;C:\Users\Alex\.m2\repository\c3p0\c3p0\0.9.1\c3p0-0.9.1.jar;C:\Users\Alex\.m2\repository\cglib\cglib\2.1_3\cglib-2.1_3.jar;C:\Users\Alex\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\Alex\.m2\repository\commons-collections\commons-collections\3.2\commons-collections-3.2.jar;C:\Users\Alex\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\Alex\.m2\repository\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar;C:\Users\Alex\.m2\repository\log4j\log4j\1.2.9\log4j-1.2.9.jar;C:\Users\Alex\.m2\repository\net\sf\ehcache\ehcache\1.2.3\ehcache-1.2.3.jar;C:\Users\Alex\.m2\repository\javax\transaction\jta\1.1\jta-1.1.jar;C:\Users\Alex\.m2\repository\org\xerial\sqlite-jdbc\3.6.0\sqlite-jdbc-3.6.0.jar, user.name=Alex, format_sql=true, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, java.vm.specification.version=1.8, sun.java.command=com.intellij.rt.execution.junit.JUnitStarter -ideVersion5 test.TestSaveUser, java.home=C:\Program Files\Java\jdk1.8.0_66\jre, sun.arch.data.model=64, hibernate.connection.url=jdbc:sqlite:1.db, hibernate.dialect=dialect.SQLiteDialect, user.language=ru, java.specification.vendor=Oracle Corporation, awt.toolkit=sun.awt.windows.WToolkit, java.vm.info=mixed mode, java.version=1.8.0_66, java.ext.dirs=C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext;C:\Windows\Sun\Java\lib\ext, sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_66\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_66\jre\classes, idea.junit.sm_runner=, java.vendor=Oracle Corporation, connection.driver_class=org.sqlite.JDBC, file.separator=\, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, sun.io.unicode.encoding=UnicodeLittle, sun.cpu.endian=little, sun.desktop=windows, connection.url=jdbc:sqlite:1.db, dialect=dialect.SQLiteDialect, sun.cpu.isalist=amd64}
+23:51:55,177 DEBUG Configuration:1291 : Preparing to build session factory with filters : {}
+23:51:55,177 DEBUG Configuration:1126 : processing extends queue
+23:51:55,177 DEBUG Configuration:1130 : processing collection mappings
+23:51:55,177 DEBUG Configuration:1141 : processing native query and ResultSetMapping mappings
+23:51:55,177 DEBUG Configuration:1149 : processing association property references
+23:51:55,177 DEBUG Configuration:1171 : processing foreign key constraints
+23:51:55,214  INFO DriverManagerConnectionProvider:41 : Using Hibernate built-in connection pool (not for production use!)
+23:51:55,215  INFO DriverManagerConnectionProvider:42 : Hibernate connection pool size: 20
+23:51:55,215  INFO DriverManagerConnectionProvider:45 : autocommit mode: false
+23:51:55,218  INFO DriverManagerConnectionProvider:80 : using driver: org.sqlite.JDBC at URL: jdbc:sqlite:1.db
+23:51:55,219  INFO DriverManagerConnectionProvider:83 : connection properties: {user=, password=}
+23:51:55,219 DEBUG DriverManagerConnectionProvider:93 : total checked-out connections: 0
+23:51:55,219 DEBUG DriverManagerConnectionProvider:109 : opening new JDBC connection
+23:51:55,891 DEBUG DriverManagerConnectionProvider:115 : created connection to: jdbc:sqlite:1.db, Isolation Level: 8
+23:51:55,894  INFO SettingsFactory:89 : RDBMS: SQLite, version: 3.6.0
+23:51:55,894  INFO SettingsFactory:90 : JDBC driver: SQLiteJDBC, version: pure
+23:51:55,895 DEBUG DriverManagerConnectionProvider:129 : returning connection to pool, pool size: 1
+23:51:55,908  INFO Dialect:152 : Using dialect: dialect.SQLiteDialect
+23:51:55,912  INFO TransactionFactoryFactory:31 : Using default transaction strategy (direct JDBC transactions)
+23:51:55,914  INFO TransactionManagerLookupFactory:33 : No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+23:51:55,914  INFO SettingsFactory:143 : Automatic flush during beforeCompletion(): disabled
+23:51:55,914  INFO SettingsFactory:147 : Automatic session close at end of transaction: disabled
+23:51:55,915  INFO SettingsFactory:162 : Scrollable result sets: disabled
+23:51:55,915 DEBUG SettingsFactory:166 : Wrap result sets: disabled
+23:51:55,916  INFO SettingsFactory:170 : JDBC3 getGeneratedKeys(): disabled
+23:51:55,916  INFO SettingsFactory:178 : Connection release mode: auto
+23:51:55,917  INFO SettingsFactory:205 : Default batch fetch size: 1
+23:51:55,917  INFO SettingsFactory:209 : Generate SQL with comments: disabled
+23:51:55,917  INFO SettingsFactory:213 : Order SQL updates by primary key: disabled
+23:51:55,917  INFO SettingsFactory:217 : Order SQL inserts for batching: disabled
+23:51:55,917  INFO SettingsFactory:386 : Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+23:51:55,919  INFO ASTQueryTranslatorFactory:24 : Using ASTQueryTranslatorFactory
+23:51:55,919  INFO SettingsFactory:225 : Query language substitutions: {}
+23:51:55,919  INFO SettingsFactory:230 : JPA-QL strict compliance: disabled
+23:51:55,919  INFO SettingsFactory:235 : Second-level cache: enabled
+23:51:55,919  INFO SettingsFactory:239 : Query cache: disabled
+23:51:55,920  INFO SettingsFactory:373 : Cache provider: org.hibernate.cache.NoCacheProvider
+23:51:55,920  INFO SettingsFactory:254 : Optimize cache for minimal puts: disabled
+23:51:55,920  INFO SettingsFactory:263 : Structured second-level cache entries: disabled
+23:51:55,921 DEBUG SQLExceptionConverterFactory:52 : Using dialect defined converter
+23:51:55,923  INFO SettingsFactory:283 : Echoing all SQL to stdout
+23:51:55,923  INFO SettingsFactory:290 : Statistics: disabled
+23:51:55,923  INFO SettingsFactory:294 : Deleted entity synthetic identifier rollback: disabled
+23:51:55,923  INFO SettingsFactory:309 : Default entity-mode: pojo
+23:51:55,923  INFO SettingsFactory:313 : Named query checking : enabled
+23:51:55,956  INFO SessionFactoryImpl:161 : building session factory
+23:51:55,957 DEBUG SessionFactoryImpl:173 : Session factory constructed with filter configurations : {}
+23:51:55,958 DEBUG SessionFactoryImpl:177 : instantiating session factory with properties: {java.runtime.name=Java(TM) SE Runtime Environment, hibernate.connection.password=, sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_66\jre\bin, java.vm.version=25.66-b18, hibernate.connection.username=, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=;, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding.pkg=sun.io, user.script=, user.country=RU, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=, java.vm.specification.name=Java Virtual Machine Specification, user.dir=C:\Users\Alex\Documents\GitHub\managment\socket-programming, java.runtime.version=1.8.0_66-b18, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_66\jre\lib\endorsed, os.arch=amd64, java.io.tmpdir=C:\Users\Alex\AppData\Local\Temp\, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, user.variant=, os.name=Windows 8.1, sun.jnu.encoding=Cp1251, java.library.path=C:\Program Files\Java\jdk1.8.0_66\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Calibre2\;C:\Windows\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files (x86)\nodejs\;C:\apache-maven-3.3.3\bin;C:\Program Files (x86)\Java\jdk1.7.0_55\bin;C:\Program Files (x86)\Skype\Phone\;C:\Users\Alex\AppData\Roaming\npm;., java.specification.name=Java Platform API Specification, java.class.version=52.0, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.version=6.3, user.home=C:\Users\Alex, connection.password=, user.timezone=Europe/Samara, java.awt.printerjob=sun.awt.windows.WPrinterJob, connection.username=, java.specification.version=1.8, file.encoding=UTF-8, hibernate.format_sql=true, hibernate.connection.driver_class=org.sqlite.JDBC, show_sql=true, user.name=Alex, java.class.path=C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 15.0.2\lib\idea_rt.jar;C:\Program Files (x86)\JetBrains\IntelliJ IDEA Community Edition 15.0.2\plugins\junit\lib\junit-rt.jar;C:\Users\Alex\Documents\GitHub\managment\socket-programming\target\test-classes;C:\Users\Alex\Documents\GitHub\managment\socket-programming\target\classes;C:\Program Files\Java\jdk1.8.0_66\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\rt.jar;C:\Users\Alex\.m2\repository\junit\junit\4.5\junit-4.5.jar;C:\Users\Alex\.m2\repository\org\hibernate\hibernate\3.2.6.ga\hibernate-3.2.6.ga.jar;C:\Users\Alex\.m2\repository\asm\asm-attrs\1.5.3\asm-attrs-1.5.3.jar;C:\Users\Alex\.m2\repository\antlr\antlr\2.7.6\antlr-2.7.6.jar;C:\Users\Alex\.m2\repository\asm\asm\1.5.3\asm-1.5.3.jar;C:\Users\Alex\.m2\repository\c3p0\c3p0\0.9.1\c3p0-0.9.1.jar;C:\Users\Alex\.m2\repository\cglib\cglib\2.1_3\cglib-2.1_3.jar;C:\Users\Alex\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\Alex\.m2\repository\commons-collections\commons-collections\3.2\commons-collections-3.2.jar;C:\Users\Alex\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\Alex\.m2\repository\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar;C:\Users\Alex\.m2\repository\log4j\log4j\1.2.9\log4j-1.2.9.jar;C:\Users\Alex\.m2\repository\net\sf\ehcache\ehcache\1.2.3\ehcache-1.2.3.jar;C:\Users\Alex\.m2\repository\javax\transaction\jta\1.1\jta-1.1.jar;C:\Users\Alex\.m2\repository\org\xerial\sqlite-jdbc\3.6.0\sqlite-jdbc-3.6.0.jar, hibernate.bytecode.use_reflection_optimizer=false, format_sql=true, hibernate.show_sql=true, java.vm.specification.version=1.8, sun.arch.data.model=64, java.home=C:\Program Files\Java\jdk1.8.0_66\jre, sun.java.command=com.intellij.rt.execution.junit.JUnitStarter -ideVersion5 test.TestSaveUser, hibernate.dialect=dialect.SQLiteDialect, hibernate.connection.url=jdbc:sqlite:1.db, java.specification.vendor=Oracle Corporation, user.language=ru, awt.toolkit=sun.awt.windows.WToolkit, java.vm.info=mixed mode, java.version=1.8.0_66, java.ext.dirs=C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext;C:\Windows\Sun\Java\lib\ext, sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_66\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_66\jre\classes, java.vendor=Oracle Corporation, idea.junit.sm_runner=, file.separator=\, connection.driver_class=org.sqlite.JDBC, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, sun.cpu.endian=little, sun.io.unicode.encoding=UnicodeLittle, sun.desktop=windows, connection.url=jdbc:sqlite:1.db, sun.cpu.isalist=amd64, dialect=dialect.SQLiteDialect}
+23:51:56,091 DEBUG AbstractEntityPersister:2743 : Static SQL for entity: model.User
+23:51:56,091 DEBUG AbstractEntityPersister:2748 :  Version select: select id from users where id =?
+23:51:56,091 DEBUG AbstractEntityPersister:2751 :  Snapshot select: select user_.id, user_.name as name0_, user_.password as password0_ from users user_ where user_.id=?
+23:51:56,092 DEBUG AbstractEntityPersister:2754 :  Insert 0: insert into users (name, password, id) values (?, ?, ?)
+23:51:56,092 DEBUG AbstractEntityPersister:2755 :  Update 0: update users set name=?, password=? where id=?
+23:51:56,092 DEBUG AbstractEntityPersister:2756 :  Delete 0: delete from users where id=?
+23:51:56,092 DEBUG AbstractEntityPersister:2760 :  Identity insert: insert into users (name, password) values (?, ?)
+23:51:56,112 DEBUG EntityLoader:79 : Static select for entity model.User: select user0_.id as id0_0_, user0_.name as name0_0_, user0_.password as password0_0_ from users user0_ where user0_.id=?
+23:51:56,112 DEBUG EntityLoader:79 : Static select for entity model.User: select user0_.id as id0_0_, user0_.name as name0_0_, user0_.password as password0_0_ from users user0_ where user0_.id=?
+23:51:56,112 DEBUG EntityLoader:79 : Static select for entity model.User: select user0_.id as id0_0_, user0_.name as name0_0_, user0_.password as password0_0_ from users user0_ where user0_.id=?
+23:51:56,113 DEBUG EntityLoader:79 : Static select for entity model.User: select user0_.id as id0_0_, user0_.name as name0_0_, user0_.password as password0_0_ from users user0_ where user0_.id=?
+23:51:56,113 DEBUG EntityLoader:79 : Static select for entity model.User: select user0_.id as id0_0_, user0_.name as name0_0_, user0_.password as password0_0_ from users user0_ where user0_.id=?
+23:51:56,118 DEBUG EntityLoader:34 : Static select for action ACTION_MERGE on entity model.User: select user0_.id as id0_0_, user0_.name as name0_0_, user0_.password as password0_0_ from users user0_ where user0_.id=?
+23:51:56,118 DEBUG EntityLoader:34 : Static select for action ACTION_REFRESH on entity model.User: select user0_.id as id0_0_, user0_.name as name0_0_, user0_.password as password0_0_ from users user0_ where user0_.id=?
+23:51:56,120 DEBUG SessionFactoryObjectFactory:39 : initializing class SessionFactoryObjectFactory
+23:51:56,120 DEBUG SessionFactoryObjectFactory:76 : registered: 402881a651cb3f830151cb3f83d60000 (unnamed)
+23:51:56,121  INFO SessionFactoryObjectFactory:82 : Not binding factory to JNDI, no JNDI name configured
+23:51:56,121 DEBUG SessionFactoryImpl:308 : instantiated session factory
+23:51:56,121 DEBUG SessionFactoryImpl:392 : Checking 0 named HQL queries
+23:51:56,121 DEBUG SessionFactoryImpl:412 : Checking 0 named SQL queries
+23:51:56,142 DEBUG SessionImpl:220 : opened session at timestamp: 14508139161
+23:51:56,144 DEBUG JDBCTransaction:54 : begin
+23:51:56,144 DEBUG ConnectionManager:421 : opening JDBC connection
+23:51:56,144 DEBUG DriverManagerConnectionProvider:93 : total checked-out connections: 0
+23:51:56,144 DEBUG DriverManagerConnectionProvider:99 : using pooled JDBC connection, pool size: 0
+23:51:56,144 DEBUG JDBCTransaction:59 : current autocommit status: false
+23:51:56,144 DEBUG JDBCContext:214 : after transaction begin
+23:52:46,873 DEBUG DefaultSaveOrUpdateEventListener:158 : saving transient instance
+23:52:46,874 DEBUG AbstractSaveEventListener:153 : saving [model.User#<null>]
+23:52:46,875 DEBUG AbstractSaveEventListener:244 : executing insertions
+23:52:46,885 DEBUG AbstractSaveEventListener:297 : executing identity-insert immediately
+23:52:46,885 DEBUG AbstractEntityPersister:2149 : Inserting entity: model.User (native id)
+23:52:46,886 DEBUG AbstractBatcher:366 : about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+23:52:46,888 DEBUG SQL:401 : 
+    insert 
+    into
+        users
+        (name, password) 
+    values
+        (?, ?)
+23:52:46,889 DEBUG AbstractBatcher:484 : preparing statement
+23:52:46,910 DEBUG JDBCExceptionReporter:69 : could not insert: [model.User] [insert into users (name, password) values (?, ?)]
+java.sql.SQLException: no such table: users
+	at org.sqlite.DB.throwex(DB.java:288)
+	at org.sqlite.NestedDB.prepare(NestedDB.java:115)
+	at org.sqlite.DB.prepare(DB.java:114)
+	at org.sqlite.PrepStmt.<init>(PrepStmt.java:37)
+	at org.sqlite.Conn.prepareStatement(Conn.java:224)
+	at org.sqlite.Conn.prepareStatement(Conn.java:217)
+	at org.sqlite.Conn.prepareStatement(Conn.java:206)
+	at org.hibernate.jdbc.AbstractBatcher.getPreparedStatement(AbstractBatcher.java:505)
+	at org.hibernate.jdbc.AbstractBatcher.prepareStatement(AbstractBatcher.java:94)
+	at org.hibernate.id.insert.AbstractSelectingDelegate.performInsert(AbstractSelectingDelegate.java:30)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2163)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2643)
+	at org.hibernate.action.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:51)
+	at org.hibernate.engine.ActionQueue.execute(ActionQueue.java:279)
+	at org.hibernate.event.def.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:298)
+	at org.hibernate.event.def.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:181)
+	at org.hibernate.event.def.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:107)
+	at org.hibernate.event.def.DefaultSaveOrUpdateEventListener.saveWithGeneratedOrRequestedId(DefaultSaveOrUpdateEventListener.java:187)
+	at org.hibernate.event.def.DefaultSaveEventListener.saveWithGeneratedOrRequestedId(DefaultSaveEventListener.java:33)
+	at org.hibernate.event.def.DefaultSaveOrUpdateEventListener.entityIsTransient(DefaultSaveOrUpdateEventListener.java:172)
+	at org.hibernate.event.def.DefaultSaveEventListener.performSaveOrUpdate(DefaultSaveEventListener.java:27)
+	at org.hibernate.event.def.DefaultSaveOrUpdateEventListener.onSaveOrUpdate(DefaultSaveOrUpdateEventListener.java:70)
+	at org.hibernate.impl.SessionImpl.fireSave(SessionImpl.java:535)
+	at org.hibernate.impl.SessionImpl.save(SessionImpl.java:523)
+	at org.hibernate.impl.SessionImpl.save(SessionImpl.java:519)
+	at test.TestSaveUser.testSave(TestSaveUser.java:17)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:232)
+	at junit.framework.TestSuite.run(TestSuite.java:227)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:79)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:234)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:74)
+23:52:46,911  WARN JDBCExceptionReporter:77 : SQL Error: 0, SQLState: null
+23:52:46,912 ERROR JDBCExceptionReporter:78 : no such table: users

@@ -34,8 +34,7 @@ public class SocketServer {
             thread.start();
         }     
     }
-    
-    
+
     
     /**
     * Creates a SocketServer object and starts the server.
