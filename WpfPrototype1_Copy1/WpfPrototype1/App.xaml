@@ -1,0 +1,105 @@
+﻿<Application
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
+	x:Class="WpfPrototype1.App">
+	<Application.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="/Microsoft.Expression.Prototyping.SketchControls;component/ScrollViewerStyles.xaml"/>
+				<ResourceDictionary Source="/WpfPrototype1.Screens;component/SketchStyles.xaml"/>
+			</ResourceDictionary.MergedDictionaries>
+			
+			<Style x:Key="Izmen Kol" TargetType="{x:Type Button}">
+				<Setter Property="Template">
+					<Setter.Value>
+						<ControlTemplate TargetType="{x:Type Button}">
+							<ControlTemplate.Resources>
+								<Storyboard x:Key="OnMouseLeftButtonDown1">
+									<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="arrow_UP">
+										<EasingDoubleKeyFrame KeyTime="0" Value="0.745"/>
+									</DoubleAnimationUsingKeyFrames>
+								</Storyboard>
+								<Storyboard x:Key="OnMouseLeftButtonDown2">
+									<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="arrow_UP">
+										<EasingDoubleKeyFrame KeyTime="0" Value="0.695"/>
+									</DoubleAnimationUsingKeyFrames>
+									<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)" Storyboard.TargetName="arrow_UP">
+										<EasingColorKeyFrame KeyTime="0" Value="White"/>
+									</ColorAnimationUsingKeyFrames>
+									<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.StrokeThickness)" Storyboard.TargetName="arrow_UP">
+										<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+										<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0"/>
+									</DoubleAnimationUsingKeyFrames>
+								</Storyboard>
+								<Storyboard x:Key="OnMouseLeftButtonDown3">
+									<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)" Storyboard.TargetName="arrow_DW">
+										<EasingColorKeyFrame KeyTime="0" Value="White"/>
+									</ColorAnimationUsingKeyFrames>
+									<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.StrokeThickness)" Storyboard.TargetName="arrow_DW">
+										<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+										<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0"/>
+									</DoubleAnimationUsingKeyFrames>
+								</Storyboard>
+							</ControlTemplate.Resources>
+							<StackPanel Orientation="Vertical">
+								<Path x:Name="arrow_UP" Data="F1M23.241,15.44C23.453,15.44 23.643,15.345 23.785,15.202 23.785,15.202 24.967,14.011 24.967,14.011 25.109,13.868 25.204,13.653 25.204,13.463 25.204,13.272 25.109,13.058 24.967,12.915 24.967,12.915 13.944,1.812 13.944,1.812 13.802,1.669 13.589,1.574 13.4,1.574 13.211,1.574 12.998,1.669 12.856,1.812 12.856,1.812 1.833,12.915 1.833,12.915 1.691,13.058 1.597,13.272 1.597,13.463 1.597,13.653 1.691,13.868 1.833,14.011 1.833,14.011 3.016,15.202 3.016,15.202 3.158,15.345 3.371,15.44 3.56,15.44 3.749,15.44 3.962,15.345 4.104,15.202 4.104,15.202 13.4,5.838 13.4,5.838 13.4,5.838 22.696,15.202 22.696,15.202 22.838,15.345 23.051,15.44 23.241,15.44z" Fill="White" Height="17" Opacity="0.4" Stroke="Black"/>
+								<Path x:Name="arrow_DW" Data="F1M13.4,15.289C13.589,15.289 13.802,15.194 13.944,15.051 13.944,15.051 24.967,3.948 24.967,3.948 25.109,3.805 25.204,3.59 25.204,3.4 25.204,3.209 25.109,2.995 24.967,2.852 24.967,2.852 23.785,1.661 23.785,1.661 23.643,1.518 23.43,1.422 23.241,1.422 23.051,1.422 22.838,1.518 22.696,1.661 22.696,1.661 13.4,11.024 13.4,11.024 13.4,11.024 4.104,1.661 4.104,1.661 3.962,1.518 3.749,1.422 3.56,1.422 3.347,1.422 3.158,1.518 3.016,1.661 3.016,1.661 1.833,2.852 1.833,2.852 1.691,2.995 1.597,3.209 1.597,3.4 1.597,3.59 1.691,3.805 1.833,3.948 1.833,3.948 12.856,15.051 12.856,15.051 12.998,15.194 13.211,15.289 13.4,15.289z" Fill="#FFFFFFFF" Height="17" Opacity="0.4" Stroke="Black"/>
+							</StackPanel>
+							<ControlTemplate.Triggers>
+								<EventTrigger RoutedEvent="UIElement.MouseLeftButtonDown" SourceName="arrow_DW">
+									<BeginStoryboard x:Name="OnMouseLeftButtonDown3_BeginStoryboard" Storyboard="{StaticResource OnMouseLeftButtonDown3}"/>
+								</EventTrigger>
+								<Trigger Property="IsFocused" Value="True"/>
+								<Trigger Property="IsDefaulted" Value="True"/>
+								<Trigger Property="IsMouseOver" Value="True"/>
+								<Trigger Property="IsPressed" Value="True"/>
+								<Trigger Property="IsEnabled" Value="False"/>
+								<EventTrigger RoutedEvent="UIElement.MouseLeftButtonDown" SourceName="arrow_UP">
+									<BeginStoryboard x:Name="OnMouseLeftButtonDown1_BeginStoryboard1" Storyboard="{StaticResource OnMouseLeftButtonDown2}"/>
+								</EventTrigger>
+							</ControlTemplate.Triggers>
+						</ControlTemplate>
+					</Setter.Value>
+				</Setter>
+			</Style>
+			<Style x:Key="NewGame" TargetType="{x:Type Button}">
+				<Setter Property="Template">
+					<Setter.Value>
+						<ControlTemplate TargetType="{x:Type Button}">
+							<Grid/>
+							<ControlTemplate.Triggers>
+								<Trigger Property="IsFocused" Value="True"/>
+								<Trigger Property="IsDefaulted" Value="True"/>
+								<Trigger Property="IsMouseOver" Value="True"/>
+								<Trigger Property="IsPressed" Value="True"/>
+								<Trigger Property="IsEnabled" Value="False"/>
+							</ControlTemplate.Triggers>
+						</ControlTemplate>
+					</Setter.Value>
+				</Setter>
+			</Style>
+			<Style x:Key="Ngame" TargetType="{x:Type Button}">
+				<Setter Property="Template">
+					<Setter.Value>
+						<ControlTemplate TargetType="{x:Type Button}">
+							<Grid>
+								<Ellipse x:Name="ellipse" Fill="{x:Null}" Margin="-26.667,-24.667,-24.666,-25.667" Stroke="White" StrokeThickness="3"/>
+								<Image x:Name="hard_disk_network" Height="Auto" Source="hard_disk_network1.png" Width="Auto" Margin="-2,0,0,-1"/>
+							</Grid>
+							<ControlTemplate.Triggers>
+								<Trigger Property="IsFocused" Value="True"/>
+								<Trigger Property="IsDefaulted" Value="True"/>
+								<Trigger Property="IsMouseOver" Value="True">
+									<Setter Property="Fill" TargetName="ellipse" Value="#FF1FD6C1"/>
+								</Trigger>
+								<Trigger Property="IsPressed" Value="True"/>
+								<Trigger Property="IsEnabled" Value="False"/>
+							</ControlTemplate.Triggers>
+						</ControlTemplate>
+					</Setter.Value>
+				</Setter>
+			</Style>
+		</ResourceDictionary>
+	</Application.Resources>
+</Application>

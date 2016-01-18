@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ExpressionBlendVersion>4.0.20525.0</ExpressionBlendVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{c22f9532-e4a6-48cf-a5bb-97216b298405}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WpfPrototype1Screens</RootNamespace>
+    <AssemblyName>WpfPrototype1.Screens</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <Utf8Output>true</Utf8Output>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <PropertyGroup>
+    <ExpressionBlendPrototypingEnabled>true</ExpressionBlendPrototypingEnabled>
+    <ExpressionBlendPrototypeHarness>false</ExpressionBlendPrototypeHarness>
+  </PropertyGroup>
+  <ItemGroup>
+    <!--Reference Include="PresentationFramework.Aero" /-->
+    <Reference Include="System.Windows.Interactivity" />
+    <Reference Include="Microsoft.Expression.Interactions" />
+    <Reference Include="Microsoft.Expression.Prototyping.Interactivity" />
+    <Reference Include="Microsoft.Expression.Prototyping.Runtime" />
+    <Reference Include="Microsoft.Expression.Prototyping.SketchControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Game.xaml.cs">
+      <DependentUpon>Game.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Load.xaml.cs">
+      <DependentUpon>Load.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LOG1.xaml.cs">
+      <DependentUpon>LOG1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screen_1_1.xaml.cs">
+      <DependentUpon>Screen_1_1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screen_1_2.xaml.cs">
+      <DependentUpon>Screen_1_2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screen_3.xaml.cs">
+      <DependentUpon>Screen_3.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Game.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Load.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="LOG1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screen_1_1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screen_1_2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screen_3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SketchStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Resource Include="Fonts\BuxtonSketch.ttf" />
+    <Resource Include="Fonts\SketchFlow Print.ttf" />
+    <Resource Include="Fonts\SegoeMarker.ttf" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="..\Properties\Version.cs">
+      <Link>Properties\Version.cs</Link>
+    </Compile>
+    <Resource Include="Help icon1.png" />
+    <Resource Include="Help icon2.png" />
+    <Resource Include="Help icon3.png" />
+    <Resource Include="Sketch.Flow" />
+    <Resource Include="x копия1.png" />
+    <Resource Include="x копия2.png" />
+    <Resource Include="x копия3.png" />
+    <Resource Include="Игровое поле imp_Images\4 аватар %281%29.png" />
+    <Resource Include="Игровое поле imp_Images\4 аватар.png" />
+    <Resource Include="Игровое поле imp_Images\BACKGROUND.png" />
+    <Resource Include="Игровое поле imp_Images\background_bank %281%29.png" />
+    <Resource Include="Игровое поле imp_Images\background_bank.png" />
+    <Resource Include="Игровое поле imp_Images\background_top %281%29.png" />
+    <Resource Include="Игровое поле imp_Images\background_top.png" />
+    <Resource Include="Игровое поле imp_Images\box %281%29.png" />
+    <Resource Include="Игровое поле imp_Images\box.png" />
+    <Resource Include="Игровое поле imp_Images\check_money %281%29.png" />
+    <Resource Include="Игровое поле imp_Images\check_money.png" />
+    <Resource Include="Игровое поле imp_Images\crown %281%29.png" />
+    <Resource Include="Игровое поле imp_Images\crown копия %281%29.png" />
+    <Resource Include="Игровое поле imp_Images\crown копия 2 %281%29.png" />
+    <Resource Include="Игровое поле imp_Images\crown копия 2.png" />
+    <Resource Include="Игровое поле imp_Images\crown копия 3 %281%29.png" />
+    <Resource Include="Игровое поле imp_Images\crown копия 3.png" />
+    <Resource Include="Игровое поле imp_Images\crown копия.png" />
+    <Resource Include="Игровое поле imp_Images\crown.png" />
+    <Resource Include="Игровое поле imp_Images\CUBEN-12-Space-9-iPad3-SimonCPage %281%29.png" />
+    <Resource Include="Игровое поле imp_Images\CUBEN-12-Space-9-iPad3-SimonCPage.png" />
+    <Resource Include="Игровое поле imp_Images\CUBEN-12-Space-9-iPad3-SimonCPage1 %281%29.png" />
+    <Resource Include="Игровое поле imp_Images\CUBEN-12-Space-9-iPad3-SimonCPage1.png" />
+    <Resource Include="Игровое поле imp_Images\CUBEN-12-Space-9-iPad3-SimonCPage2 %281%29.png" />
+    <Resource Include="Игровое поле imp_Images\CUBEN-12-Space-9-iPad3-SimonCPage2.png" />
+    <Resource Include="Игровое поле imp_Images\genius %281%29.png" />
+    <Resource Include="Игровое поле imp_Images\genius.png" />
+    <Resource Include="Игровое поле imp_Images\Help icon %281%29.png" />
+    <Resource Include="Игровое поле imp_Images\Help icon.png" />
+    <Resource Include="Игровое поле imp_Images\inputfield копия 15 %281%29.png" />
+    <Resource Include="Игровое поле imp_Images\inputfield копия 15.png" />
+    <Resource Include="Игровое поле imp_Images\inputfield копия 151 %281%29.png" />
+    <Resource Include="Игровое поле imp_Images\inputfield копия 151.png" />
+    <Resource Include="Игровое поле imp_Images\inputfield копия 152 %281%29.png" />
+    <Resource Include="Игровое поле imp_Images\inputfield копия 152.png" />
+    <Resource Include="Игровое поле imp_Images\inputfield копия 153 %281%29.png" />
+    <Resource Include="Игровое поле imp_Images\inputfield копия 153.png" />
+    <Resource Include="Игровое поле imp_Images\OK %281%29.png" />
+    <Resource Include="Игровое поле imp_Images\OK копия %281%29.png" />
+    <Resource Include="Игровое поле imp_Images\OK копия 2 %281%29.png" />
+    <Resource Include="Игровое поле imp_Images\OK копия 2.png" />
+    <Resource Include="Игровое поле imp_Images\OK копия.png" />
+    <Resource Include="Игровое поле imp_Images\OK.png" />
+    <Resource Include="Игровое поле imp_Images\oven_stove %281%29.png" />
+    <Resource Include="Игровое поле imp_Images\oven_stove.png" />
+    <Resource Include="Игровое поле imp_Images\shopping_cart %281%29.png" />
+    <Resource Include="Игровое поле imp_Images\shopping_cart.png" />
+    <Resource Include="Игровое поле imp_Images\x копия %281%29.png" />
+    <Resource Include="Игровое поле imp_Images\x копия.png" />
+    <Resource Include="Игровое поле imp_Images\Слой 2 %281%29.png" />
+    <Resource Include="Игровое поле imp_Images\Слой 2 копия 2 %281%29.png" />
+    <Resource Include="Игровое поле imp_Images\Слой 2 копия 2.png" />
+    <Resource Include="Игровое поле imp_Images\Слой 2.png" />
+    <Resource Include="Игровое поле imp_Images\Слой 3 %281%29.png" />
+    <Resource Include="Игровое поле imp_Images\Слой 3.png" />
+    <Resource Include="правила imp_Images\ игра менеджмент.png" />
+    <Resource Include="правила imp_Images\hard_disk.png" />
+    <Resource Include="правила imp_Images\hard_disk_download.png" />
+    <Resource Include="правила imp_Images\hard_disk_network.png" />
+    <Resource Include="правила imp_Images\script.png" />
+    <Resource Include="регистрация imp_Images\1 ic.png" />
+    <Resource Include="регистрация imp_Images\10 ic.png" />
+    <Resource Include="регистрация imp_Images\2 ic.png" />
+    <Resource Include="регистрация imp_Images\3 ic.png" />
+    <Resource Include="регистрация imp_Images\4 ic.png" />
+    <Resource Include="регистрация imp_Images\5 ic.png" />
+    <Resource Include="регистрация imp_Images\6 ic.png" />
+    <Resource Include="регистрация imp_Images\7 ic.png" />
+    <Resource Include="регистрация imp_Images\8 ic.png" />
+    <Resource Include="регистрация imp_Images\9 ic.png" />
+    <Resource Include="регистрация imp_Images\Ava BG.png" />
+    <Resource Include="регистрация imp_Images\BACKGROUND.png" />
+    <Resource Include="регистрация imp_Images\Help icon.png" />
+    <Resource Include="регистрация imp_Images\LOGO.png" />
+    <Resource Include="регистрация imp_Images\SOCIAL.png" />
+    <Resource Include="регистрация imp_Images\User icon.png" />
+    <Resource Include="регистрация imp_Images\Vhod.png" />
+    <Resource Include="регистрация imp_Images\x копия.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\..\..\Google Диск\ManG\Mang_Copy1_Copy1\Mang\Mang.csproj">
+      <Project>{C2AFC6A9-B950-470E-8271-1DFF17059300}</Project>
+      <Name>Mang</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="crown_main.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="log.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath32)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	     Other similar extension points exist, see Microsoft.Common.targets.
+	<Target Name="BeforeBuild">
+	</Target>
+	<Target Name="AfterBuild">
+	</Target>
+	-->
+</Project>

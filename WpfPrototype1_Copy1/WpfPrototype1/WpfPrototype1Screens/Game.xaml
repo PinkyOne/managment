@@ -1,0 +1,487 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" x:Name="Game_Name"
+	mc:Ignorable="d"
+	x:Class="WpfPrototype1Screens.Game"
+	Width="783" Height="587">
+	<UserControl.Resources>
+		<Style x:Key="ButtonStyle1" TargetType="{x:Type Button}">
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="{x:Type Button}">
+						<Grid>
+							<Image x:Name="x_копия" Source="x копия1.png"/>
+							<Rectangle x:Name="rectangle" Fill="{x:Null}" Stroke="White" StrokeThickness="2" StrokeMiterLimit="12" Visibility="Hidden"/>
+						</Grid>
+						<ControlTemplate.Triggers>
+							<Trigger Property="IsFocused" Value="True"/>
+							<Trigger Property="IsDefaulted" Value="True"/>
+							<Trigger Property="IsMouseOver" Value="True" SourceName="x_копия">
+								<Setter Property="Visibility" TargetName="rectangle" Value="Visible"/>
+							</Trigger>
+							<Trigger Property="IsPressed" Value="True"/>
+							<Trigger Property="IsEnabled" Value="False"/>
+						</ControlTemplate.Triggers>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+	</UserControl.Resources>
+
+	<Grid x:Name="LayoutRoot" Background="White" Width="783" Height="587">
+		<Canvas x:Name="Игровое_поле_imp" ClipToBounds="True" HorizontalAlignment="Left" Height="587" UseLayoutRounding="False" VerticalAlignment="Top" Width="783">
+			<Canvas x:Name="Группа_2" Height="595" Canvas.Left="-6" Canvas.Top="-7" Width="792">
+				<Image x:Name="BACKGROUND" Height="595" Source="/Mang;component/New Folder1/Игровое поле imp_Images/BACKGROUND.png" Canvas.Top="0" Width="792" Canvas.Left="5"/>
+				<Canvas x:Name="Действия_игрока" Height="466" Canvas.Left="20" Canvas.Top="123" Width="411">
+					<Path x:Name="background" Data="F1M1.006,1.149C1.006,1.149 409.577,1.149 409.577,1.149 409.577,1.149 409.577,347.312 409.577,347.312 409.577,347.312 1.006,347.312 1.006,347.312 1.006,347.312 1.006,1.149 1.006,1.149z" Height="349" Canvas.Left="0" Canvas.Top="0" Width="411">
+						<Path.Fill>
+							<SolidColorBrush Color="#FF20232A" Opacity="0.851"/>
+						</Path.Fill>
+					</Path>
+					<Canvas x:Name="List" Height="463" Canvas.Left="3" Canvas.Top="3" Width="408">
+						<TextBlock x:Name="Купить_ЕСМ1" Foreground="#FFFFFFFF" FontSize="32" FontFamily="Oswald" Height="34.398" LineStackingStrategy="BlockLineHeight" Canvas.Left="60.932" LineHeight="38" TextAlignment="Left" TextWrapping="Wrap" Text="Купить ЕСМ" Canvas.Top="14.627" Width="183.36">
+							<TextBlock.RenderTransform>
+								<MatrixTransform Matrix="0.505,0,0,0.506,0,0"/>
+							</TextBlock.RenderTransform>
+						</TextBlock>
+						<Button Content="Button" Canvas.Left="292" Style="{DynamicResource Izmen Kol}" Canvas.Top="4" Width="27"/>
+						<Canvas x:Name="Не_меняемое" Height="335" Canvas.Left="15" Canvas.Top="4" Width="39">
+							<Canvas x:Name="Круги" Height="335" Canvas.Left="0" Canvas.Top="0" Width="39">
+								<Path x:Name="Clipping_Mask4" Data="F1M17.937,1.28C27.002,1.28 34.35,8.64 34.35,17.719 34.35,26.797 27.002,34.157 17.937,34.157 8.872,34.157 1.524,26.797 1.524,17.719 1.524,8.64 8.872,1.28 17.937,1.28z" Fill="#FFB595FB" Height="36" Canvas.Left="2" Canvas.Top="1" Width="36"/>
+								<Path x:Name="Clipping_Mask3" Data="F1M17.937,1.389C27.002,1.389 34.35,8.748 34.35,17.827 34.35,26.906 27.002,34.265 17.937,34.265 8.872,34.265 1.524,26.906 1.524,17.827 1.524,8.748 8.872,1.389 17.937,1.389z" Fill="#FF3DC5FB" Height="36" Canvas.Left="2" Canvas.Top="183" Width="36"/>
+								<Path x:Name="Clipping_Mask2" Data="F1M17.937,1.987C27.002,1.987 34.35,9.347 34.35,18.425 34.35,27.504 27.002,34.864 17.937,34.864 8.872,34.864 1.524,27.504 1.524,18.425 1.524,9.347 8.872,1.987 17.937,1.987z" Fill="#FF5D9DFD" Height="36" Canvas.Left="2" Canvas.Top="61" Width="36"/>
+								<Path x:Name="Clipping_Mask_копия" Data="F1M18.163,1.877C27.228,1.877 34.576,9.237 34.576,18.315 34.576,27.394 27.228,34.753 18.163,34.753 9.098,34.753 1.75,27.394 1.75,18.315 1.75,9.237 9.098,1.877 18.163,1.877z" Fill="#FF5D9DFD" Height="36" Canvas.Left="1" Canvas.Top="240" Width="36"/>
+								<Path x:Name="Clipping_Mask1" Data="F1M17.937,1.682C27.002,1.682 34.35,9.042 34.35,18.12 34.35,27.199 27.002,34.558 17.937,34.558 8.872,34.558 1.524,27.199 1.524,18.12 1.524,9.042 8.872,1.682 17.937,1.682z" Fill="#FF9D97FB" Height="36" Canvas.Left="2" Canvas.Top="122" Width="36"/>
+								<Path x:Name="Clipping_Mask" Data="F1M17.937,1.293C27.002,1.293 34.35,8.655 34.35,17.737 34.35,26.819 27.002,34.181 17.937,34.181 8.872,34.181 1.524,26.819 1.524,17.737 1.524,8.655 8.872,1.293 17.937,1.293z" Fill="#FF00D5C3" Height="36" Canvas.Left="2" Canvas.Top="298" Width="36"/>
+							</Canvas>
+							<Image x:Name="Слой_3" Height="22" Canvas.Left="9" Source="/Mang;component/New Folder1/Игровое поле imp_Images/Слой 3.png" Canvas.Top="189" Width="22"/>
+							<Image x:Name="check_money" Height="25" Canvas.Left="8" Source="/Mang;component/New Folder1/Игровое поле imp_Images/check_money.png" Canvas.Top="127" Width="25" VerticalAlignment="Center"/>
+							<Image x:Name="shopping_cart" Height="22" Canvas.Left="8" Source="/Mang;component/New Folder1/Игровое поле imp_Images/shopping_cart.png" Canvas.Top="68" Width="23"/>
+							<Image x:Name="box" Height="22" Canvas.Left="9" Source="/Mang;component/New Folder1/Игровое поле imp_Images/box.png" Canvas.Top="7" Width="22"/>
+							<Image x:Name="genius" Height="26" Canvas.Left="6" Source="/Mang;component/New Folder1/Игровое поле imp_Images/genius.png" Canvas.Top="303" Width="26"/>
+							<Image x:Name="oven_stove" Height="23" Canvas.Left="10" Source="/Mang;component/New Folder1/Игровое поле imp_Images/oven_stove.png" Canvas.Top="247" Width="18"/>
+							<Canvas x:Name="Строки" Height="248" Canvas.Left="0" Canvas.Top="50" Width="281">
+								<Path x:Name="divider2" Data="F1M1.853,2.026C1.853,2.026 1.853,1.52 1.853,1.52 1.853,1.52 279.672,1.52 279.672,1.52 279.672,1.52 279.672,2.026 279.672,2.026 279.672,2.026 1.853,2.026 1.853,2.026z" Height="4" Canvas.Left="0" Canvas.Top="57" Width="281">
+									<Path.Effect>
+										<DropShadowEffect BlurRadius="0" Color="#FF000000" Direction="-270" Opacity="0.8" ShadowDepth="1"/>
+									</Path.Effect>
+									<Path.Fill>
+										<SolidColorBrush Color="#FFFFFFFF" Opacity="0.349"/>
+									</Path.Fill>
+								</Path>
+								<Path x:Name="divider1" Data="F1M1.853,1.727C1.853,1.727 1.853,1.221 1.853,1.221 1.853,1.221 279.672,1.221 279.672,1.221 279.672,1.221 279.672,1.727 279.672,1.727 279.672,1.727 1.853,1.727 1.853,1.727z" Height="3" Canvas.Left="0" Canvas.Top="119" Width="281">
+									<Path.Effect>
+										<DropShadowEffect BlurRadius="0" Color="#FF000000" Direction="-270" Opacity="0.8" ShadowDepth="1"/>
+									</Path.Effect>
+									<Path.Fill>
+										<SolidColorBrush Color="#FFFFFFFF" Opacity="0.349"/>
+									</Path.Fill>
+								</Path>
+								<Path x:Name="divider" Data="F1M1.853,2.324C1.853,2.324 1.853,1.818 1.853,1.818 1.853,1.818 279.672,1.818 279.672,1.818 279.672,1.818 279.672,2.324 279.672,2.324 279.672,2.324 1.853,2.324 1.853,2.324z" Height="4" Canvas.Left="0" Width="281" Canvas.Top="-6">
+									<Path.Effect>
+										<DropShadowEffect BlurRadius="0" Color="#FF000000" Direction="-270" Opacity="0.8" ShadowDepth="1"/>
+									</Path.Effect>
+									<Path.Fill>
+										<SolidColorBrush Color="#FFFFFFFF" Opacity="0.349"/>
+									</Path.Fill>
+								</Path>
+								<Path x:Name="divider_копия_3" Data="F1M1.853,1.996C1.853,1.996 1.853,1.49 1.853,1.49 1.853,1.49 279.672,1.49 279.672,1.49 279.672,1.49 279.672,1.996 279.672,1.996 279.672,1.996 1.853,1.996 1.853,1.996z" Height="3" Canvas.Left="0" Canvas.Top="178" Width="281">
+									<Path.Effect>
+										<DropShadowEffect BlurRadius="0" Color="#FF000000" Direction="-270" Opacity="0.8" ShadowDepth="1"/>
+									</Path.Effect>
+									<Path.Fill>
+										<SolidColorBrush Color="#FFFFFFFF" Opacity="0.349"/>
+									</Path.Fill>
+								</Path>
+								<Path x:Name="divider_копия_4" Data="F1M1.853,2.4C1.853,2.4 1.853,1.894 1.853,1.894 1.853,1.894 279.672,1.894 279.672,1.894 279.672,1.894 279.672,2.4 279.672,2.4 279.672,2.4 1.853,2.4 1.853,2.4z" Height="4" Canvas.Left="0" Canvas.Top="241" Width="281">
+									<Path.Effect>
+										<DropShadowEffect BlurRadius="0" Color="#FF000000" Direction="-270" Opacity="0.8" ShadowDepth="1"/>
+									</Path.Effect>
+									<Path.Fill>
+										<SolidColorBrush Color="#FFFFFFFF" Opacity="0.349"/>
+									</Path.Fill>
+								</Path>
+							</Canvas>
+						</Canvas>
+						<Canvas x:Name="Купить_ЕСМ" Height="45" Canvas.Left="60" Canvas.Top="0" Width="343">
+							<Path x:Name="inputfield1" Data="F1M6.678,1.634C6.678,1.634 82.184,1.634 82.184,1.634 84.945,1.634 87.184,3.872 87.184,6.634 87.184,6.634 87.184,38.452 87.184,38.452 87.184,41.214 84.945,43.452 82.184,43.452 82.184,43.452 6.678,43.452 6.678,43.452 3.917,43.452 1.678,41.214 1.678,38.452 1.678,38.452 1.678,6.634 1.678,6.634 1.678,3.872 3.917,1.634 6.678,1.634z" Height="45" Canvas.Left="141" Canvas.Top="0" Width="89">
+								<Path.Fill>
+									<SolidColorBrush Color="#FFFFFFFF" Opacity="0.102"/>
+								</Path.Fill>
+							</Path>
+							<Path x:Name="inputfield_копия_19" Data="F1M6.487,1.634C6.487,1.634 71.16,1.634 71.16,1.634 73.921,1.634 76.16,3.872 76.16,6.634 76.16,6.634 76.16,38.452 76.16,38.452 76.16,41.214 73.921,43.452 71.16,43.452 71.16,43.452 6.487,43.452 6.487,43.452 3.726,43.452 1.487,41.214 1.487,38.452 1.487,38.452 1.487,6.634 1.487,6.634 1.487,3.872 3.726,1.634 6.487,1.634z" Height="45" Canvas.Left="265" Canvas.Top="0" Width="78">
+								<Path.Fill>
+									<SolidColorBrush Color="#FF1D2331" Opacity="0.102"/>
+								</Path.Fill>
+							</Path>
+							<Path x:Name="inputfield_копия_19_Copy" Data="F1M6.487,1.634C6.487,1.634 71.16,1.634 71.16,1.634 73.921,1.634 76.16,3.872 76.16,6.634 76.16,6.634 76.16,38.452 76.16,38.452 76.16,41.214 73.921,43.452 71.16,43.452 71.16,43.452 6.487,43.452 6.487,43.452 3.726,43.452 1.487,41.214 1.487,38.452 1.487,38.452 1.487,6.634 1.487,6.634 1.487,3.872 3.726,1.634 6.487,1.634z" Height="45" Canvas.Left="265" Canvas.Top="59" Width="78">
+								<Path.Fill>
+									<SolidColorBrush Color="#FF1D2331" Opacity="0.102"/>
+								</Path.Fill>
+							</Path>
+						</Canvas>
+						<Canvas x:Name="Продать_ЕГП" Height="45" Canvas.Left="60" Canvas.Top="60" Width="343">
+							<Path x:Name="inputfield_копия_9" Data="F1M6.678,1.651C6.678,1.651 82.184,1.651 82.184,1.651 84.945,1.651 87.184,3.89 87.184,6.651 87.184,6.651 87.184,38.469 87.184,38.469 87.184,41.231 84.945,43.469 82.184,43.469 82.184,43.469 6.678,43.469 6.678,43.469 3.917,43.469 1.678,41.231 1.678,38.469 1.678,38.469 1.678,6.651 1.678,6.651 1.678,3.89 3.917,1.651 6.678,1.651z" Height="45" Canvas.Left="141" Canvas.Top="0" Width="89">
+								<Path.Fill>
+									<SolidColorBrush Color="#FFFFFFFF" Opacity="0.102"/>
+								</Path.Fill>
+							</Path>
+							<TextBlock x:Name="Продать_ЕГП1" Foreground="#FFFFFFFF" FontSize="32" FontFamily="Oswald" Height="46.256" LineStackingStrategy="BlockLineHeight" Canvas.Left="-0.068" LineHeight="38" TextAlignment="Left" TextWrapping="Wrap" Text="Продать ЕГП" Canvas.Top="13.293" Width="183.36">
+								<TextBlock.RenderTransform>
+									<MatrixTransform Matrix="0.505,0,0,0.506,0,0"/>
+								</TextBlock.RenderTransform>
+							</TextBlock>
+						</Canvas>
+						<Canvas x:Name="Взять_ссуду" Height="45" Canvas.Left="60" Canvas.Top="122" Width="342">
+							<TextBlock x:Name="Взять_ссуду1" Foreground="#FFFFFFFF" FontSize="32" FontFamily="Oswald" Height="42.303" LineStackingStrategy="BlockLineHeight" Canvas.Left="-0.068" LineHeight="38" TextWrapping="Wrap" Text="Взять ссуду" Canvas.Top="13.007" Width="274.449">
+								<TextBlock.RenderTransform>
+									<MatrixTransform Matrix="0.505,0,0,0.506,0,0"/>
+								</TextBlock.RenderTransform>
+							</TextBlock>
+							<Path x:Name="inputfield_копия_8" Data="F1M6.648,1.991C6.648,1.991 66.061,1.991 66.061,1.991 68.822,1.991 71.061,4.23 71.061,6.991 71.061,6.991 71.061,38.774 71.061,38.774 71.061,41.535 68.822,43.773 66.061,43.773 66.061,43.773 6.648,43.773 6.648,43.773 3.887,43.773 1.648,41.535 1.648,38.774 1.648,38.774 1.648,6.991 1.648,6.991 1.648,4.23 3.887,1.991 6.648,1.991z" Height="45" Canvas.Left="242" Canvas.Top="0" Width="73">
+								<Path.Fill>
+									<SolidColorBrush Color="#FFFFFFFF" Opacity="0.102"/>
+								</Path.Fill>
+							</Path>
+							<Path x:Name="inputfield_копия_17" Data="F1M6.678,1.991C6.678,1.991 66.091,1.991 66.091,1.991 68.852,1.991 71.091,4.23 71.091,6.991 71.091,6.991 71.091,38.774 71.091,38.774 71.091,41.535 68.852,43.773 66.091,43.773 66.091,43.773 6.678,43.773 6.678,43.773 3.917,43.773 1.678,41.535 1.678,38.774 1.678,38.774 1.678,6.991 1.678,6.991 1.678,4.23 3.917,1.991 6.678,1.991z" Height="45" Canvas.Left="141" Canvas.Top="0" Width="73">
+								<Path.Fill>
+									<SolidColorBrush Color="#FFFFFFFF" Opacity="0.102"/>
+								</Path.Fill>
+							</Path>
+						</Canvas>
+						<Canvas x:Name="Купить_фабрику" Height="47" Canvas.Left="60" Canvas.Top="181" Width="343">
+							<Path x:Name="inputfield_копия_7" Data="F1M6.678,1.847C6.678,1.847 82.184,1.847 82.184,1.847 84.945,1.847 87.184,4.086 87.184,6.847 87.184,6.847 87.184,38.665 87.184,38.665 87.184,41.427 84.945,43.665 82.184,43.665 82.184,43.665 6.678,43.665 6.678,43.665 3.917,43.665 1.678,41.427 1.678,38.665 1.678,38.665 1.678,6.847 1.678,6.847 1.678,4.086 3.917,1.847 6.678,1.847z" Height="45" Canvas.Left="141" Canvas.Top="0" Width="89">
+								<Path.Fill>
+									<SolidColorBrush Color="#FFFFFFFF" Opacity="0.102"/>
+								</Path.Fill>
+							</Path>
+							<TextBlock x:Name="Купить_фабрику_простую" Foreground="#FFFFFFFF" FontSize="32" FontFamily="Oswald" Height="86.899" LineStackingStrategy="BlockLineHeight" Canvas.Left="-1.068" LineHeight="38" TextAlignment="Left" TextWrapping="Wrap" Canvas.Top="4.415" Width="264.548"><TextBlock.RenderTransform>
+									<MatrixTransform Matrix="0.505,0,0,0.506,0,0"/>
+								</TextBlock.RenderTransform><Run Text="Купить фабрику"/><Run Text="&#xa;простую"/></TextBlock>
+						</Canvas>
+						<Canvas x:Name="Купить_фабрику_копия" Height="48" Canvas.Left="59" Canvas.Top="243" Width="344">
+							<Path x:Name="inputfield_копия_5" Data="F1M6.678,1.575C6.678,1.575 82.184,1.575 82.184,1.575 84.945,1.575 87.184,3.813 87.184,6.575 87.184,6.575 87.184,38.393 87.184,38.393 87.184,41.154 84.945,43.393 82.184,43.393 82.184,43.393 6.678,43.393 6.678,43.393 3.917,43.393 1.678,41.154 1.678,38.393 1.678,38.393 1.678,6.575 1.678,6.575 1.678,3.813 3.917,1.575 6.678,1.575z" Height="45" Canvas.Left="142" Canvas.Top="1" Width="89">
+								<Path.Fill>
+									<SolidColorBrush Color="#FFFFFFFF" Opacity="0.102"/>
+								</Path.Fill>
+							</Path>
+							<TextBlock x:Name="Купить_фабрику_автоматизированную_" Foreground="#FFFFFFFF" FontSize="32" FontFamily="Oswald" Height="94.145" LineStackingStrategy="BlockLineHeight" Canvas.Left="-0.068" LineHeight="38" TextAlignment="Left" TextWrapping="Wrap" Text="Купить фабрику автоматизированную " Canvas.Top="1.143" Width="274.449">
+								<TextBlock.RenderTransform>
+									<MatrixTransform Matrix="0.505,0,0,0.506,0,0"/>
+								</TextBlock.RenderTransform>
+							</TextBlock>
+							<TextBlock x:Name="_1" Foreground="#FFFFFFFF" FontSize="45.928" FontFamily="Oswald" Height="44.28" LineStackingStrategy="BlockLineHeight" Canvas.Left="145.813" LineHeight="45.928" TextAlignment="Right" TextWrapping="Wrap" Text="5000" Canvas.Top="-108.564" Width="112.073">
+								<TextBlock.RenderTransform>
+									<MatrixTransform Matrix="0.505,0,0,0.506,0,0"/>
+								</TextBlock.RenderTransform>
+							</TextBlock>
+							<Path x:Name="inputfield_копия_11" Data="F1M6.487,1.736C6.487,1.736 71.16,1.736 71.16,1.736 73.921,1.736 76.16,3.975 76.16,6.736 76.16,6.736 76.16,38.555 76.16,38.555 76.16,41.316 73.921,43.555 71.16,43.555 71.16,43.555 6.487,43.555 6.487,43.555 3.726,43.555 1.487,41.316 1.487,38.555 1.487,38.555 1.487,6.736 1.487,6.736 1.487,3.975 3.726,1.736 6.487,1.736z" Height="45" Canvas.Left="266" Canvas.Top="2" Width="78">
+								<Path.Fill>
+									<SolidColorBrush Color="#FF1D2331" Opacity="0.102"/>
+								</Path.Fill>
+							</Path>
+							<TextBlock x:Name="___900_" Foreground="White" FontSize="45.928" FontFamily="Oswald" Height="48.891" LineStackingStrategy="BlockLineHeight" Canvas.Left="286.241" LineHeight="45.928" TextAlignment="Left" TextWrapping="Wrap" Text="  900$" Canvas.Top="14.436" Width="183.36">
+								<TextBlock.RenderTransform>
+									<MatrixTransform Matrix="0.505,0,0,0.506,0,0"/>
+								</TextBlock.RenderTransform>
+							</TextBlock>
+							<TextBlock x:Name="_1_Copy" Foreground="#FFFFFFFF" FontSize="45.928" FontFamily="Oswald" Height="44.28" LineStackingStrategy="BlockLineHeight" Canvas.Left="241.813" LineHeight="45.928" TextAlignment="Right" TextWrapping="Wrap" Text="10000" Canvas.Top="-109.564" Width="127.915">
+								<TextBlock.RenderTransform>
+									<MatrixTransform Matrix="0.505,0,0,0.506,0,0"/>
+								</TextBlock.RenderTransform>
+							</TextBlock>
+						</Canvas>
+						<Canvas x:Name="Автоматизировать_фабрику" Height="45" Canvas.Left="59" Canvas.Top="294" Width="344">
+							<Path x:Name="inputfield_копия_12" Data="F1M6.487,1.524C6.487,1.524 71.16,1.524 71.16,1.524 73.921,1.524 76.16,3.763 76.16,6.524 76.16,6.524 76.16,38.343 76.16,38.343 76.16,41.104 73.921,43.343 71.16,43.343 71.16,43.343 6.487,43.343 6.487,43.343 3.726,43.343 1.487,41.104 1.487,38.343 1.487,38.343 1.487,6.524 1.487,6.524 1.487,3.763 3.726,1.524 6.487,1.524z" Height="45" Canvas.Left="266" Canvas.Top="0" Width="78">
+								<Path.Fill>
+									<SolidColorBrush Color="#FF1D2331" Opacity="0.102"/>
+								</Path.Fill>
+							</Path>
+							<TextBlock x:Name="___100_" Foreground="White" FontSize="45.928" FontFamily="Oswald" Height="50.208" LineStackingStrategy="BlockLineHeight" Canvas.Left="286.241" LineHeight="45.928" TextAlignment="Left" TextWrapping="Wrap" Canvas.Top="12.224" Width="183.36"><TextBlock.RenderTransform>
+									<MatrixTransform Matrix="0.505,0,0,0.506,0,0"/>
+								</TextBlock.RenderTransform><Run Text="  100$"/></TextBlock>
+							<TextBlock x:Name="Автоматизировать_фабрику1" Foreground="#FFFFFFFF" FontSize="32" FontFamily="Oswald" Height="79.264" LineStackingStrategy="BlockLineHeight" Canvas.Left="-0.068" LineHeight="38" TextAlignment="Left" TextWrapping="Wrap" Text="Автоматизировать фабрику" Canvas.Top="7.275" Width="286.33">
+								<TextBlock.RenderTransform>
+									<MatrixTransform Matrix="0.505,0,0,0.506,0,0"/>
+								</TextBlock.RenderTransform>
+							</TextBlock>
+						</Canvas>
+					</Canvas>
+					<Grid x:Name="Вводимые" Height="289" Canvas.Left="204" Width="202" Canvas.Top="3">
+						<TextBox x:Name="Cost_ESM" Height="45" TextWrapping="Wrap" Width="76" FontFamily="Oswald" FontSize="21.333" Background="{x:Null}" TextAlignment="Right" Foreground="#FF00D5C3" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+						<TextBox x:Name="Cost_EGP" Height="45" TextWrapping="Wrap" Width="76" FontFamily="Oswald" FontSize="21.333" Background="{x:Null}" Foreground="#FF00D5C3" TextAlignment="Right" HorizontalAlignment="Right" Margin="0,59,0,0" VerticalAlignment="Top"/>
+						<TextBox x:Name="Cost_Fab" Height="45" TextWrapping="Wrap" Width="76" FontFamily="Oswald" FontSize="21.333" Background="{x:Null}" Foreground="#FF00D5C3" TextAlignment="Right" HorizontalAlignment="Right" Margin="0,0,0,61" VerticalAlignment="Bottom"/>
+						<TextBox x:Name="Kol_ESM" Height="45" TextWrapping="Wrap" Width="87" FontFamily="Oswald" FontSize="21.333" Background="{x:Null}" TextAlignment="Right" Foreground="White" BorderBrush="{x:Null}" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+						<TextBox x:Name="Kol_EGP" Height="45" TextWrapping="Wrap" Width="87" FontFamily="Oswald" FontSize="21.333" Background="{x:Null}" TextAlignment="Right" Foreground="White" BorderBrush="{x:Null}" HorizontalAlignment="Left" Margin="0,60,0,0" VerticalAlignment="Top"/>
+						<TextBox x:Name="Kol_Fab" Height="45" TextWrapping="Wrap" Width="87" FontFamily="Oswald" FontSize="21.333" Background="{x:Null}" TextAlignment="Right" Foreground="White" BorderBrush="{x:Null}" HorizontalAlignment="Left" Margin="0,0,0,62" VerticalAlignment="Bottom"/>
+						<TextBox x:Name="Kol_Auto" Height="45" TextWrapping="Wrap" Width="87" FontFamily="Oswald" FontSize="21.333" Background="{x:Null}" TextAlignment="Right" Foreground="White" BorderBrush="{x:Null}" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+						<CheckBox Content="" Height="16.46" Width="17.441" Background="{x:Null}" BorderBrush="#FF00D5C3" Foreground="#FF00D5C3" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Margin="58.309,0,0,-37.71" VerticalAlignment="Bottom">
+							<CheckBox.RenderTransform>
+								<TransformGroup>
+									<ScaleTransform ScaleX="2" ScaleY="2"/>
+									<SkewTransform/>
+									<RotateTransform/>
+									<TranslateTransform/>
+								</TransformGroup>
+							</CheckBox.RenderTransform>
+						</CheckBox>
+						<RadioButton x:Name="_5k" Content="&#xd;&#xa;" Width="14.74" Background="{x:Null}" BorderBrush="#FF00D5C3" RenderTransformOrigin="0.294,-0.124" Foreground="#FF00D5C3" HorizontalAlignment="Left" Margin="78.63,137.663,0,135.663">
+							<RadioButton.RenderTransform>
+								<TransformGroup>
+									<ScaleTransform ScaleX="2.3" ScaleY="2.3"/>
+									<SkewTransform/>
+									<RotateTransform/>
+									<TranslateTransform X="-3.949" Y="-12.718"/>
+								</TransformGroup>
+							</RadioButton.RenderTransform>
+						</RadioButton>
+						<RadioButton x:Name="_10k" Content="&#xa;" Width="14.74" Background="{x:Null}" BorderBrush="#FF00D5C3" RenderTransformOrigin="0.294,-0.124" Foreground="#FF00D5C3" HorizontalAlignment="Right" Margin="0,135.663,6.63,137.663">
+							<RadioButton.RenderTransform>
+								<TransformGroup>
+									<ScaleTransform ScaleX="2.3" ScaleY="2.3"/>
+									<SkewTransform/>
+									<RotateTransform/>
+									<TranslateTransform X="-3.949" Y="-12.718"/>
+								</TransformGroup>
+							</RadioButton.RenderTransform>
+						</RadioButton>
+						<Canvas x:Name="Итоги" Height="114" Margin="-96.5,0,-3.5,-174" VerticalAlignment="Bottom">
+							<TextBlock x:Name="Остаток_на_счету_после_хода_" Foreground="#FFFFFFFF" FontSize="37.333" FontFamily="Oswald" Height="68.073" LineStackingStrategy="BlockLineHeight" Canvas.Left="-43.209" LineHeight="36.024" TextAlignment="Left" TextWrapping="Wrap" Text="Остаток на счету после хода:" Canvas.Top="85.27" Width="445.112">
+								<TextBlock.RenderTransform>
+									<MatrixTransform Matrix="0.601,0,0,0.602,0,0"/>
+								</TextBlock.RenderTransform>
+							</TextBlock>
+							<Path x:Name="inputfield_копия_13" Data="F1M6.475,1.616C6.475,1.616 76.951,1.616 76.951,1.616 79.713,1.616 81.951,3.854 81.951,6.616 81.951,6.616 81.951,31.017 81.951,31.017 81.951,33.778 79.713,36.017 76.951,36.017 76.951,36.017 6.475,36.017 6.475,36.017 3.714,36.017 1.475,33.778 1.475,31.017 1.475,31.017 1.475,6.616 1.475,6.616 1.475,3.854 3.714,1.616 6.475,1.616z" Height="38" Canvas.Left="219" Canvas.Top="39" Width="83">
+								<Path.Fill>
+									<SolidColorBrush Color="#FF1D2331" Opacity="0.102"/>
+								</Path.Fill>
+							</Path>
+							<TextBlock x:Name="Итого_затрат_на_ход_" Foreground="#FFFFFFFF" FontSize="32" FontFamily="Oswald" Height="34.814" LineStackingStrategy="BlockLineHeight" Canvas.Left="24.707" LineHeight="29.345" TextAlignment="Left" TextWrapping="Wrap" Text="Итого затрат на ход:" Canvas.Top="48.194" Width="322.023">
+								<TextBlock.RenderTransform>
+									<MatrixTransform Matrix="0.738,0,0,0.739,0,0"/>
+								</TextBlock.RenderTransform>
+							</TextBlock>
+							<Path x:Name="inputfield_копия_16" Data="F1M6.475,1.12C6.475,1.12 76.951,1.12 76.951,1.12 79.713,1.12 81.951,3.359 81.951,6.12 81.951,6.12 81.951,30.521 81.951,30.521 81.951,33.283 79.713,35.521 76.951,35.521 76.951,35.521 6.475,35.521 6.475,35.521 3.714,35.521 1.475,33.283 1.475,30.521 1.475,30.521 1.475,6.12 1.475,6.12 1.475,3.359 3.714,1.12 6.475,1.12z" Height="37" Canvas.Left="219" Canvas.Top="0" Width="83">
+								<Path.Fill>
+									<SolidColorBrush Color="#FF1D2331" Opacity="0.102"/>
+								</Path.Fill>
+							</Path>
+							<TextBlock x:Name="Выплата_банку_по_ссуде_" Foreground="#FFFFFFFF" FontSize="32" FontFamily="Oswald" Height="29.401" LineStackingStrategy="BlockLineHeight" Canvas.Left="-21.115" LineHeight="29.345" TextAlignment="Left" TextWrapping="Wrap" Text="Выплата банку по ссуде:" Canvas.Top="9.699" Width="335.572">
+								<TextBlock.RenderTransform>
+									<MatrixTransform Matrix="0.738,0,0,0.739,0,0"/>
+								</TextBlock.RenderTransform>
+							</TextBlock>
+							<Path x:Name="inputfield_копия_14" Data="F1M6.475,1.812C6.475,1.812 76.951,1.812 76.951,1.812 79.713,1.812 81.951,4.05 81.951,6.812 81.951,6.812 81.951,31.213 81.951,31.213 81.951,33.974 79.713,36.213 76.951,36.213 76.951,36.213 6.475,36.213 6.475,36.213 3.714,36.213 1.475,33.974 1.475,31.213 1.475,31.213 1.475,6.812 1.475,6.812 1.475,4.05 3.714,1.812 6.475,1.812z" Height="38" Canvas.Left="219" Canvas.Top="76" Width="83">
+								<Path.Fill>
+									<SolidColorBrush Color="#FF1D2331" Opacity="0.102"/>
+								</Path.Fill>
+							</Path>
+							<Grid Height="106" Canvas.Left="218.001" Canvas.Top="8" Width="83">
+								<TextBlock x:Name="Dolg" Height="30.5" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF00D5C3" FontFamily="Oswald" FontSize="21.333" Text="1424" TextAlignment="Right" Margin="0,-3.5,0,0"/>
+								<TextBlock x:Name="Rashod" TextWrapping="Wrap" Foreground="#FF00D5C3" FontFamily="Oswald" FontSize="21.333" Text="1424" TextAlignment="Right" Margin="0,34.5,0,41"/>
+								<TextBlock x:Name="Ostatok" TextWrapping="Wrap" Foreground="#FF00D5C3" FontFamily="Oswald" FontSize="21.333" Text="1424" TextAlignment="Right" Margin="0,0,0,1.682" Height="30.5" VerticalAlignment="Bottom"/>
+							</Grid>
+						</Canvas>
+					</Grid>
+				</Canvas>
+				<Canvas x:Name="Банк" Height="228" Canvas.Left="468" Canvas.Top="143" Width="301">
+					<Canvas x:Name="Банк1" Height="228" Canvas.Left="0" Canvas.Top="0" Width="301">
+						<Canvas x:Name="Группа_1" Height="43" Canvas.Left="13" Canvas.Top="23" Width="278">
+							<Image x:Name="inputfield_копия_4" Height="43" Canvas.Left="202" Source="/Mang;component/New Folder1/Игровое поле imp_Images/inputfield копия 153.png" Canvas.Top="0" Width="76"/>
+							<TextBlock x:Name="Максимальная_цена_ЕГП" Foreground="#FFFFFFFF" FontSize="32" FontFamily="Oswald" Height="40.327" LineStackingStrategy="BlockLineHeight" Canvas.Left="-0.943" LineHeight="38" TextAlignment="Left" TextWrapping="Wrap" Text="Максимальная цена ЕГП" Canvas.Top="11.896" Width="391.281">
+								<TextBlock.RenderTransform>
+									<MatrixTransform Matrix="0.505,0,0,0.506,0,0"/>
+								</TextBlock.RenderTransform>
+							</TextBlock>
+						</Canvas>
+						<Canvas x:Name="Группа_1_копия" Height="43" Canvas.Left="13" Canvas.Top="77" Width="278">
+							<Image x:Name="inputfield_копия_3" Height="43" Canvas.Left="202" Source="/Mang;component/New Folder1/Игровое поле imp_Images/inputfield копия 152.png" Canvas.Top="0" Width="76"/>
+							<TextBlock x:Name="Минимальная_цена_ЕСМ" Foreground="#FFFFFFFF" FontSize="32" FontFamily="Oswald" Height="40.327" LineStackingStrategy="BlockLineHeight" Canvas.Left="-0.943" LineHeight="38" TextAlignment="Left" TextWrapping="Wrap" Text="Минимальная цена ЕСМ" Canvas.Top="11.718" Width="401.182">
+								<TextBlock.RenderTransform>
+									<MatrixTransform Matrix="0.505,0,0,0.506,0,0"/>
+								</TextBlock.RenderTransform>
+							</TextBlock>
+						</Canvas>
+						<Canvas x:Name="Группа_1_копия_2" Height="42" Canvas.Left="13" Canvas.Top="131" Width="278">
+							<Image x:Name="inputfield_копия_1" Height="42" Canvas.Left="202" Source="/Mang;component/New Folder1/Игровое поле imp_Images/inputfield копия 151.png" Canvas.Top="0" Width="76"/>
+							<TextBlock x:Name="Максимальная_кол_во_ЕГП" Foreground="#FFFFFFFF" FontSize="38" FontFamily="Oswald" Height="42.303" LineStackingStrategy="BlockLineHeight" Canvas.Left="-0.943" LineHeight="38" TextAlignment="Left" TextWrapping="Wrap" Canvas.Top="10.153" Width="391.281"><TextBlock.RenderTransform>
+									<MatrixTransform Matrix="0.505,0,0,0.506,0,0"/>
+								</TextBlock.RenderTransform><Run FontSize="32" Text="Максимальная "/><Run Text="кол-во ЕГП"/></TextBlock>
+						</Canvas>
+						<Canvas x:Name="Группа_1_копия_3" Height="43" Canvas.Left="13" Canvas.Top="183" Width="278">
+							<Image x:Name="inputfield_копия_15" Height="43" Canvas.Left="202" Source="/Mang;component/New Folder1/Игровое поле imp_Images/inputfield копия 15.png" Canvas.Top="0" Width="76"/>
+							<TextBlock x:Name="Максимальная_кол_во_ЕСМ" Foreground="#FFFFFFFF" FontSize="32" FontFamily="Oswald" Height="42.303" LineStackingStrategy="BlockLineHeight" Canvas.Left="-0.943" LineHeight="38" TextAlignment="Left" TextWrapping="Wrap" Text="Максимальная кол-во ЕСМ" Canvas.Top="10.813" Width="385.34">
+								<TextBlock.RenderTransform>
+									<MatrixTransform Matrix="0.505,0,0,0.506,0,0"/>
+								</TextBlock.RenderTransform>
+							</TextBlock>
+						</Canvas>
+						<TextBlock x:Name="Банк2" Foreground="#FFFFFFFF" FontSize="16.444" FontFamily="Myriad Pro" IsHyphenationEnabled="True" Canvas.Left="-2.108" TextAlignment="Center" TextWrapping="Wrap" Text="Банк" Canvas.Top="-7.508">
+							<TextBlock.RenderTransform>
+								<MatrixTransform Matrix="1.423,0,0,1.413,0,0"/>
+							</TextBlock.RenderTransform>
+						</TextBlock>
+						<Image x:Name="background_bank" Height="209" Canvas.Left="0" Source="/Mang;component/New Folder1/Игровое поле imp_Images/background_bank.png" Canvas.Top="19" Width="301"/>
+					</Canvas>
+					<Grid Height="206.5" Canvas.Left="214.5" Canvas.Top="21.5" Width="78.5">
+						<TextBlock x:Name="Max_EGP" Height="30.5" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF00D5C3" FontFamily="Oswald" FontSize="21.333" Text="1424" TextAlignment="Right" Margin="7,8.5,5,0"/>
+						<TextBlock x:Name="Min_ESM" Height="30.5" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF00D5C3" FontFamily="Oswald" FontSize="21.333" Text="1424" TextAlignment="Right" Margin="7,62,5,0"/>
+						<TextBlock x:Name="Max_Kol_EGP" TextWrapping="Wrap" Foreground="#FF00D5C3" FontFamily="Oswald" FontSize="21.333" Text="1424" TextAlignment="Right" Margin="7,0,5,61" Height="30.5" VerticalAlignment="Bottom"/>
+						<TextBlock x:Name="Max_Kol_ESM" TextWrapping="Wrap" Foreground="#FF00D5C3" FontFamily="Oswald" FontSize="21.333" Text="1424" TextAlignment="Right" Margin="7,0,5,8.5" Height="30.5" VerticalAlignment="Bottom"/>
+					</Grid>
+				</Canvas>
+				<Canvas x:Name="Top" Height="119" Canvas.Left="0" Canvas.Top="0" Width="792">
+					<Image x:Name="background_top" Height="119" Canvas.Left="0" Source="/Mang;component/New Folder1/Игровое поле imp_Images/background_top.png" Canvas.Top="0" Width="792"/>
+					<WrapPanel Canvas.Left="20" Orientation="Vertical" Canvas.Top="50" Width="560">
+						<Canvas x:Name="HEADER" Height="64" Width="560">
+							<Canvas x:Name="_1_pl" Height="64" Canvas.Left="0" Canvas.Top="0" Width="128">
+								<Image x:Name="_1_ava" Height="64" Canvas.Left="0" Source="/Mang;component/New Folder1/Игровое поле imp_Images/CUBEN-12-Space-9-iPad3-SimonCPage2.png" Canvas.Top="0" Width="65"/>
+								<TextBlock x:Name="Счёт__1000__" Foreground="#FFFFFFFF" FontSize="48" FontFamily="Oswald" IsHyphenationEnabled="True" Canvas.Left="69.569" TextAlignment="Left" TextWrapping="Wrap" Text="Счёт: " Canvas.Top="45.532">
+									<TextBlock.RenderTransform>
+										<MatrixTransform Matrix="0.27,0,0,0.271,0,0"/>
+									</TextBlock.RenderTransform>
+								</TextBlock>
+								<Image x:Name="crown" Height="18" Canvas.Left="67" Source="/Mang;component/New Folder1/Игровое поле imp_Images/crown.png" Canvas.Top="13" Width="18"/>
+								<TextBlock x:Name="name1" Height="15.167" TextWrapping="Wrap" Foreground="White" FontFamily="Oswald" Canvas.Left="69" Canvas.Top="31.835" Width="59" FontSize="13.333" Text="name1"/>
+								<TextBlock x:Name="money1" Height="15.167" TextWrapping="Wrap" Foreground="White" FontFamily="Oswald" Canvas.Left="96.666" Canvas.Top="47.335" Width="38.667" FontSize="10.667" Text="23123" FontStyle="Italic"/>
+							</Canvas>
+							<Canvas x:Name="_2_pl" Height="64" Canvas.Left="139" Canvas.Top="0" Width="135">
+								<Image x:Name="_2_ava" Height="64" Canvas.Left="0" Source="/Mang;component/New Folder1/Игровое поле imp_Images/CUBEN-12-Space-9-iPad3-SimonCPage1.png" Canvas.Top="0" Width="65"/>
+								<Image Height="30" Canvas.Left="56" Source="pack://siteoforigin:,,,/crown_main.png" Stretch="Fill" Canvas.Top="5" Width="38"/>
+								<TextBlock x:Name="Счёт__1000___копия" Foreground="#FFFFFFFF" FontSize="48" FontFamily="Oswald" IsHyphenationEnabled="True" Canvas.Left="68.783" TextAlignment="Left" TextWrapping="Wrap" Text="Счёт: " Canvas.Top="45.532">
+									<TextBlock.RenderTransform>
+										<MatrixTransform Matrix="0.27,0,0,0.271,0,0"/>
+									</TextBlock.RenderTransform>
+								</TextBlock>
+								<Image x:Name="crown_копия" Height="18" Canvas.Left="67" Source="/Mang;component/New Folder1/Игровое поле imp_Images/crown копия.png" Canvas.Top="13" Width="18" OpacityMask="#FFCAF70C"/>
+								<TextBlock x:Name="name2" Height="15.167" TextWrapping="Wrap" Foreground="White" FontFamily="Oswald" Canvas.Left="69" Canvas.Top="31.835" Width="59" FontSize="13.333" Text="name2"/>
+								<TextBlock x:Name="money2" Height="15.167" TextWrapping="Wrap" Foreground="White" FontFamily="Oswald" Canvas.Left="96.666" Canvas.Top="47.335" Width="38.667" FontSize="10.667" Text="2323" FontStyle="Italic"/>
+							</Canvas>
+							<Canvas x:Name="_3_pl" Height="64" Canvas.Left="291" Canvas.Top="0" Width="126">
+								<Image x:Name="crown_копия_2" Height="18" Canvas.Left="66" Source="/Mang;component/New Folder1/Игровое поле imp_Images/crown копия 2.png" Canvas.Top="13" Width="18"/>
+								<Image x:Name="_3_ava" Height="64" Canvas.Left="0" Source="/Mang;component/New Folder1/Игровое поле imp_Images/CUBEN-12-Space-9-iPad3-SimonCPage.png" Canvas.Top="0" Width="64"/>
+								<TextBlock x:Name="Счёт__1000___копия_2" Foreground="#FFFFFFFF" FontSize="48" FontFamily="Oswald" IsHyphenationEnabled="True" Canvas.Left="68.384" TextAlignment="Left" TextWrapping="Wrap" Text="Счёт" Canvas.Top="45.532">
+									<TextBlock.RenderTransform>
+										<MatrixTransform Matrix="0.27,0,0,0.271,0,0"/>
+									</TextBlock.RenderTransform>
+								</TextBlock>
+								<TextBlock x:Name="name3" Height="15.167" TextWrapping="Wrap" Foreground="White" FontFamily="Oswald" Canvas.Left="69" Canvas.Top="31.835" Width="59" FontSize="13.333" Text="name3"/>
+								<TextBlock x:Name="money3" Height="15.167" TextWrapping="Wrap" Foreground="White" FontFamily="Oswald" Canvas.Left="96.666" Canvas.Top="47.335" Width="38.667" FontSize="10.667" Text="2323" FontStyle="Italic"/>
+							</Canvas>
+							<Canvas x:Name="_4_pl" Height="64" Canvas.Left="433" Canvas.Top="0" Width="127">
+								<Image x:Name="crown_копия_3" Height="18" Canvas.Left="67" Source="/Mang;component/New Folder1/Игровое поле imp_Images/crown копия 3.png" Canvas.Top="11" Width="18"/>
+								<Image x:Name="_4_ava" Height="64" Canvas.Left="0" Source="/Mang;component/New Folder1/Игровое поле imp_Images/4 аватар.png" Canvas.Top="0" Width="65"/>
+								<TextBlock x:Name="Счёт__1000___копия_3" Foreground="#FFFFFFFF" FontSize="48" FontFamily="Oswald" IsHyphenationEnabled="True" Canvas.Left="69.437" TextAlignment="Left" TextWrapping="Wrap" Text="Счёт: " Canvas.Top="45.532">
+									<TextBlock.RenderTransform>
+										<MatrixTransform Matrix="0.27,0,0,0.271,0,0"/>
+									</TextBlock.RenderTransform>
+								</TextBlock>
+								<TextBlock x:Name="name4" Height="15.167" TextWrapping="Wrap" Foreground="White" FontFamily="Oswald" Canvas.Left="69" Canvas.Top="31.835" Width="59" FontSize="13.333" Text="name4"/>
+								<TextBlock x:Name="money4" Height="15.167" TextWrapping="Wrap" Foreground="White" FontFamily="Oswald" Canvas.Left="96.666" Canvas.Top="47.335" Width="38.667" FontSize="10.667" Text="2323" FontStyle="Italic"/>
+							</Canvas>
+						</Canvas>
+					</WrapPanel>
+					<TextBlock x:Name="Время_игры___00_00_60" Foreground="#FFFFFFFF" FontSize="89.333" FontFamily="Oswald" Canvas.Left="599.65" TextWrapping="Wrap" Text="Время игры:  " Canvas.Top="54.58">
+						<TextBlock.RenderTransform>
+							<MatrixTransform Matrix="0.227,0,0,0.227,0,0"/>
+						</TextBlock.RenderTransform>
+					</TextBlock>
+					<TextBlock x:Name="Время_хода___00_00_60" Foreground="#FFFFFFFF" FontSize="89.333" FontFamily="Oswald" Canvas.Left="600.155" TextWrapping="Wrap" Text="Время хода:  " Canvas.Top="84.203">
+						<TextBlock.RenderTransform>
+							<MatrixTransform Matrix="0.227,0,0,0.227,0,0"/>
+						</TextBlock.RenderTransform>
+					</TextBlock>
+					<Image Height="49.844" Canvas.Left="323" Source="pack://siteoforigin:,,,/log.png" Stretch="Fill" Width="159.5" Canvas.Top="2.5"/>
+					<Button Canvas.Left="631.705" Style="{DynamicResource ButtonStyle1}" Canvas.Top="12.456">
+						<Button.Resources>
+							<Style x:Key="ButtonStyle1" TargetType="{x:Type Button}">
+								<Setter Property="Template">
+									<Setter.Value>
+										<ControlTemplate TargetType="{x:Type Button}">
+											<Grid>
+												<ContentPresenter x:Name="contentPresenter" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" Cursor="Hand" OpacityMask="Black" Content="Справка"/>
+												<Image x:Name="Help_icon" Height="Auto" Source="Help icon1.png" Width="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Hidden">
+													<Image.RenderTransform>
+														<TransformGroup>
+															<ScaleTransform/>
+															<SkewTransform/>
+															<RotateTransform/>
+															<TranslateTransform X="-85"/>
+														</TransformGroup>
+													</Image.RenderTransform>
+												</Image>
+											</Grid>
+											<ControlTemplate.Triggers>
+												<Trigger Property="IsMouseOver" Value="True" SourceName="contentPresenter">
+													<Setter Property="Visibility" TargetName="Help_icon" Value="Visible"/>
+												</Trigger>
+												<Trigger Property="IsFocused" Value="True"/>
+												<Trigger Property="IsDefaulted" Value="True"/>
+												<Trigger Property="IsPressed" Value="True"/>
+												<Trigger Property="IsEnabled" Value="False"/>
+											</ControlTemplate.Triggers>
+										</ControlTemplate>
+									</Setter.Value>
+								</Setter>
+								<Setter Property="FontFamily" Value="Myriad Pro"/>
+								<Setter Property="FontSize" Value="30.006"/>
+								<Setter Property="Foreground" Value="White"/>
+							</Style>
+						</Button.Resources>
+						<Button.RenderTransform>
+							<MatrixTransform Matrix="0.78,0,0,0.78,0,0"/>
+						</Button.RenderTransform>
+					</Button>
+					<Button x:Name="Ex" Content="Button" Height="28" Canvas.Left="745" Style="{DynamicResource ButtonStyle1}" Canvas.Top="12" Width="30"/>
+				</Canvas>
+				<Canvas x:Name="Вверх" Height="0" Canvas.Left="6" Canvas.Top="7" Width="0">
+					<TextBlock x:Name="Time_game" Height="30.5" TextWrapping="Wrap" Foreground="#FF00D5C3" FontFamily="Oswald" FontSize="21.333" TextAlignment="Right" Canvas.Left="695" Canvas.Top="47.5" Width="81.5"><Run Text="06"/><Run Language="ru-ru" Text=":35"/></TextBlock>
+					<TextBlock x:Name="Time_hod" Height="30.5" TextWrapping="Wrap" Foreground="#FF00D5C3" FontFamily="Oswald" FontSize="21.333" TextAlignment="Right" Canvas.Left="695" Canvas.Top="78" Width="81.5"><Run Text="0"/><Run Language="ru-ru" Text="1:05"/></TextBlock>
+				</Canvas>
+				<Canvas x:Name="Кнопки" Height="171" Canvas.Left="582" Canvas.Top="411" Width="189"/>
+				<Button x:Name="Save_game" Content="Сохранить игру" Height="35.5" Canvas.Left="584.5" Canvas.Top="546.5" Width="184.5" Background="#FF00D5C3" Foreground="White" FontFamily="Oswald" FontSize="21.333" Cursor="Hand" BorderBrush="{x:Null}" Margin="0" RenderTransformOrigin="0.5,0.5">
+					<Button.LayoutTransform>
+						<TransformGroup>
+							<ScaleTransform ScaleY="1" ScaleX="1"/>
+							<SkewTransform AngleY="0" AngleX="0"/>
+							<RotateTransform Angle="0"/>
+							<TranslateTransform/>
+						</TransformGroup>
+					</Button.LayoutTransform>
+				</Button>
+				<Button x:Name="Next" Content="Пропустить ход" Height="35.5" Canvas.Left="584.5" Canvas.Top="501" Width="184.5" Background="#FF00D5C3" Foreground="White" FontFamily="Oswald" FontSize="21.333" Cursor="Hand" BorderBrush="{x:Null}" Margin="0" RenderTransformOrigin="0.5,0.5">
+					<Button.LayoutTransform>
+						<TransformGroup>
+							<ScaleTransform ScaleY="1" ScaleX="1"/>
+							<SkewTransform AngleY="0" AngleX="0"/>
+							<RotateTransform Angle="0"/>
+							<TranslateTransform/>
+						</TransformGroup>
+					</Button.LayoutTransform>
+				</Button>
+				<Button x:Name="Take_hod" Content="Сделать ход" Height="35.5" Canvas.Left="584.5" Canvas.Top="456" Width="184.5" Background="#FF00D5C3" Foreground="White" FontFamily="Oswald" FontSize="21.333" Cursor="Hand" BorderBrush="{x:Null}" Margin="0" RenderTransformOrigin="0.5,0.5">
+					<Button.LayoutTransform>
+						<TransformGroup>
+							<ScaleTransform ScaleY="1" ScaleX="1"/>
+							<SkewTransform AngleY="0" AngleX="0"/>
+							<RotateTransform Angle="0"/>
+							<TranslateTransform/>
+						</TransformGroup>
+					</Button.LayoutTransform>
+				</Button>
+				<Button x:Name="Otchet" Content="Сформировать отчёт" Height="35.5" Canvas.Left="584.5" Canvas.Top="411.5" Width="184.5" Background="#FF00D5C3" Foreground="White" FontFamily="Oswald" FontSize="21.333" Cursor="Hand" BorderBrush="{x:Null}" Margin="0" RenderTransformOrigin="0.5,0.5">
+					<Button.LayoutTransform>
+						<TransformGroup>
+							<ScaleTransform ScaleY="1" ScaleX="1"/>
+							<SkewTransform AngleY="0" AngleX="0"/>
+							<RotateTransform Angle="0"/>
+							<TranslateTransform/>
+						</TransformGroup>
+					</Button.LayoutTransform>
+				</Button>
+			</Canvas>
+		</Canvas>
+	</Grid>
+</UserControl>

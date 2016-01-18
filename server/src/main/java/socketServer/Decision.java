@@ -16,15 +16,15 @@ public class Decision {
         this.FCount = FCount;
     }
 
-    public void setADCount(int ADCount) {
-        this.ADCount = ADCount;
+    public void setAFCount(int AFCount) {
+        this.AFCount = AFCount;
     }
 
     public void setUFCount(int UFCount) {
         this.UFCount = UFCount;
     }
 
-    private int ADCount;
+    private int AFCount;
     private int UFCount;
 
     public int getESM() {
@@ -70,8 +70,8 @@ public class Decision {
         return FCount;
     }
 
-    public int getADCount() {
-        return ADCount;
+    public int getAFCount() {
+        return AFCount;
     }
 
     public int getUFCount() {

@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfPrototype1", "WpfPrototype1\WpfPrototype1.csproj", "{319c9997-e655-4880-a456-2a6963912008}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfPrototype1Screens", "WpfPrototype1\WpfPrototype1Screens\WpfPrototype1Screens.csproj", "{c22f9532-e4a6-48cf-a5bb-97216b298405}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mang", "..\..\..\..\..\Google Диск\ManG\Mang_Copy1_Copy1\Mang\Mang.csproj", "{c2afc6a9-b950-470e-8271-1dff17059300}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{319C9997-E655-4880-A456-2A6963912008}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{319C9997-E655-4880-A456-2A6963912008}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{319C9997-E655-4880-A456-2A6963912008}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{319C9997-E655-4880-A456-2A6963912008}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C22F9532-E4A6-48CF-A5BB-97216B298405}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C22F9532-E4A6-48CF-A5BB-97216B298405}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C22F9532-E4A6-48CF-A5BB-97216B298405}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C22F9532-E4A6-48CF-A5BB-97216B298405}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2AFC6A9-B950-470E-8271-1DFF17059300}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2AFC6A9-B950-470E-8271-1DFF17059300}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2AFC6A9-B950-470E-8271-1DFF17059300}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2AFC6A9-B950-470E-8271-1DFF17059300}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

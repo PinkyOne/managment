@@ -73,15 +73,16 @@ public class Bank {
         }
     }
 
+    Map<Integer, Map<String, Integer>> currentStates;
+
     private void makeDecision() throws Exception {
         makeMapsOredered();
-        Map<Integer, Map<String, Integer>> currentStates =
-                DBConnector.getCurrentClientsState(
-                        Game.getInstance().getGameId(),
-                        Game.getInstance().getSaveId());
+        refreshStates();
         Map<Integer, Decision> decisions = new HashMap<>();
         for (int id : sellList.keySet()) {
-            decisions.put(id, new Decision(id));
+            Decision decision = new Decision(id);
+
+            decisions.put(id, decision);
         }
 
         makeESMDecision(decisions);
@@ -90,15 +91,72 @@ public class Bank {
 
         makeLoanDecision(decisions);
 
-        setNewStates(currentStates, decisions);
+        makeFabricsDecision(decisions);
+
+        makeCashDecision(decisions);
+
+        setNewStates(decisions);
+    }
+
+    private void makeCashDecision(Map<Integer, Decision> decisions) {
+        for (int id : sellList.keySet()) {
+            Decision decision = new Decision(id);
+            Map<String, Integer> currentState = currentStates.get(Game.getInstance().getClient(id).getId());
+            int newCashValue = currentState.get("CASH");
+            newCashValue -= (decision.getFCount() * fabricCost
+                    + decision.getUFCount() * automationCost
+                    + decision.getAFCount() * automatedFabricCost);
+            newCashValue += decision.getLoan();
+            newCashValue += (decision.getEGP() * EGPLevels.get(level).getRight());
+            newCashValue -= (decision.getESM() * ESMLevels.get(level).getRight());
+            decision.setCash(newCashValue);
+        }
+    }
+
+    private void makeFabricsDecision(Map<Integer, Decision> decisions) {
+        for (int id : sellList.keySet()) {
+            Decision decision = new Decision(id);
+            decision.setAFCount(buildAFabricCountList.get(id));
+            decision.setFCount(buildFabricCountList.get(id));
+            decision.setUFCount(automateFabricCountList.get(id));
+        }
+    }
+
+    private void refreshStates() {
+        currentStates =
+                DBConnector.getCurrentClientsState(
+                        Game.getInstance().getGameId(),
+                        Game.getInstance().getSaveId());
     }
 
     private void makeLoanDecision(Map<Integer, Decision> decisions) {
-        khjvkjhvkjghv
+        for (Map.Entry<Integer, Integer> entry : loanCountList.entrySet()) {
+            Map<String, Integer> currentState = currentStates.get(entry.getKey());
+            int currentLoan = currentState.get("LOAN");
+            int currentCapital = getCurCap(currentState);
+            if (currentLoan + entry.getValue() <= currentCapital / 2) {
+                decisions.get(entry.getKey()).setLoan(entry.getValue());
+            }
+        }
     }
 
-    private Map<Integer, Map<String, Integer>> setNewStates(Map<Integer, Map<String, Integer>> currentStates,
-                                                            Map<Integer, Decision> decisions) throws Exception {
+    private int getCurCap(Map<String, Integer> currentState) {
+        int capital = 0;
+        int cash = currentState.get("CASH");
+        int esm = currentState.get("ESM");
+        int egp = currentState.get("EGP");
+        int fCount = currentState.get("FABRIC_COUNT");
+        int aFCount = currentState.get("A_FABRIC_COUNT");
+        fCount += currentState.get("U_FABRIC_COUNT");
+        capital = cash +
+                fCount * fabricCost +
+                aFCount * automatedFabricCost +
+                esm * ESMLevels.get(level).getRight() +
+                egp * EGPLevels.get(level).getRight();
+        return capital;
+    }
+
+    private Map<Integer, Map<String, Integer>> setNewStates(Map<Integer, Decision> decisions) throws Exception {
         Map<Integer, Map<String, Integer>> newStates = new HashMap<>();
         for (Map.Entry<Integer, Map<String, Integer>> entry : currentStates.entrySet()) {
             int sessionId = Game.getInstance().getClientSessionId(entry.getKey());
@@ -109,14 +167,14 @@ public class Bank {
             Map<String, Integer> map = new HashMap<>();
             Map<String, Integer> oldMap = entry.getValue();
 
-
             map.put("CASH", oldMap.get("CASH") + decision.getCash());
             map.put("ESM", oldMap.get("ESM") + decision.getESM());
             map.put("EGP", oldMap.get("EGP") - decision.getEGP());
             map.put("LOAN", oldMap.get("LOAN") + decision.getLoan());
-            map.put("FABRIC_COUNT", oldMap.get("FABRIC_COUNT") + decision.getFCount());
-            map.put("A_FABRIC_COUNT", oldMap.get("A_FABRIC_COUNT") + decision.getADCount());
+            map.put("FABRIC_COUNT", oldMap.get("FABRIC_COUNT") + decision.getFCount() - decision.getUFCount());
+            map.put("A_FABRIC_COUNT", oldMap.get("A_FABRIC_COUNT") + decision.getAFCount());
             map.put("U_FABRIC_COUNT", oldMap.get("U_FABRIC_COUNT") + decision.getUFCount());
+
             newStates.put(entry.getKey(), map);
         }
         return newStates;

@@ -1,0 +1,61 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" x:Name="Screen_3_Name"
+	mc:Ignorable="d"
+	x:Class="WpfPrototype1Screens.Screen_3"
+	Width="765" Height="565">
+	<UserControl.Resources>
+		<Style x:Key="ButtonStyle2" TargetType="{x:Type Button}">
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="{x:Type Button}">
+						<Grid>
+							<Image x:Name="x_копия" Source="x копия3.png"/>
+							<Rectangle x:Name="rectangle" Fill="{x:Null}" Stroke="White" StrokeThickness="2" StrokeMiterLimit="12" Visibility="Hidden"/>
+						</Grid>
+						<ControlTemplate.Triggers>
+							<Trigger Property="IsFocused" Value="True"/>
+							<Trigger Property="IsDefaulted" Value="True"/>
+							<Trigger Property="IsMouseOver" Value="True" SourceName="x_копия">
+								<Setter Property="Visibility" TargetName="rectangle" Value="Visible"/>
+							</Trigger>
+							<Trigger Property="IsPressed" Value="True"/>
+							<Trigger Property="IsEnabled" Value="False"/>
+						</ControlTemplate.Triggers>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+	</UserControl.Resources>
+
+	<Grid x:Name="LayoutRoot" Background="White">
+		<Grid x:Name="LayoutRoot_Copy" Background="White">
+			<Image x:Name="BACKGROUND" Source="регистрация imp_Images/BACKGROUND.png" Margin="-22.18,8,-18,-10" VerticalAlignment="Center" Height="586.5"/>
+			<Path x:Name="background" Data="F1M1,1C1,1 786,1 786,1 786,1 786,48.161 786,48.161 786,48.161 1,48.161 1,48.161 1,48.161 1,1 1,1z" Fill="#FF00D5C3" Height="50" VerticalAlignment="Top" Stretch="Fill"/>
+			<Rectangle Fill="Black" Opacity="0.52"/>
+			<Canvas x:Name="правила_imp" ClipToBounds="True" HorizontalAlignment="Left" Height="575" UseLayoutRounding="False" VerticalAlignment="Top" Width="783">
+				<Canvas x:Name="Группа_1" Height="203" Canvas.Left="215" Canvas.Top="174" Width="349">
+					<Canvas x:Name="Подключение_к_игре" Height="350" Canvas.Left="0" Canvas.Top="0" Width="349">
+						<Canvas x:Name="Modal" Height="203" Canvas.Left="0" Canvas.Top="0" Width="349">
+							<Canvas x:Name="Background" Height="351" Canvas.Left="0" Canvas.Top="0" Width="349">
+								<Path x:Name="background2" Data="F1M1.911,1.694C1.911,1.694 347.321,1.694 347.321,1.694 347.321,1.694 347.321,201.095 347.321,201.095 347.321,201.095 1.911,201.095 1.911,201.095 1.911,201.095 1.911,1.694 1.911,1.694z" Fill="#FF282D38" Height="354.5" Canvas.Left="0" Canvas.Top="0" Width="349" Stretch="Fill"/>
+								<Button Content="Загрузить игру" Height="37" Canvas.Left="243" Canvas.Top="305" Width="106" Background="#FF161A21" BorderBrush="#FF3F3D3D" Foreground="White" FontFamily="Oswald"/>
+								<DataGrid Height="216" Canvas.Left="8" Canvas.Top="83" Width="234" Background="{x:Null}" BorderBrush="#FF00D5C3" Foreground="White" GridLinesVisibility="Horizontal" IsReadOnly="True"/>
+							</Canvas>
+							<Canvas x:Name="Content" Height="122" Canvas.Left="124" Canvas.Top="68" Width="102"/>
+							<Canvas x:Name="Title" Height="45" Canvas.Left="0" Canvas.Top="0" Width="349">
+								<Path x:Name="background1" Data="F1M1.911,1.694C1.911,1.694 347.321,1.694 347.321,1.694 347.321,1.694 347.321,43.875 347.321,43.875 347.321,43.875 1.911,43.875 1.911,43.875 1.911,43.875 1.911,1.694 1.911,1.694z" Fill="#FF00D5C3" Height="45" Canvas.Left="0" Canvas.Top="0" Width="349"/>
+								<TextBlock x:Name="Подключиться_к_игре" Foreground="#FFFFFFFF" FontSize="72.39" FontFamily="Oswald" Canvas.Left="15.728" TextAlignment="Left" TextWrapping="Wrap" Canvas.Top="10.921"><TextBlock.RenderTransform>
+										<MatrixTransform Matrix="0.254,0,0,0.254,0,0"/>
+									</TextBlock.RenderTransform><Run Language="ru-ru" Text="Загрузить игру"/></TextBlock>
+							</Canvas>
+						</Canvas>
+					</Canvas>
+				</Canvas>
+			</Canvas>
+			<Button x:Name="Ex" Content="Button" Height="28" Style="{DynamicResource ButtonStyle2}" Width="30" HorizontalAlignment="Right" Margin="0,183.5,214.5,0" VerticalAlignment="Top" RenderTransformOrigin="-0.583,2.089"/>
+		</Grid>
+	</Grid>
+</UserControl>

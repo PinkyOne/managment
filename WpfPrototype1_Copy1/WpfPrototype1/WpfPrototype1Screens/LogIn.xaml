@@ -1,0 +1,195 @@
+﻿</UserControl>
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" x:Name="LogIn_Name"
+	mc:Ignorable="d"
+	x:Class="WpfPrototype1Screens.LogIn"
+	Title="MainWindow"
+	Width="798" Height="621">
+	<Window.Resources>
+		<Style x:Key="Avatars" TargetType="{x:Type Button}">
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="{x:Type Button}">
+						<Grid>
+							<Image x:Name="_1_ic" Source="регистрация imp_Images\1 ic.png"/>
+							<ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+						</Grid>
+						<ControlTemplate.Triggers>
+							<Trigger Property="IsFocused" Value="True"/>
+							<Trigger Property="IsDefaulted" Value="True"/>
+							<Trigger Property="IsMouseOver" Value="True"/>
+							<Trigger Property="IsPressed" Value="True"/>
+							<Trigger Property="IsEnabled" Value="False"/>
+						</ControlTemplate.Triggers>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+		<Style x:Key="Info" TargetType="{x:Type Button}">
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="{x:Type Button}">
+						<Grid>
+							<ContentPresenter RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+						</Grid>
+						<ControlTemplate.Triggers>
+							<Trigger Property="IsFocused" Value="True"/>
+							<Trigger Property="IsDefaulted" Value="True"/>
+							<Trigger Property="IsMouseOver" Value="True"/>
+							<Trigger Property="IsPressed" Value="True"/>
+							<Trigger Property="IsEnabled" Value="False"/>
+						</ControlTemplate.Triggers>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+			<Setter Property="FontFamily" Value="Myriad Pro"/>
+			<Setter Property="FontSize" Value="30.006"/>
+			<Setter Property="Foreground" Value="White"/>
+		</Style>
+		<Style x:Key="Exit" TargetType="{x:Type Button}">
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="{x:Type Button}">
+						<Grid>
+							<Image x:Name="x_копия" Source="регистрация imp_Images\x копия.png"/>
+							<ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+						</Grid>
+						<ControlTemplate.Triggers>
+							<Trigger Property="IsFocused" Value="True"/>
+							<Trigger Property="IsDefaulted" Value="True"/>
+							<Trigger Property="IsMouseOver" Value="True"/>
+							<Trigger Property="IsPressed" Value="True"/>
+							<Trigger Property="IsEnabled" Value="False"/>
+						</ControlTemplate.Triggers>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+		<Style x:Key="Spravka" TargetType="{x:Type Button}">
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="{x:Type Button}">
+						<Grid>
+							<ContentPresenter RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+						</Grid>
+						<ControlTemplate.Triggers>
+							<Trigger Property="IsFocused" Value="True"/>
+							<Trigger Property="IsDefaulted" Value="True"/>
+							<Trigger Property="IsMouseOver" Value="True"/>
+							<Trigger Property="IsPressed" Value="True"/>
+							<Trigger Property="IsEnabled" Value="False"/>
+						</ControlTemplate.Triggers>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+			<Setter Property="FontFamily" Value="Myriad Pro"/>
+			<Setter Property="FontSize" Value="30.006"/>
+			<Setter Property="Foreground" Value="White"/>
+		</Style>
+	</Window.Resources>
+
+	<Grid x:Name="LayoutRoot" Margin="-7,0,-8,-6">
+		<WrapPanel x:Name="регистрация_imp" ClipToBounds="True" Height="587" UseLayoutRounding="False" Width="783">
+			<Canvas x:Name="Группа_1" Height="590" Width="787">
+				<Image x:Name="BACKGROUND" Height="589" Canvas.Left="1" Source="регистрация imp_Images\BACKGROUND.png" Canvas.Top="1" Width="785"/>
+				<Image x:Name="LOGO" Height="69" Canvas.Left="269" Source="регистрация imp_Images\LOGO.png" Canvas.Top="131" Width="254"/>
+				<Canvas x:Name="FORM" Height="295" Canvas.Left="245" Canvas.Top="231" Width="241">
+					<Canvas x:Name="Username" Height="256" Canvas.Left="0" Canvas.Top="0" Width="241">
+						<Image x:Name="User_icon" Height="35" Canvas.Left="57" Source="регистрация imp_Images\User icon.png" Canvas.Top="0" Width="184"/>
+						<Canvas x:Name="Avatars" Height="212" Canvas.Left="57" Canvas.Top="44" Width="184">
+							<Image x:Name="Ava_BG" Height="212" Canvas.Left="0" Source="регистрация imp_Images\Ava BG.png" Canvas.Top="0" Width="184"/>
+							<Image x:Name="SOCIAL" Height="202" Canvas.Left="14" Source="регистрация imp_Images\SOCIAL.png" Canvas.Top="3" Width="154" Opacity="0.6" Visibility="Hidden"/>
+							<Button x:Name="_10_ava" Content="Button" Height="42" Canvas.Left="127" Style="{DynamicResource 10 ava}" Canvas.Top="164" Width="42" Cursor="Hand"/>
+							<Button x:Name="_9_ava" Content="Button" Height="42" Canvas.Left="71" Style="{DynamicResource 9 ava}" Canvas.Top="164" Width="41" Cursor="Hand"/>
+							<Button x:Name="_8_ava" Content="Button" Height="42" Canvas.Left="14" Style="{DynamicResource 8 ava}" Canvas.Top="164" Width="42" Cursor="Hand"/>
+							<Button x:Name="_7_ava" Content="Button" Height="42" Canvas.Left="127" Style="{DynamicResource 7 ava}" Canvas.Top="111" Width="42" Cursor="Hand"/>
+							<Button x:Name="_6_ava" Content="Button" Height="42" Canvas.Left="71" Style="{DynamicResource 6 ava}" Canvas.Top="111" Width="41" Cursor="Hand"/>
+							<Button x:Name="_5_ava" Content="Button" Height="42" Canvas.Left="14" Style="{DynamicResource 5 ava}" Canvas.Top="111" Width="42" Cursor="Hand"/>
+							<Button x:Name="_4_ava" Content="Button" Height="42" Canvas.Left="127" Style="{DynamicResource 4 ava}" Canvas.Top="56" Width="42" Cursor="Hand"/>
+							<Button x:Name="_3_ava" Content="Button" Height="42" Canvas.Left="71" Style="{DynamicResource 3 ava}" Canvas.Top="56" Width="41" Cursor="Hand"/>
+							<Button x:Name="_2_ava" Content="Button" Height="42" Canvas.Left="14" Style="{DynamicResource 2 ava}" Canvas.Top="56" Width="42" Cursor="Hand"/>
+							<Button x:Name="_1_ava" Content="Button" Height="43" Canvas.Left="14" Style="{DynamicResource 1 ava}" Canvas.Top="4" Width="42" Cursor="Hand" Background="{x:Null}"/>
+						</Canvas>
+						<TextBlock x:Name="Логин" Foreground="#FFFFFFFF" FontSize="60.011" FontFamily="Oswald" Canvas.Left="-4.288" TextAlignment="Left" TextWrapping="Wrap" Text="Логин" Canvas.Top="0.857">
+							<TextBlock.RenderTransform>
+								<MatrixTransform Matrix="0.383,0,0,0.383,0,0"/>
+							</TextBlock.RenderTransform>
+						</TextBlock>
+						<TextBlock x:Name="Аватар" Foreground="#FFFFFFFF" FontSize="60.011" FontFamily="Oswald" Canvas.Left="-13.556" TextAlignment="Left" TextWrapping="Wrap" Text="Аватар" Canvas.Top="45.422">
+							<TextBlock.RenderTransform>
+								<MatrixTransform Matrix="0.383,0,0,0.383,0,0"/>
+							</TextBlock.RenderTransform>
+						</TextBlock>
+						<TextBox Height="35" Canvas.Left="92.667" TextWrapping="Wrap" Width="148.333" FontSize="18.667" FontFamily="/Mang;component/Fonts/#HelveticaNeueCyr" Background="{x:Null}" Foreground="White"/>
+					</Canvas>
+					<Button Content="Button" Height="35" Canvas.Left="57" Style="{DynamicResource ButtonStyle1}" Canvas.Top="260" Width="184">
+						<Button.Resources>
+							<Style x:Key="ButtonStyle1" TargetType="{x:Type Button}">
+								<Setter Property="Template">
+									<Setter.Value>
+										<ControlTemplate TargetType="{x:Type Button}">
+											<Grid>
+												<Image x:Name="Vhod" Source="регистрация imp_Images\Vhod.png"/>
+												<Rectangle x:Name="rectangle" Fill="{x:Null}" Stroke="White" StrokeThickness="2" StrokeMiterLimit="12" Visibility="Hidden"/>
+											</Grid>
+											<ControlTemplate.Triggers>
+												<Trigger Property="IsFocused" Value="True"/>
+												<Trigger Property="IsDefaulted" Value="True"/>
+												<Trigger Property="IsMouseOver" Value="True">
+													<Setter Property="Visibility" TargetName="rectangle" Value="Visible"/>
+												</Trigger>
+												<Trigger Property="IsPressed" Value="True"/>
+												<Trigger Property="IsEnabled" Value="False"/>
+											</ControlTemplate.Triggers>
+										</ControlTemplate>
+									</Setter.Value>
+								</Setter>
+							</Style>
+						</Button.Resources>
+					</Button>
+				</Canvas>
+				<Path x:Name="background" Data="F1M1,1C1,1 786,1 786,1 786,1 786,48.161 786,48.161 786,48.161 1,48.161 1,48.161 1,48.161 1,1 1,1z" Fill="#FF00D5C3" Height="50" Canvas.Left="0" Canvas.Top="0" Width="787"/>
+				<Button Canvas.Left="631.705" Style="{DynamicResource ButtonStyle1}" Canvas.Top="12.456">
+					<Button.Resources>
+						<Style x:Key="ButtonStyle1" TargetType="{x:Type Button}">
+							<Setter Property="Template">
+								<Setter.Value>
+									<ControlTemplate TargetType="{x:Type Button}">
+										<Grid>
+											<ContentPresenter x:Name="contentPresenter" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" Cursor="Hand" OpacityMask="Black" Content="Справка"/>
+											<Image x:Name="Help_icon" Height="Auto" Source="регистрация imp_Images/Help icon.png" Width="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Hidden">
+												<Image.RenderTransform>
+													<TransformGroup>
+														<ScaleTransform/>
+														<SkewTransform/>
+														<RotateTransform/>
+														<TranslateTransform X="-85"/>
+													</TransformGroup>
+												</Image.RenderTransform>
+											</Image>
+										</Grid>
+										<ControlTemplate.Triggers>
+											<Trigger Property="IsMouseOver" Value="True" SourceName="contentPresenter">
+												<Setter Property="Visibility" TargetName="Help_icon" Value="Visible"/>
+											</Trigger>
+											<Trigger Property="IsFocused" Value="True"/>
+											<Trigger Property="IsDefaulted" Value="True"/>
+											<Trigger Property="IsPressed" Value="True"/>
+											<Trigger Property="IsEnabled" Value="False"/>
+										</ControlTemplate.Triggers>
+									</ControlTemplate>
+								</Setter.Value>
+							</Setter>
+							<Setter Property="FontFamily" Value="Myriad Pro"/>
+							<Setter Property="FontSize" Value="30.006"/>
+							<Setter Property="Foreground" Value="White"/>
+						</Style>
+					</Button.Resources>
+					<Button.RenderTransform>
+						<MatrixTransform Matrix="0.78,0,0,0.78,0,0"/>
+					</Button.RenderTransform>
+				</Button>
+				<Button Content="Button" Height="28" Canvas.Left="745" Style="{DynamicResource ButtonStyle1}" Canvas.Top="12" Width="30"/>
+			</Canvas>
+		</WrapPanel>
+	</Grid>
+</Window>

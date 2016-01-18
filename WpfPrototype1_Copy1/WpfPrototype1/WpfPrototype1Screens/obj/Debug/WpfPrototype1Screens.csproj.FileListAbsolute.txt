@@ -1,0 +1,43 @@
+C:\Users\Иван\Desktop\4 курс 1 симестр\Зелен Курсовая\sketch\WpfPrototype1\WpfPrototype1\bin\Debug\WpfPrototype1.Screens.dll
+C:\Users\Иван\Desktop\4 курс 1 симестр\Зелен Курсовая\sketch\WpfPrototype1\WpfPrototype1\bin\Debug\WpfPrototype1.Screens.pdb
+C:\Users\Иван\Desktop\4 курс 1 симестр\Зелен Курсовая\sketch\WpfPrototype1\WpfPrototype1\WpfPrototype1Screens\obj\Debug\WpfPrototype1Screens.csprojResolveAssemblyReference.cache
+C:\Users\Иван\Desktop\4 курс 1 симестр\Зелен Курсовая\sketch\WpfPrototype1\WpfPrototype1\WpfPrototype1Screens\obj\Debug\Game.baml
+C:\Users\Иван\Desktop\4 курс 1 симестр\Зелен Курсовая\sketch\WpfPrototype1\WpfPrototype1\WpfPrototype1Screens\obj\Debug\Load.baml
+C:\Users\Иван\Desktop\4 курс 1 симестр\Зелен Курсовая\sketch\WpfPrototype1\WpfPrototype1\WpfPrototype1Screens\obj\Debug\Screen_1_1.baml
+C:\Users\Иван\Desktop\4 курс 1 симестр\Зелен Курсовая\sketch\WpfPrototype1\WpfPrototype1\WpfPrototype1Screens\obj\Debug\Screen_1_2.baml
+C:\Users\Иван\Desktop\4 курс 1 симестр\Зелен Курсовая\sketch\WpfPrototype1\WpfPrototype1\WpfPrototype1Screens\obj\Debug\Screen_3.baml
+C:\Users\Иван\Desktop\4 курс 1 симестр\Зелен Курсовая\sketch\WpfPrototype1\WpfPrototype1\WpfPrototype1Screens\obj\Debug\SketchStyles.baml
+C:\Users\Иван\Desktop\4 курс 1 симестр\Зелен Курсовая\sketch\WpfPrototype1\WpfPrototype1\WpfPrototype1Screens\obj\Debug\Новая_игра.baml
+C:\Users\Иван\Desktop\4 курс 1 симестр\Зелен Курсовая\sketch\WpfPrototype1\WpfPrototype1\WpfPrototype1Screens\obj\Debug\Game.g.cs
+C:\Users\Иван\Desktop\4 курс 1 симестр\Зелен Курсовая\sketch\WpfPrototype1\WpfPrototype1\WpfPrototype1Screens\obj\Debug\Load.g.cs
+C:\Users\Иван\Desktop\4 курс 1 симестр\Зелен Курсовая\sketch\WpfPrototype1\WpfPrototype1\WpfPrototype1Screens\obj\Debug\Screen_1_1.g.cs
+C:\Users\Иван\Desktop\4 курс 1 симестр\Зелен Курсовая\sketch\WpfPrototype1\WpfPrototype1\WpfPrototype1Screens\obj\Debug\Screen_1_2.g.cs
+C:\Users\Иван\Desktop\4 курс 1 симестр\Зелен Курсовая\sketch\WpfPrototype1\WpfPrototype1\WpfPrototype1Screens\obj\Debug\Screen_3.g.cs
+C:\Users\Иван\Desktop\4 курс 1 симестр\Зелен Курсовая\sketch\WpfPrototype1\WpfPrototype1\WpfPrototype1Screens\obj\Debug\Новая_игра.g.cs
+C:\Users\Иван\Desktop\4 курс 1 симестр\Зелен Курсовая\sketch\WpfPrototype1\WpfPrototype1\WpfPrototype1Screens\obj\Debug\WpfPrototype1.Screens_MarkupCompile.cache
+C:\Users\Иван\Desktop\4 курс 1 симестр\Зелен Курсовая\sketch\WpfPrototype1\WpfPrototype1\WpfPrototype1Screens\obj\Debug\WpfPrototype1.Screens.g.resources
+C:\Users\Иван\Desktop\4 курс 1 симестр\Зелен Курсовая\sketch\WpfPrototype1\WpfPrototype1\WpfPrototype1Screens\obj\Debug\WpfPrototype1.Screens.dll
+C:\Users\Иван\Desktop\4 курс 1 симестр\Зелен Курсовая\sketch\WpfPrototype1\WpfPrototype1\WpfPrototype1Screens\obj\Debug\WpfPrototype1.Screens.pdb
+C:\Users\Иван\Desktop\4 курс 1 симестр\Зелен Курсовая\sketch\WpfPrototype1\WpfPrototype1\WpfPrototype1Screens\obj\Debug\LOG1.baml
+C:\Users\Иван\Desktop\4 курс 1 симестр\Зелен Курсовая\sketch\WpfPrototype1\WpfPrototype1\WpfPrototype1Screens\obj\Debug\LOG1.g.cs
+C:\Users\Иван\Desktop\4 курс 1 симестр\Зелен Курсовая\sketch\WpfPrototype1\WpfPrototype1\bin\Debug\New Folder1\log.png
+C:\Users\Иван\Desktop\4 курс 1 симестр\Зелен Курсовая\sketch\WpfPrototype1\WpfPrototype1\bin\Debug\log.png
+C:\Users\Иван\Desktop\4 курс 1 симестр\Зелен Курсовая\sketch\WpfPrototype1\WpfPrototype1\bin\Debug\crown_main.png
+C:\Users\Alex\Dropbox\WpfPrototype1_Copy1\WpfPrototype1\WpfPrototype1Screens\obj\Debug\WpfPrototype1Screens.csprojResolveAssemblyReference.cache
+C:\Users\Alex\Dropbox\WpfPrototype1_Copy1\WpfPrototype1\WpfPrototype1Screens\obj\Debug\Game.baml
+C:\Users\Alex\Dropbox\WpfPrototype1_Copy1\WpfPrototype1\WpfPrototype1Screens\obj\Debug\Load.baml
+C:\Users\Alex\Dropbox\WpfPrototype1_Copy1\WpfPrototype1\WpfPrototype1Screens\obj\Debug\LOG1.baml
+C:\Users\Alex\Dropbox\WpfPrototype1_Copy1\WpfPrototype1\WpfPrototype1Screens\obj\Debug\Screen_1_1.baml
+C:\Users\Alex\Dropbox\WpfPrototype1_Copy1\WpfPrototype1\WpfPrototype1Screens\obj\Debug\Screen_1_2.baml
+C:\Users\Alex\Dropbox\WpfPrototype1_Copy1\WpfPrototype1\WpfPrototype1Screens\obj\Debug\Screen_3.baml
+C:\Users\Alex\Dropbox\WpfPrototype1_Copy1\WpfPrototype1\WpfPrototype1Screens\obj\Debug\SketchStyles.baml
+C:\Users\Alex\Dropbox\WpfPrototype1_Copy1\WpfPrototype1\WpfPrototype1Screens\obj\Debug\Game.g.cs
+C:\Users\Alex\Dropbox\WpfPrototype1_Copy1\WpfPrototype1\WpfPrototype1Screens\obj\Debug\Load.g.cs
+C:\Users\Alex\Dropbox\WpfPrototype1_Copy1\WpfPrototype1\WpfPrototype1Screens\obj\Debug\LOG1.g.cs
+C:\Users\Alex\Dropbox\WpfPrototype1_Copy1\WpfPrototype1\WpfPrototype1Screens\obj\Debug\Screen_1_1.g.cs
+C:\Users\Alex\Dropbox\WpfPrototype1_Copy1\WpfPrototype1\WpfPrototype1Screens\obj\Debug\Screen_1_2.g.cs
+C:\Users\Alex\Dropbox\WpfPrototype1_Copy1\WpfPrototype1\WpfPrototype1Screens\obj\Debug\Screen_3.g.cs
+C:\Users\Alex\Dropbox\WpfPrototype1_Copy1\WpfPrototype1\WpfPrototype1Screens\obj\Debug\WpfPrototype1.Screens_MarkupCompile.cache
+C:\Users\Alex\Dropbox\WpfPrototype1_Copy1\WpfPrototype1\WpfPrototype1Screens\obj\Debug\WpfPrototype1.Screens.g.resources
+C:\Users\Alex\Dropbox\WpfPrototype1_Copy1\WpfPrototype1\WpfPrototype1Screens\obj\Debug\WpfPrototype1.Screens.dll
+C:\Users\Alex\Dropbox\WpfPrototype1_Copy1\WpfPrototype1\WpfPrototype1Screens\obj\Debug\WpfPrototype1.Screens.pdb
