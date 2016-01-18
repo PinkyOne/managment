@@ -1,6 +1,10 @@
 package database;
 
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class DBConnector {
     private static Connection c = null;
@@ -48,10 +52,14 @@ public class DBConnector {
                     " CASH           INT     NOT NULL," +
                     " ESM            INT     NOT NULL," +
                     " EGP            INT     NOT NULL," +
+                    " LOAN           INT             ," +
+                    " FABRIC_COUNT   INT     NOT NULL," +
+                    " A_FABRIC_COUNT INT     NOT NULL," +
+                    " U_FABRIC_COUNT INT     NOT NULL," +
                     " TURN           INT     NOT NULL," +
                     " CLIENT_ID      INT     NOT NULL," +
                     " GAME_ID        INT     NOT NULL," +
-                    " SAVE_ID        INT     NOT NULL)";
+                    " SAVE_ID        INT             )";
             stmt.executeUpdate(sql);
             stmt.close();
             disconnect();
@@ -61,6 +69,68 @@ public class DBConnector {
         }
         System.out.println("Table created successfully");
     }
+
+    public static Map<Integer, Map<String, Integer>> getCurrentClientsState(int gameId, int saveId) {
+        Map<Integer, Map<String, Integer>> bigMap = new HashMap<>();
+        connect();
+        Statement stmt;
+        int turn = 0;
+        try {
+            c.setAutoCommit(false);
+            System.out.println("Opened database successfully");
+
+            stmt = c.createStatement();
+            ResultSet rs = stmt.executeQuery("SELECT * FROM TURN where GAME_ID = " + gameId +
+                    " AND TURN = " + getCurrentTurn(gameId, saveId) +
+                    (saveId > 0 ? " AND SAVE_ID =" + saveId : "") + ";");
+            while (rs.next()) {
+                Map<String, Integer> map = new HashMap<>();
+                map.put("CASH", rs.getInt(1));
+                map.put("ESM", rs.getInt(2));
+                map.put("EGP", rs.getInt(3));
+                map.put("LOAN", rs.getInt(4));
+                map.put("FABRIC_COUNT", rs.getInt(5));
+                map.put("A_FABRIC_COUNT", rs.getInt(6));
+                map.put("U_FABRIC_COUNT", rs.getInt(7));
+                bigMap.put(rs.getInt(0), map);
+            }
+            rs.close();
+            stmt.close();
+
+            disconnect();
+        } catch (Exception e) {
+            System.err.println(e.getClass().getName() + ": " + e.getMessage());
+            System.exit(0);
+        }
+        System.out.println("Operation done successfully");
+        return bigMap;
+    }
+
+    private static int getCurrentTurn(int gameId, int saveId) {
+        connect();
+        Statement stmt;
+        int turn = 0;
+        try {
+            c.setAutoCommit(false);
+            System.out.println("Opened database successfully");
+
+            stmt = c.createStatement();
+            ResultSet rs = stmt.executeQuery("SELECT MAX(TURN) FROM TURN where GAME_ID = " + gameId +
+                    (saveId > 0 ? " AND SAVE_ID =" + saveId : "") + ";");
+            if (rs.first())
+                turn = rs.getInt(0);
+            else return 0;
+            rs.close();
+            stmt.close();
+
+        } catch (Exception e) {
+            System.err.println(e.getClass().getName() + ": " + e.getMessage());
+            System.exit(0);
+        }
+        System.out.println("Operation done successfully");
+        return turn;
+    }
+
 
     private static void disconnect() throws SQLException {
         c.close();
@@ -96,7 +166,7 @@ public class DBConnector {
 
             stmt = c.createStatement();
             ResultSet rs = stmt.executeQuery("SELECT MAX(TURN) FROM TURN where GAME_ID = "
-                    + gameId + "AND SAVE_ID =" + saveId + ";");
+                    + gameId + " AND SAVE_ID =" + saveId + ";");
             int max = 0;
             if (rs.first())
                 max = rs.getInt(0);
@@ -106,8 +176,8 @@ public class DBConnector {
 
             stmt = c.createStatement();
             rs = stmt.executeQuery("SELECT COUNT(*) FROM TURN where GAME_ID = " + gameId
-                    + "AND TURN =" + max
-                    + "AND SAVE_ID =" + saveId + ";");
+                    + " AND TURN =" + max
+                    + " AND SAVE_ID =" + saveId + ";");
             int count = 0;
             if (rs.first())
                 count = rs.getInt(0);
@@ -190,7 +260,7 @@ public class DBConnector {
                 System.err.println(e.getClass().getName() + ": " + e.getMessage());
                 System.exit(0);
             }
-        else throw new Exception("Game has 4 players already");
+        else throw new Exception("game.Game has 4 players already");
         System.out.println("Records created successfully");
     }
 
@@ -211,6 +281,31 @@ public class DBConnector {
             System.exit(0);
         }
         System.out.println("Records created successfully");
+    }
+
+    public static int getLastGame() {
+        connect();
+        Statement stmt;
+        int i = -1;
+        try {
+            c.setAutoCommit(false);
+            System.out.println("Opened database successfully");
+
+            stmt = c.createStatement();
+            ResultSet rs = stmt.executeQuery("SELECT max(ID) FROM GAME;");
+
+            while (rs.next()) {
+                i = rs.getInt(0);
+            }
+            rs.close();
+            stmt.close();
+            disconnect();
+        } catch (Exception e) {
+            System.err.println(e.getClass().getName() + ": " + e.getMessage());
+            System.exit(0);
+        }
+        System.out.println("Operation done successfully");
+        return i;
     }
 
     public static int getNumberOfClientInGame(int id) {
@@ -261,5 +356,30 @@ public class DBConnector {
         }
         System.out.println("Operation done successfully");
         return i;
+    }
+
+    public static List<Integer> getClientsOfGame(int gameId) {
+        List<Integer> clients = new ArrayList<>();
+        connect();
+        Statement stmt;
+        int i = -1;
+        try {
+            c.setAutoCommit(false);
+            System.out.println("Opened database successfully");
+
+            stmt = c.createStatement();
+            ResultSet rs = stmt.executeQuery("SELECT CLIENT_ID FROM CLIENT where GAME_ID = '" + gameId + "';");
+
+            while (rs.next()) {
+                clients.add(rs.getInt("CLIENT_ID"));
+            }
+            rs.close();
+            stmt.close();
+            disconnect();
+        } catch (Exception e) {
+            System.err.println(e.getClass().getName() + ": " + e.getMessage());
+            System.exit(0);
+        }
+        return clients;
     }
 }

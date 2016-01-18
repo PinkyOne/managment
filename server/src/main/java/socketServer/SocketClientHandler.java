@@ -1,6 +1,8 @@
 package socketServer;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.net.Socket;
 
 public class SocketClientHandler implements Runnable {
@@ -30,26 +32,6 @@ public class SocketClientHandler implements Runnable {
         while ((tmp = stdIn.readLine()) != null) {
             userInput.append(tmp);
         }
+        ResponseProcessor.getInstance().processResponse(client, new Message(userInput.toString()));
     }
-
-    public void sendOK() throws IOException, InterruptedException {
-        Message okMessage = new Message();
-        okMessage.addMessage("OK");
-        sendAnswer(okMessage);
-    }
-
-    public void sendError() throws IOException, InterruptedException {
-        Message errorMessage = new Message();
-        errorMessage.addMessage("ERROR");
-        errorMessage.addErrorDetails(null);
-        sendAnswer(errorMessage);
-    }
-
-    private void sendAnswer(Message message) throws IOException {
-        BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(client.getOutputStream()));
-        writer.write(message.toString());
-        writer.flush();
-        writer.close();
-    }
-
 }

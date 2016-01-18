@@ -38,9 +38,6 @@ public class SocketServer {
      * @param args
      */
     public static void main(String[] args) {
-        // Setting a default port number.
-        int portNumber = 9991;
-
         try {
             // initializing the Socket Server
             SocketServer socketServer = new SocketServer();
