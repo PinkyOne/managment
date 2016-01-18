@@ -88,7 +88,15 @@ public class Game {
             int loanCount) {
         for (int i = 0; ; i++)
             try {
-                Bank.getInstance().collectTurnRequest(sessionId, sell, buy, produceEGP, buildFabricCount, automateFabricCount, buildAFabricCount, loanCount);
+                Bank.getInstance().collectTurnRequest(
+                        sessionId,
+                        sell,
+                        buy,
+                        produceEGP,
+                        buildFabricCount,
+                        automateFabricCount,
+                        buildAFabricCount,
+                        loanCount);
             } catch (Exception e) {
                 if (i > 10) break;
             }

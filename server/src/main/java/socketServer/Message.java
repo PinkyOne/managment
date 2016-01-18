@@ -4,7 +4,9 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
 
 public class Message {
     private JsonObject jsonObject;
@@ -68,7 +70,7 @@ public class Message {
     }
 
     public enum MessageType {
-        CONNECT("connect"), TURN("turn"), CREATE_GAME("create"), UNKNOWN("unknown");
+        CONNECT("connect"), TURN("turn"), CREATE_GAME("create"), UNKNOWN("unknown"), SHUTDOWN("shutdown");
         private final String type;
 
         MessageType(String type) {
@@ -85,6 +87,9 @@ public class Message {
                 }
                 case "create": {
                     return CREATE_GAME;
+                }
+                case "shutdown": {
+                    return SHUTDOWN;
                 }
                 default: {
                     return UNKNOWN;

@@ -77,4 +77,8 @@ public class Decision {
     public int getUFCount() {
         return UFCount;
     }
+
+    public Client getClient() {
+        return client;
+    }
 }

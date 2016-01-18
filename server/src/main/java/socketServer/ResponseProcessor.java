@@ -38,6 +38,10 @@ public class ResponseProcessor {
                 answer.addMessage("OK");
             }
             break;
+            case SHUTDOWN: {
+                // SocketServer.shutdown();
+            }
+            break;
             default: {
                 answer.addErrorDetails("Can not read message");
             }
@@ -50,13 +54,15 @@ public class ResponseProcessor {
         int sessionId = message.getInt("sessionId");
         JsonObject esm = message.getObject("esm");
         JsonObject egp = message.getObject("egp");
+        JsonObject produceESM = message.getObject("produceESM");
         Pair<Integer, Integer> buy = new ImmutablePair<>(esm.get("count").getAsInt(), esm.get("price").getAsInt());
         Pair<Integer, Integer> sell = new ImmutablePair<>(egp.get("count").getAsInt(), egp.get("price").getAsInt());
+        Pair<Integer, Integer> produce = new ImmutablePair<>(produceESM.get("count").getAsInt(), produceESM.get("price").getAsInt());
         int buildFabricCount = message.getInt("buildFabricCount");
         int automateFabricCount = message.getInt("automateFabricCount");
         int buildAFabricCount = message.getInt("buildAFabricCount");
         int loanCount = message.getInt("loanCount");
-        Game.getInstance().makeTurn(sessionId, sell, buy, buildFabricCount, automateFabricCount, buildAFabricCount, loanCount);
+        Game.getInstance().makeTurn(sessionId, sell, buy, produce, buildFabricCount, automateFabricCount, buildAFabricCount, loanCount);
         return message;
     }
 

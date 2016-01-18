@@ -47,4 +47,8 @@ public class SocketServer {
             e.printStackTrace();
         }
     }
+
+    public void shutdown() throws IOException {
+        serverSocket.close();
+    }
 }

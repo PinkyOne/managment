@@ -11,6 +11,7 @@ public class Client {
         if (id < 0) id = DBConnector.insertClient(name);
     }
 
+    @Deprecated
     public Client(int sessionId) {
 
     }
