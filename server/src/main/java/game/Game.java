@@ -1,6 +1,8 @@
 package game;
 
 import database.DBConnector;
+import org.apache.commons.lang3.tuple.ImmutablePair;
+import org.apache.commons.lang3.tuple.Pair;
 import socketServer.Message;
 
 import java.util.HashMap;
@@ -77,34 +79,42 @@ public class Game {
 
     public synchronized void makeTurn(
             int sessionId,
-            int sell,
-            int buy,
+            Pair<Integer, Integer> sell,
+            Pair<Integer, Integer> buy,
+            Pair<Integer, Integer> produceEGP,
             int buildFabricCount,
             int automateFabricCount,
             int buildAFabricCount,
             int loanCount) {
-
+        for (int i = 0; ; i++)
+            try {
+                Bank.getInstance().collectTurnRequest(sessionId, sell, buy, produceEGP, buildFabricCount, automateFabricCount, buildAFabricCount, loanCount);
+            } catch (Exception e) {
+                if (i > 10) break;
+            }
     }
 
     public synchronized void makeTurn(
             int sessionId,
-            int sell,
-            int buy,
+            Pair<Integer, Integer> sell,
+            Pair<Integer, Integer> buy,
+            Pair<Integer, Integer> produceEGP,
             int buildFabricCount,
             int automateFabricCount,
             int buildAFabricCount) {
-        makeTurn(sessionId, sell, buy, buildFabricCount, automateFabricCount, buildAFabricCount, 0);
+        makeTurn(sessionId, sell, buy, produceEGP, buildFabricCount, automateFabricCount, buildAFabricCount, 0);
     }
 
     public synchronized void makeTurn(
             int sessionId,
-            int sell,
-            int buy) {
-        makeTurn(sessionId, sell, buy, 0, 0, 0);
+            Pair<Integer, Integer> sell,
+            Pair<Integer, Integer> buy,
+            Pair<Integer, Integer> produceEGP) {
+        makeTurn(sessionId, sell, buy, produceEGP, 0, 0, 0);
     }
 
     public synchronized void makeTurn(int sessionId) {
-        makeTurn(sessionId, 0, 0);
+        makeTurn(sessionId, new ImmutablePair<>(0, 0), new ImmutablePair<>(0, 0), new ImmutablePair<>(0, 0));
     }
 
     public int getSaveId() {

@@ -50,6 +50,7 @@ public class Bank {
 
     private Map<Integer, Pair<Integer, Integer>> sellList;
     private Map<Integer, Pair<Integer, Integer>> buyList;
+    private Map<Integer, Pair<Integer, Integer>> produceEGPList;
     private Map<Integer, Integer> buildFabricCountList;
     private Map<Integer, Integer> automateFabricCountList;
     private Map<Integer, Integer> buildAFabricCountList;
@@ -58,12 +59,14 @@ public class Bank {
     public synchronized void collectTurnRequest(int sessionId,
                                                 Pair<Integer, Integer> sell,
                                                 Pair<Integer, Integer> buy,
+                                                Pair<Integer, Integer> produceEGP,
                                                 int buildFabricCount,
                                                 int automateFabricCount,
                                                 int buildAFabricCount,
                                                 int loanCount) throws Exception {
         sellList.put(sessionId, sell);
         buyList.put(sessionId, buy);
+        produceEGPList.put(sessionId, produceEGP);
         buildFabricCountList.put(sessionId, buildFabricCount);
         automateFabricCountList.put(sessionId, automateFabricCount);
         buildAFabricCountList.put(sessionId, buildAFabricCount);
@@ -76,7 +79,7 @@ public class Bank {
     Map<Integer, Map<String, Integer>> currentStates;
 
     private void makeDecision() throws Exception {
-        makeMapsOredered();
+        makeMapsOrdered();
         refreshStates();
         Map<Integer, Decision> decisions = new HashMap<>();
         for (int id : sellList.keySet()) {
@@ -100,22 +103,22 @@ public class Bank {
 
     private void makeCashDecision(Map<Integer, Decision> decisions) {
         for (int id : sellList.keySet()) {
-            Decision decision = new Decision(id);
+            Decision decision = decisions.get(id);
             Map<String, Integer> currentState = currentStates.get(Game.getInstance().getClient(id).getId());
             int newCashValue = currentState.get("CASH");
             newCashValue -= (decision.getFCount() * fabricCost
                     + decision.getUFCount() * automationCost
                     + decision.getAFCount() * automatedFabricCost);
             newCashValue += decision.getLoan();
-            newCashValue += (decision.getEGP() * EGPLevels.get(level).getRight());
-            newCashValue -= (decision.getESM() * ESMLevels.get(level).getRight());
+            newCashValue += (decision.getEGP() * sellList.get(id).getRight());
+            newCashValue -= (decision.getESM() * buyList.get(id).getRight());
             decision.setCash(newCashValue);
         }
     }
 
     private void makeFabricsDecision(Map<Integer, Decision> decisions) {
         for (int id : sellList.keySet()) {
-            Decision decision = new Decision(id);
+            Decision decision = decisions.get(id);
             decision.setAFCount(buildAFabricCountList.get(id));
             decision.setFCount(buildFabricCountList.get(id));
             decision.setUFCount(automateFabricCountList.get(id));
@@ -169,10 +172,14 @@ public class Bank {
 
             map.put("CASH", oldMap.get("CASH") + decision.getCash());
             map.put("ESM", oldMap.get("ESM") + decision.getESM());
-            map.put("EGP", oldMap.get("EGP") - decision.getEGP());
+            map.put("EGP", oldMap.get("EGP") + decision.getEGP());
             map.put("LOAN", oldMap.get("LOAN") + decision.getLoan());
             map.put("FABRIC_COUNT", oldMap.get("FABRIC_COUNT") + decision.getFCount() - decision.getUFCount());
-            map.put("A_FABRIC_COUNT", oldMap.get("A_FABRIC_COUNT") + decision.getAFCount());
+            map.put("A_FABRIC_COUNT", oldMap.get("A_FABRIC_COUNT") +
+                    decision.getAFCount() +
+                    (decision.getUFCount() < 0
+                            ? -decision.getUFCount()
+                            : 0));
             map.put("U_FABRIC_COUNT", oldMap.get("U_FABRIC_COUNT") + decision.getUFCount());
 
             newStates.put(entry.getKey(), map);
@@ -186,14 +193,15 @@ public class Bank {
         int maxEGPPrice = EGPLevel.getValue();
         for (Map.Entry<Integer, Pair<Integer, Integer>> entry : sellList.entrySet()) {
             Pair<Integer, Integer> request = entry.getValue();
+            int producedEGP = produceEGPList.get(entry.getKey()).getLeft();
             if (request.getValue() <= maxEGPPrice) {
                 Decision decision = decisions.get(entry.getKey());
-                int requestedESM = request.getLeft();
-                if (availableEGPCount >= requestedESM) {
-                    decision.setEGP(requestedESM);
-                    availableEGPCount -= requestedESM;
+                int requestedEGP = request.getLeft();
+                if (availableEGPCount >= requestedEGP) {
+                    decision.setEGP(-requestedEGP + producedEGP);
+                    availableEGPCount -= requestedEGP;
                 } else if (availableEGPCount > 0) {
-                    decision.setEGP(availableEGPCount);
+                    decision.setEGP(-availableEGPCount + producedEGP);
                     availableEGPCount = 0;
                 } else break;
             } else break;
@@ -206,21 +214,22 @@ public class Bank {
         int minESMPrice = ESMLevel.getValue();
         for (Map.Entry<Integer, Pair<Integer, Integer>> entry : sellList.entrySet()) {
             Pair<Integer, Integer> request = entry.getValue();
+            int producedEGP = produceEGPList.get(entry.getKey()).getLeft();
             if (request.getValue() >= minESMPrice) {
                 Decision decision = decisions.get(entry.getKey());
                 int requestedESM = request.getLeft();
                 if (availableESMCount >= requestedESM) {
-                    decision.setESM(requestedESM);
+                    decision.setESM(requestedESM - producedEGP);
                     availableESMCount -= requestedESM;
                 } else if (availableESMCount > 0) {
-                    decision.setESM(availableESMCount);
+                    decision.setESM(availableESMCount - producedEGP);
                     availableESMCount = 0;
                 } else break;
             } else break;
         }
     }
 
-    private void makeMapsOredered() {
+    private void makeMapsOrdered() {
         Map<Integer, Pair<Integer, Integer>> tmpMap;
 
         tmpMap = new TreeMap<>(new ResourceComparator(sellList).reversed());
@@ -239,6 +248,7 @@ public class Bank {
         automateFabricCountList = new HashMap<>();
         buildAFabricCountList = new HashMap<>();
         loanCountList = new HashMap<>();
+        produceEGPList = new HashMap<>();
         Random random = new Random();
         int i = 0;
         while (true) {
@@ -329,5 +339,13 @@ public class Bank {
         public Comparator thenComparing(Function keyExtractor, Comparator keyComparator) {
             return null;
         }
+    }
+
+    public static class BankHolder {
+        private static Bank HOLDER_INSTANCE = new Bank();
+    }
+
+    public synchronized static Bank getInstance() {
+        return BankHolder.HOLDER_INSTANCE;
     }
 }

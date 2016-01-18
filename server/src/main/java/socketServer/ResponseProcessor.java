@@ -1,7 +1,10 @@
 package socketServer;
 
+import com.google.gson.JsonObject;
 import game.Client;
 import game.Game;
+import org.apache.commons.lang3.tuple.ImmutablePair;
+import org.apache.commons.lang3.tuple.Pair;
 
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -45,8 +48,10 @@ public class ResponseProcessor {
 
     private synchronized Message makeTurn(Message message) {
         int sessionId = message.getInt("sessionId");
-        int sell = message.getInt("sell");
-        int buy = message.getInt("buy");
+        JsonObject esm = message.getObject("esm");
+        JsonObject egp = message.getObject("egp");
+        Pair<Integer, Integer> buy = new ImmutablePair<>(esm.get("count").getAsInt(), esm.get("price").getAsInt());
+        Pair<Integer, Integer> sell = new ImmutablePair<>(egp.get("count").getAsInt(), egp.get("price").getAsInt());
         int buildFabricCount = message.getInt("buildFabricCount");
         int automateFabricCount = message.getInt("automateFabricCount");
         int buildAFabricCount = message.getInt("buildAFabricCount");

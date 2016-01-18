@@ -58,9 +58,15 @@ public class Message {
     public String getString(String name) {
         return jsonObject.get(name).getAsString();
     }
+
     public int getInt(String name) {
         return jsonObject.get(name).getAsInt();
     }
+
+    public JsonObject getObject(String prop) {
+        return jsonObject.getAsJsonObject(prop);
+    }
+
     public enum MessageType {
         CONNECT("connect"), TURN("turn"), CREATE_GAME("create"), UNKNOWN("unknown");
         private final String type;
