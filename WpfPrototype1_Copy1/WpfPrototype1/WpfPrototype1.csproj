@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ExpressionBlendVersion>4.0.20525.0</ExpressionBlendVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{319c9997-e655-4880-a456-2a6963912008}</ProjectGuid>
+    <ProjectGuid>{319C9997-E655-4880-A456-2A6963912008}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>WpfPrototype1</RootNamespace>
@@ -51,14 +51,11 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <PropertyGroup>
-    <ExpressionBlendPrototypingEnabled>false</ExpressionBlendPrototypingEnabled>
-    <ExpressionBlendPrototypeHarness>true</ExpressionBlendPrototypeHarness>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System.Windows.Interactivity" />
     <Reference Include="Microsoft.Expression.Interactions" />
     <Reference Include="Microsoft.Expression.Prototyping.Interactivity" />
-    <Reference Include="Microsoft.Expression.Prototyping.Runtime" />
     <Reference Include="Microsoft.Expression.Prototyping.SketchControls" />
   </ItemGroup>
   <ItemGroup>

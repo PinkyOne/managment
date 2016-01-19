@@ -11,7 +11,7 @@ import java.util.function.ToDoubleFunction;
 import java.util.function.ToIntFunction;
 import java.util.function.ToLongFunction;
 
-public class Bank {
+class Bank {
 
     private List<Pair<Integer, Integer>> ESMLevels;
     private List<Pair<Integer, Integer>> EGPLevels;
@@ -32,17 +32,17 @@ public class Bank {
     private Bank() {
         usersCount = 0;
         level = 0;
-        ESMLevels = new ArrayList<Pair<Integer, Integer>>(5);
-        EGPLevels = new ArrayList<Pair<Integer, Integer>>(5);
+        ESMLevels = new ArrayList<>(5);
+        EGPLevels = new ArrayList<>(5);
         for (int i = 0; i < 5; i++) {
             ESMLevels.set(i,
-                    new ImmutablePair<Integer, Integer>((int) (
+                    new ImmutablePair<>((int) (
                             Math.floor(1.0 + i * 0.5) * (usersCount)),
                             i < 2
                                     ? 800 - 150 * i
                                     : 800 - 100 * (i + 1)));
             EGPLevels.set(i,
-                    new ImmutablePair<Integer, Integer>(
+                    new ImmutablePair<>(
                             (int) (Math.floor(3.0 - i * 0.5) * (usersCount)),
                             6500 - 500 * i));
         }
@@ -76,12 +76,14 @@ public class Bank {
         }
     }
 
+    Map<Integer, Decision> decisions;
+
     Map<Integer, Map<String, Integer>> currentStates;
 
     private void makeDecision() throws Exception {
         makeMapsOrdered();
         refreshStates();
-        Map<Integer, Decision> decisions = new HashMap<>();
+        decisions = new HashMap<>();
         for (int id : sellList.keySet()) {
             Decision decision = new Decision(id);
 
@@ -261,14 +263,13 @@ public class Bank {
         }
     }
 
-    private int getCash(int id) {
-        return 0;
-    }
-
-    private void sellESM(List<Pair<Integer, Integer>> bids) {
-    }
-
-    private void buyEGP(List<Pair<Integer, Integer>> bids) {
+    public Decision getDecision(int sessionId) {
+        Decision decision = decisions.get(sessionId);
+        decisions.remove(sessionId);
+        if (decisions.size() <= 0) {
+            setLevel();
+        }
+        return decision;
     }
 
     class ResourceComparator implements Comparator {

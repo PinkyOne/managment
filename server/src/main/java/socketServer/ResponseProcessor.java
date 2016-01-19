@@ -34,12 +34,12 @@ public class ResponseProcessor {
             }
             break;
             case TURN: {
-                answer = makeTurn(message);
+                makeTurn(message);
                 answer.addMessage("OK");
             }
             break;
-            case SHUTDOWN: {
-                // SocketServer.shutdown();
+            case GET_DECISION: {
+                getDecision(message);
             }
             break;
             default: {
@@ -50,7 +50,14 @@ public class ResponseProcessor {
         return answer;
     }
 
-    private synchronized Message makeTurn(Message message) {
+    private synchronized Message getDecision(Message message) {
+        Message answer = new Message();
+        Decision decision = Game.getInstance().getDecision(message.getInt("sessionId"));
+        answer.addDecision(decision);
+        return answer;
+    }
+
+    private synchronized void makeTurn(Message message) {
         int sessionId = message.getInt("sessionId");
         JsonObject esm = message.getObject("esm");
         JsonObject egp = message.getObject("egp");
@@ -63,7 +70,6 @@ public class ResponseProcessor {
         int buildAFabricCount = message.getInt("buildAFabricCount");
         int loanCount = message.getInt("loanCount");
         Game.getInstance().makeTurn(sessionId, sell, buy, produce, buildFabricCount, automateFabricCount, buildAFabricCount, loanCount);
-        return message;
     }
 
     private synchronized Message createGame(Message message) {

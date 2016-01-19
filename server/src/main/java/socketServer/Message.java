@@ -27,7 +27,14 @@ public class Message {
     }
 
     public Message(String input) {
-        jsonObject = (JsonObject) new JsonParser().parse(input);
+        System.out.print(input);
+        try {
+            jsonObject = (JsonObject) new JsonParser().parse(input);
+        } catch (Exception e) {
+            jsonObject = new JsonObject();
+            setMessageType("");
+            return;
+        }
         setMessageType(jsonObject.get("type").getAsString());
     }
 
@@ -69,8 +76,12 @@ public class Message {
         return jsonObject.getAsJsonObject(prop);
     }
 
+    public void addDecision(Decision decision) {
+
+    }
+
     public enum MessageType {
-        CONNECT("connect"), TURN("turn"), CREATE_GAME("create"), UNKNOWN("unknown"), SHUTDOWN("shutdown");
+        CONNECT("connect"), TURN("turn"), CREATE_GAME("create"), UNKNOWN("unknown"), GET_DECISION("shutdown");
         private final String type;
 
         MessageType(String type) {
@@ -89,7 +100,7 @@ public class Message {
                     return CREATE_GAME;
                 }
                 case "shutdown": {
-                    return SHUTDOWN;
+                    return GET_DECISION;
                 }
                 default: {
                     return UNKNOWN;

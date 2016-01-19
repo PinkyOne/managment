@@ -3,6 +3,7 @@ package game;
 import database.DBConnector;
 import org.apache.commons.lang3.tuple.ImmutablePair;
 import org.apache.commons.lang3.tuple.Pair;
+import socketServer.Decision;
 import socketServer.Message;
 
 import java.util.HashMap;
@@ -142,6 +143,10 @@ public class Game {
             }
         }
         return id;
+    }
+
+    public Decision getDecision(int sessionId) {
+        return Bank.getInstance().getDecision(sessionId)     ;
     }
 
     public static class GameHolder {

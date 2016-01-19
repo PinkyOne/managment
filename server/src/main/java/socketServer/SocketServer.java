@@ -42,7 +42,6 @@ public class SocketServer {
             // initializing the Socket Server
             SocketServer socketServer = new SocketServer();
             socketServer.start();
-
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -9,7 +9,6 @@ using System.Windows;
 // on project creation, but if you change the name of the control assembly manually, you must also
 // update it manually here.
 //
-[assembly: Microsoft.Expression.Prototyping.Services.SketchFlowLibraries("WpfPrototype1.Screens")]
 
 namespace WpfPrototype1
 {
@@ -25,7 +24,7 @@ namespace WpfPrototype1
 
 		private void App_Startup(object sender, StartupEventArgs e)
 		{
-			this.StartupUri = new Uri(@"pack://application:,,,/Microsoft.Expression.Prototyping.Runtime;Component/WPF/Workspace/PlayerWindow.xaml");
-		}
+            this.StartupUri = new Uri(@"pack://application:,,,/MyProject.Screens;Component/LOG1.xaml");
+        }
 	}
 }
