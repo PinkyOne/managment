@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8f550776-dc85-42c9-83e9-028b60fcb5aa" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.db" afterPath="$PROJECT_DIR$/server.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/database/DBConnector.java" afterPath="$PROJECT_DIR$/src/main/java/database/DBConnector.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/game/Bank.java" afterPath="$PROJECT_DIR$/src/main/java/game/Bank.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/game/Client.java" afterPath="$PROJECT_DIR$/src/main/java/game/Client.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/game/Game.java" afterPath="$PROJECT_DIR$/src/main/java/game/Game.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/socketServer/ResponseProcessor.java" afterPath="$PROJECT_DIR$/src/main/java/socketServer/ResponseProcessor.java" />
     </list>
     <ignored path="server.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,11 +36,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ResponseProcessor.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ResponseProcessor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/socketServer/ResponseProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="45" column="47" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
+            <state vertical-scroll-proportion="0.701581">
+              <caret line="74" column="52" selection-start-line="64" selection-start-column="7" selection-end-line="74" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#4066#4067#0" expanded="true" />
@@ -108,10 +104,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DBConnector.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DBConnector.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/database/DBConnector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2055336">
+            <state vertical-scroll-proportion="0.0">
               <caret line="202" column="43" selection-start-line="202" selection-start-column="43" selection-end-line="202" selection-end-column="43" />
               <folding />
             </state>
@@ -137,13 +133,13 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/game/Bank.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="281" column="0" selection-start-line="281" selection-start-column="0" selection-end-line="281" selection-end-column="0" />
+              <caret line="59" column="36" selection-start-line="59" selection-start-column="36" selection-end-line="59" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1028#1029#0" expanded="true" />
                 <element signature="e#1055#1056#0" expanded="true" />
-                <element signature="e#12954#12955#0" expanded="true" />
-                <element signature="e#13003#13004#0" expanded="true" />
+                <element signature="e#12969#12970#0" expanded="true" />
+                <element signature="e#13018#13019#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -153,7 +149,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/game/Game.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="156" column="27" selection-start-line="156" selection-start-column="27" selection-end-line="156" selection-end-column="27" />
+              <caret line="83" column="31" selection-start-line="83" selection-start-column="31" selection-end-line="83" selection-end-column="31" />
               <folding>
                 <element signature="e#6293#6294#0" expanded="true" />
                 <element signature="e#6342#6343#0" expanded="true" />
@@ -206,9 +202,9 @@
         <option value="$PROJECT_DIR$/src/main/java/socketServer/Message.java" />
         <option value="$PROJECT_DIR$/src/main/java/socketServer/ResponseProcessor.java" />
         <option value="$PROJECT_DIR$/src/main/java/game/Client.java" />
-        <option value="$PROJECT_DIR$/src/main/java/game/Bank.java" />
         <option value="$PROJECT_DIR$/src/main/java/game/Game.java" />
         <option value="$PROJECT_DIR$/src/main/java/database/DBConnector.java" />
+        <option value="$PROJECT_DIR$/src/main/java/game/Bank.java" />
       </list>
     </option>
   </component>
@@ -836,8 +832,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#1028#1029#0" expanded="true" />
             <element signature="e#1055#1056#0" expanded="true" />
-            <element signature="e#12954#12955#0" expanded="true" />
-            <element signature="e#13003#13004#0" expanded="true" />
+            <element signature="e#12969#12970#0" expanded="true" />
+            <element signature="e#13018#13019#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -926,8 +922,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#1028#1029#0" expanded="true" />
             <element signature="e#1055#1056#0" expanded="true" />
-            <element signature="e#12954#12955#0" expanded="true" />
-            <element signature="e#13003#13004#0" expanded="true" />
+            <element signature="e#12969#12970#0" expanded="true" />
+            <element signature="e#13018#13019#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -999,8 +995,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#1028#1029#0" expanded="true" />
             <element signature="e#1055#1056#0" expanded="true" />
-            <element signature="e#12954#12955#0" expanded="true" />
-            <element signature="e#13003#13004#0" expanded="true" />
+            <element signature="e#12969#12970#0" expanded="true" />
+            <element signature="e#13018#13019#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1053,8 +1049,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#1028#1029#0" expanded="true" />
             <element signature="e#1055#1056#0" expanded="true" />
-            <element signature="e#12954#12955#0" expanded="true" />
-            <element signature="e#13003#13004#0" expanded="true" />
+            <element signature="e#12969#12970#0" expanded="true" />
+            <element signature="e#13018#13019#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1291,28 +1287,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/socketServer/ResponseProcessor.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/database/DBConnector.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="47" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4066#4067#0" expanded="true" />
-            <element signature="e#4128#4129#0" expanded="true" />
-          </folding>
+          <caret line="202" column="43" selection-start-line="202" selection-start-column="43" selection-end-line="202" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/game/Bank.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="281" column="0" selection-start-line="281" selection-start-column="0" selection-end-line="281" selection-end-column="0" />
+          <caret line="59" column="36" selection-start-line="59" selection-start-column="36" selection-end-line="59" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1028#1029#0" expanded="true" />
             <element signature="e#1055#1056#0" expanded="true" />
-            <element signature="e#12954#12955#0" expanded="true" />
-            <element signature="e#13003#13004#0" expanded="true" />
+            <element signature="e#12969#12970#0" expanded="true" />
+            <element signature="e#13018#13019#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1320,7 +1312,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/game/Game.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="156" column="27" selection-start-line="156" selection-start-column="27" selection-end-line="156" selection-end-column="27" />
+          <caret line="83" column="31" selection-start-line="83" selection-start-column="31" selection-end-line="83" selection-end-column="31" />
           <folding>
             <element signature="e#6293#6294#0" expanded="true" />
             <element signature="e#6342#6343#0" expanded="true" />
@@ -1328,11 +1320,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/database/DBConnector.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/socketServer/ResponseProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2055336">
-          <caret line="202" column="43" selection-start-line="202" selection-start-column="43" selection-end-line="202" selection-end-column="43" />
-          <folding />
+        <state vertical-scroll-proportion="0.701581">
+          <caret line="74" column="52" selection-start-line="64" selection-start-column="7" selection-end-line="74" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4066#4067#0" expanded="true" />
+            <element signature="e#4128#4129#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

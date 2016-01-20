@@ -72,7 +72,7 @@ class Bank {
         automateFabricCountList.put(sessionId, automateFabricCount);
         buildAFabricCountList.put(sessionId, buildAFabricCount);
         loanCountList.put(sessionId, loanCount);
-        if (loanCountList.size() == usersCount) {
+        if (loanCountList.size() == usersCount&&usersCount>=2) {
             makeDecision();
         }
     }
