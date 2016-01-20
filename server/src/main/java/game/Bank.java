@@ -27,18 +27,22 @@ class Bank {
     private final int automationCost = 7000;
 
     private Bank() {
-        usersCount = 0;
-        level = 0;
+        initiate(1);
+    }
+
+    public void initiate(int count) {
+        usersCount = 1;
+        level = count;
         ESMLevels = new ArrayList<>(5);
         EGPLevels = new ArrayList<>(5);
         for (int i = 0; i < 5; i++) {
-            ESMLevels.set(i,
+            ESMLevels.add(
                     new ImmutablePair<>((int) (
                             Math.floor(1.0 + i * 0.5) * (usersCount)),
                             i < 2
                                     ? 800 - 150 * i
                                     : 800 - 100 * (i + 1)));
-            EGPLevels.set(i,
+            EGPLevels.add(
                     new ImmutablePair<>(
                             (int) (Math.floor(3.0 - i * 0.5) * (usersCount)),
                             6500 - 500 * i));
@@ -124,7 +128,7 @@ class Bank {
         }
     }
 
-    private void refreshStates() {
+    void refreshStates() {
         currentStates =
                 DBConnector.getCurrentClientsState(
                         Game.getInstance().getGameId(),
@@ -275,7 +279,6 @@ class Bank {
         message.addProperty("egpPrice", EGPLevels.get(level).getRight().toString());
         message.addProperty("esmCount", ESMLevels.get(level).getLeft().toString());
         message.addProperty("esmPrice", ESMLevels.get(level).getRight().toString());
-
 
         return message;
     }

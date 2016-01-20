@@ -11,12 +11,15 @@ public class Client {
         if (id < 0) id = DBConnector.insertClient(name);
     }
 
-    @Deprecated
-    public Client(int sessionId) {
-
+    public Client(int id) {
+        this.name = DBConnector.getClientName(id);
     }
 
     public int getId() {
         return id;
+    }
+
+    public String getName() {
+        return name;
     }
 }

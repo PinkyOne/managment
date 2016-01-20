@@ -67,16 +67,17 @@ public class Game {
         }
         if (clients.get(client) == null) {
             if (clients.size() < 4) {
-                Integer sessionId = Math.abs(new Random().nextInt()/2);
+                Integer sessionId = Math.abs(new Random().nextInt() / 2);
                 clients.put(sessionId, client);
                 message.addProperty("sessionId", String.valueOf(sessionId));
-                System.out.print("\n"+sessionId+"\n");
+                System.out.print("\n" + sessionId + "\n");
             } else {
                 message.addErrorDetails("This game doesn't have more places");
             }
         } else {
             message.addErrorDetails("game.Client with this name already connected");
         }
+        Bank.getInstance().initiate(clients.size());
         return message;
     }
 
@@ -148,11 +149,30 @@ public class Game {
     }
 
     public Decision getDecision(int sessionId) {
-        return Bank.getInstance().getDecision(sessionId)     ;
+        return Bank.getInstance().getDecision(sessionId);
     }
 
     public Message getBankState() {
-        return Bank.getInstance().getState();
+        Message message = Bank.getInstance().getState();
+        if (DBConnector.getTurn(gameId, saveId)>0) {
+            getUserStates(message);
+        }
+        return message;
+    }
+
+    private void getUserStates(Message message) {
+        StringBuilder sb = new StringBuilder();
+        sb.append("[");
+        Bank.getInstance().refreshStates();
+        for (Map.Entry<Integer, Map<String, Integer>> clientState : Bank.getInstance().currentStates.entrySet()) {
+            Message tmpMsg = new Message();
+            tmpMsg.addProperty("name", "\"" + new Client(clientState.getKey()).getName() + "\"");
+            tmpMsg.addProperty("cash", "\"" + clientState.getValue().get("CASH") + "\"");
+
+            sb.append(tmpMsg.toString() + ",");
+        }
+        sb = new StringBuilder(sb.substring(sb.lastIndexOf(","), sb.lastIndexOf(",") + 1));
+        message.addProperty("clients", sb.append("]").toString());
     }
 
     public static class GameHolder {

@@ -95,9 +95,10 @@ public class DBConnector {
             System.out.println("Opened database successfully");
 
             stmt = c.createStatement();
-            ResultSet rs = stmt.executeQuery("SELECT * FROM TURN where GAME_ID = " + gameId +
+            String sql = "SELECT * FROM TURN where GAME_ID = " + gameId +
                     " AND TURN = " + getCurrentTurn(gameId, saveId) +
-                    (saveId > 0 ? " AND SAVE_ID =" + saveId : "") + ";");
+                    (saveId > 0 ? " AND SAVE_ID =" + saveId : "") + ";";
+            ResultSet rs = stmt.executeQuery(sql);
             while (rs.next()) {
                 Map<String, Integer> map = new HashMap<>();
                 map.put("CASH", rs.getInt(1));
@@ -181,10 +182,12 @@ public class DBConnector {
 
             stmt = c.createStatement();
             ResultSet rs = stmt.executeQuery("SELECT MAX(TURN) FROM TURN where GAME_ID = "
-                    + gameId + " AND SAVE_ID =" + saveId + ";");
+                    + gameId + (saveId != -1
+                    ? " AND SAVE_ID =" + saveId
+                    : "") + ";");
             int max = 0;
-            if (rs.first())
-                max = rs.getInt(0);
+            if (rs.next())
+                max = rs.getInt("MAX(TURN)");
             else return 0;
             rs.close();
             stmt.close();
@@ -192,16 +195,21 @@ public class DBConnector {
             stmt = c.createStatement();
             rs = stmt.executeQuery("SELECT COUNT(*) FROM TURN where GAME_ID = " + gameId
                     + " AND TURN =" + max
-                    + " AND SAVE_ID =" + saveId + ";");
+                    + (saveId != -1
+                    ? " AND SAVE_ID =" + saveId
+                    : "") + ";");
             int count = 0;
-            if (rs.first())
-                count = rs.getInt(0);
+            if (rs.next())
+                count = rs.getInt("COUNT(*)");
             else return 0;
             rs.close();
             stmt.close();
 
             stmt = c.createStatement();
-            rs = stmt.executeQuery("SELECT COUNT(*) FROM GAME_MAP where GAME_ID = " + gameId + ";");
+            rs = stmt.executeQuery("SELECT COUNT(*) FROM GAME_MAP where GAME_ID = " + gameId +
+                    (saveId != -1
+                    ? " AND SAVE_ID =" + saveId
+                    : "") + ";");
             if (rs.first()) {
                 if (rs.getInt(0) > count)
                     turn = max;
@@ -398,5 +406,58 @@ public class DBConnector {
             System.exit(0);
         }
         return clients;
+    }
+
+    public static String getClientName(int id) {
+        connect();
+        Statement stmt;
+        String i = "";
+        try {
+            c.setAutoCommit(false);
+            System.out.println("Opened database successfully");
+
+            stmt = c.createStatement();
+            ResultSet rs = stmt.executeQuery("SELECT NAME FROM CLIENT where ID = '" + id + "';");
+
+            while (rs.next()) {
+                i = rs.getString("NAME");
+            }
+            rs.close();
+            stmt.close();
+            disconnect();
+        } catch (Exception e) {
+            System.err.println(e.getClass().getName() + ": " + e.getMessage());
+            System.exit(0);
+        }
+        System.out.println("Operation done successfully");
+        return i;
+    }
+
+    public static int getTurn(int gameId, int saveId) {
+        connect();
+        Statement stmt;
+        int turn = 0;
+        try {
+            c.setAutoCommit(false);
+            System.out.println("Opened database successfully");
+
+            stmt = c.createStatement();
+            ResultSet rs = stmt.executeQuery("SELECT MAX(TURN) FROM TURN where GAME_ID = "
+                    + gameId + (saveId != -1
+                    ? " AND SAVE_ID =" + saveId
+                    : "") + ";");
+            turn = 0;
+            if (rs.next())
+                turn = rs.getInt("MAX(TURN)");
+            else return 0;
+            rs.close();
+            stmt.close();
+            disconnect();
+        } catch (Exception e) {
+            System.err.println(e.getClass().getName() + ": " + e.getMessage());
+            System.exit(0);
+        }
+        System.out.println("Operation done successfully");
+        return turn;
     }
 }
