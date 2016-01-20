@@ -36,6 +36,7 @@ public class Game {
     }
 
     private Game() {
+        DBConnector.createTablesIfNotExists();
         DBConnector.insertGame();
         saveId = -1;
         gameId = DBConnector.getLastGame();
@@ -66,9 +67,10 @@ public class Game {
         }
         if (clients.get(client) == null) {
             if (clients.size() < 4) {
-                Integer sessionId = new Random().nextInt();
+                Integer sessionId = Math.abs(new Random().nextInt()/2);
                 clients.put(sessionId, client);
                 message.addProperty("sessionId", String.valueOf(sessionId));
+                System.out.print("\n"+sessionId+"\n");
             } else {
                 message.addErrorDetails("This game doesn't have more places");
             }
@@ -147,6 +149,10 @@ public class Game {
 
     public Decision getDecision(int sessionId) {
         return Bank.getInstance().getDecision(sessionId)     ;
+    }
+
+    public Message getBankState() {
+        return Bank.getInstance().getState();
     }
 
     public static class GameHolder {

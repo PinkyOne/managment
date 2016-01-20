@@ -4,12 +4,9 @@ import database.DBConnector;
 import org.apache.commons.lang3.tuple.ImmutablePair;
 import org.apache.commons.lang3.tuple.Pair;
 import socketServer.Decision;
+import socketServer.Message;
 
 import java.util.*;
-import java.util.function.Function;
-import java.util.function.ToDoubleFunction;
-import java.util.function.ToIntFunction;
-import java.util.function.ToLongFunction;
 
 class Bank {
 
@@ -272,6 +269,17 @@ class Bank {
         return decision;
     }
 
+    public Message getState() {
+        Message message = new Message();
+        message.addProperty("egpCount", EGPLevels.get(level).getLeft().toString());
+        message.addProperty("egpPrice", EGPLevels.get(level).getRight().toString());
+        message.addProperty("esmCount", ESMLevels.get(level).getLeft().toString());
+        message.addProperty("esmPrice", ESMLevels.get(level).getRight().toString());
+
+
+        return message;
+    }
+
     class ResourceComparator implements Comparator {
         Map<Integer, Pair<Integer, Integer>> base;
 
@@ -309,36 +317,6 @@ class Bank {
         @Override
         public Comparator reversed() {
             return new ESMComparator(base);
-        }
-
-        @Override
-        public Comparator thenComparing(Comparator other) {
-            return null;
-        }
-
-        @Override
-        public Comparator thenComparingInt(ToIntFunction keyExtractor) {
-            return null;
-        }
-
-        @Override
-        public Comparator thenComparingLong(ToLongFunction keyExtractor) {
-            return null;
-        }
-
-        @Override
-        public Comparator thenComparingDouble(ToDoubleFunction keyExtractor) {
-            return null;
-        }
-
-        @Override
-        public Comparator thenComparing(Function keyExtractor) {
-            return null;
-        }
-
-        @Override
-        public Comparator thenComparing(Function keyExtractor, Comparator keyComparator) {
-            return null;
         }
     }
 

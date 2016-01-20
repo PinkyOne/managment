@@ -2,33 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f550776-dc85-42c9-83e9-028b60fcb5aa" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WpfPrototype1_Copy1/WpfPrototype1/WpfPrototype1Screens/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterPath="$PROJECT_DIR$/../WpfPrototype1_Copy1/WpfPrototype1/WpfPrototype1Screens/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WpfPrototype1_Copy1/WpfPrototype1/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterPath="$PROJECT_DIR$/../WpfPrototype1_Copy1/WpfPrototype1/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/database/DBConnector.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WpfPrototype1_Copy1/.vs/WpfPrototype1_Copy1/v14/.suo" afterPath="$PROJECT_DIR$/../WpfPrototype1_Copy1/.vs/WpfPrototype1_Copy1/v14/.suo" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/game/Bank$BankHolder.class" afterPath="$PROJECT_DIR$/target/classes/game/Bank$BankHolder.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/game/Bank$ResourceComparator$ESMComparator.class" afterPath="$PROJECT_DIR$/target/classes/game/Bank$ResourceComparator$ESMComparator.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/game/Bank$ResourceComparator.class" afterPath="$PROJECT_DIR$/target/classes/game/Bank$ResourceComparator.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/game/Bank.class" afterPath="$PROJECT_DIR$/target/classes/game/Bank.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/game/Client.class" afterPath="$PROJECT_DIR$/target/classes/game/Client.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/game/Game$GameHolder.class" afterPath="$PROJECT_DIR$/target/classes/game/Game$GameHolder.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/game/Game.class" afterPath="$PROJECT_DIR$/target/classes/game/Game.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/socketServer/Decision.class" afterPath="$PROJECT_DIR$/target/classes/socketServer/Decision.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/socketServer/Message$MessageType.class" afterPath="$PROJECT_DIR$/target/classes/socketServer/Message$MessageType.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/socketServer/Message.class" afterPath="$PROJECT_DIR$/target/classes/socketServer/Message.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/socketServer/ResponseProcessor$1.class" afterPath="$PROJECT_DIR$/target/classes/socketServer/ResponseProcessor$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/socketServer/ResponseProcessor$ResponseProcessorHolder.class" afterPath="$PROJECT_DIR$/target/classes/socketServer/ResponseProcessor$ResponseProcessorHolder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/socketServer/ResponseProcessor.class" afterPath="$PROJECT_DIR$/target/classes/socketServer/ResponseProcessor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/socketServer/SocketClientHandler.class" afterPath="$PROJECT_DIR$/target/classes/socketServer/SocketClientHandler.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/socketServer/SocketServer.class" afterPath="$PROJECT_DIR$/target/classes/socketServer/SocketServer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.gitignore" afterPath="$PROJECT_DIR$/../.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WpfPrototype1_Copy1/WpfPrototype1/WpfPrototype1Screens/obj/Debug/WpfPrototype1.Screens_MarkupCompile.cache" afterPath="$PROJECT_DIR$/../WpfPrototype1_Copy1/WpfPrototype1/WpfPrototype1Screens/obj/Debug/WpfPrototype1.Screens_MarkupCompile.cache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WpfPrototype1_Copy1/WpfPrototype1/WpfPrototype1Screens/obj/Debug/WpfPrototype1.Screens_MarkupCompile.i.cache" afterPath="$PROJECT_DIR$/../WpfPrototype1_Copy1/WpfPrototype1/WpfPrototype1Screens/obj/Debug/WpfPrototype1.Screens_MarkupCompile.i.cache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WpfPrototype1_Copy1/WpfPrototype1/WpfPrototype1Screens/obj/Debug/WpfPrototype1Screens.csproj.FileListAbsolute.txt" afterPath="$PROJECT_DIR$/../WpfPrototype1_Copy1/WpfPrototype1/WpfPrototype1Screens/obj/Debug/WpfPrototype1Screens.csproj.FileListAbsolute.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WpfPrototype1_Copy1/WpfPrototype1/obj/Debug/WpfPrototype1.csproj.FileListAbsolute.txt" afterPath="$PROJECT_DIR$/../WpfPrototype1_Copy1/WpfPrototype1/obj/Debug/WpfPrototype1.csproj.FileListAbsolute.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../WpfPrototype1_Copy1/WpfPrototype1/obj/Debug/WpfPrototype1_MarkupCompile.i.cache" afterPath="$PROJECT_DIR$/../WpfPrototype1_Copy1/WpfPrototype1/obj/Debug/WpfPrototype1_MarkupCompile.i.cache" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/database/DBConnector.java" afterPath="$PROJECT_DIR$/src/main/java/database/DBConnector.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/game/Bank.java" afterPath="$PROJECT_DIR$/src/main/java/game/Bank.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/game/Game.java" afterPath="$PROJECT_DIR$/src/main/java/game/Game.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/socketServer/Message.java" afterPath="$PROJECT_DIR$/src/main/java/socketServer/Message.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/socketServer/ResponseProcessor.java" afterPath="$PROJECT_DIR$/src/main/java/socketServer/ResponseProcessor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/socketServer/SocketClientHandler.java" afterPath="$PROJECT_DIR$/src/main/java/socketServer/SocketClientHandler.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/socketServer/SocketServer.java" afterPath="$PROJECT_DIR$/src/main/java/socketServer/SocketServer.java" />
     </list>
     <ignored path="server.iws" />
@@ -62,12 +55,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ResponseProcessor.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ResponseProcessor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/socketServer/ResponseProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.15289983">
-              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="46" column="53" selection-start-line="46" selection-start-column="53" selection-end-line="46" selection-end-column="53" />
+              <folding>
+                <element signature="e#4084#4085#0" expanded="true" />
+                <element signature="e#4146#4147#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -76,64 +72,50 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/socketServer/SocketServer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-              <folding />
+              <caret line="50" column="33" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
+              <folding>
+                <element signature="e#303#304#0" expanded="true" />
+                <element signature="e#351#352#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Message.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Message.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/socketServer/Message.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+            <state vertical-scroll-proportion="-0.61335677">
+              <caret line="44" column="16" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
               <folding>
                 <element signature="e#300#301#0" expanded="true" />
                 <element signature="e#334#335#0" expanded="true" />
                 <element signature="e#389#390#0" expanded="true" />
                 <element signature="e#463#464#0" expanded="true" />
-                <element signature="e#2055#2056#0" expanded="true" />
-                <element signature="e#2110#2111#0" expanded="true" />
+                <element signature="e#1121#1122#0" expanded="true" />
+                <element signature="e#1176#1177#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JsonParser.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.5/gson-2.5-sources.jar!/com/google/gson/JsonParser.java">
+      <file leaf-file-name="JsonObject.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.5/gson-2.5-sources.jar!/com/google/gson/JsonObject.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="43" column="21" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Bank.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/game/Bank.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="131" column="44" selection-start-line="131" selection-start-column="44" selection-end-line="131" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Decision.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/socketServer/Decision.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+              <caret line="151" column="0" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#344#345#0" expanded="false" />
-                <element signature="e#427#428#0" expanded="true" />
-                <element signature="e#465#466#0" expanded="true" />
-                <element signature="e#852#853#0" expanded="false" />
-                <element signature="e#1183#1184#0" expanded="false" />
-                <element signature="e#1367#1368#0" expanded="false" />
-                <element signature="e#1398#1399#0" expanded="false" />
+                <element signature="e#5009#5010#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LinkedTreeMap.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.5/gson-2.5-sources.jar!/com/google/gson/internal/LinkedTreeMap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -142,7 +124,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/database/DBConnector.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="93" column="55" selection-start-line="93" selection-start-column="55" selection-end-line="93" selection-end-column="55" />
+              <caret line="221" column="22" selection-start-line="221" selection-start-column="22" selection-end-line="221" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -152,10 +134,19 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/game/Client.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+              <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Bank.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/game/Bank.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="276" column="19" selection-start-line="276" selection-start-column="19" selection-end-line="276" selection-end-column="19" />
               <folding>
-                <element signature="e#341#342#0" expanded="true" />
-                <element signature="e#366#367#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -165,11 +156,12 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/game/Game.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="148" column="41" selection-start-line="148" selection-start-column="41" selection-end-line="148" selection-end-column="41" />
+              <caret line="154" column="35" selection-start-line="154" selection-start-column="35" selection-end-line="154" selection-end-column="35" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#4455#4456#0" expanded="true" />
-                <element signature="e#4524#4525#0" expanded="true" />
+                <element signature="e#4675#4676#0" expanded="true" />
+                <element signature="e#4727#4728#0" expanded="true" />
+                <element signature="e#5367#5368#0" expanded="true" />
+                <element signature="e#5416#5417#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -197,7 +189,6 @@
       <list>
         <option value="C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/net/ServerSocket.java" />
         <option value="C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/net/SocketImpl.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/lang/Double.java" />
         <option value="$PROJECT_DIR$/src/main/java/Bank.java" />
         <option value="$PROJECT_DIR$/src/main/java/SQLiteDialect.java" />
@@ -208,19 +199,21 @@
         <option value="$PROJECT_DIR$/src/main/java/Client.java" />
         <option value="$PROJECT_DIR$/src/main/java/Game.java" />
         <option value="C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/lang/Integer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/socketServer/SocketClientHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/Pair.java" />
         <option value="C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/lang/annotation/Native.java" />
         <option value="C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/util/TreeMap.java" />
         <option value="C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/util/Map.java" />
         <option value="$PROJECT_DIR$/src/main/java/game/Client.java" />
-        <option value="$PROJECT_DIR$/src/main/java/database/DBConnector.java" />
         <option value="$PROJECT_DIR$/src/main/java/socketServer/Decision.java" />
+        <option value="C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/util/function/Function.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/socketServer/SocketServer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/game/Game.java" />
-        <option value="$PROJECT_DIR$/src/main/java/game/Bank.java" />
+        <option value="$PROJECT_DIR$/src/main/java/socketServer/SocketClientHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/database/DBConnector.java" />
         <option value="$PROJECT_DIR$/src/main/java/socketServer/ResponseProcessor.java" />
         <option value="$PROJECT_DIR$/src/main/java/socketServer/Message.java" />
+        <option value="$PROJECT_DIR$/src/main/java/game/Game.java" />
+        <option value="$PROJECT_DIR$/src/main/java/game/Bank.java" />
       </list>
     </option>
   </component>
@@ -267,7 +260,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -403,6 +395,7 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -602,6 +595,28 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -681,8 +696,33 @@
       <envs />
       <method />
     </configuration>
-    <list size="1">
+    <configuration default="false" name="pack" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="package" />
+              </list>
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method />
+    </configuration>
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Application.Unnamed" />
+      <item index="1" class="java.lang.String" itemvalue="Maven.pack" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -738,7 +778,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="11" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -746,44 +788,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/game/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4455#4456#0" expanded="true" />
-            <element signature="e#4524#4525#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/game/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="e#341#342#0" expanded="true" />
-            <element signature="e#366#367#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/socketServer/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
-          <folding>
-            <element signature="e#300#301#0" expanded="true" />
-            <element signature="e#334#335#0" expanded="true" />
-            <element signature="e#389#390#0" expanded="true" />
-            <element signature="e#463#464#0" expanded="true" />
-            <element signature="e#2055#2056#0" expanded="true" />
-            <element signature="e#2110#2111#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/socketServer/SocketClientHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -803,7 +807,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -820,9 +826,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4455#4456#0" expanded="true" />
-            <element signature="e#4524#4525#0" expanded="true" />
+            <element signature="e#4675#4676#0" expanded="true" />
+            <element signature="e#4727#4728#0" expanded="true" />
+            <element signature="e#5367#5368#0" expanded="true" />
+            <element signature="e#5416#5417#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -831,9 +838,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/socketServer/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
-            <element signature="e#341#342#0" expanded="true" />
-            <element signature="e#366#367#0" expanded="true" />
+            <element signature="e#300#301#0" expanded="true" />
+            <element signature="e#334#335#0" expanded="true" />
+            <element signature="e#389#390#0" expanded="true" />
+            <element signature="e#463#464#0" expanded="true" />
+            <element signature="e#1121#1122#0" expanded="true" />
+            <element signature="e#1176#1177#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -847,23 +866,8 @@
             <element signature="e#334#335#0" expanded="true" />
             <element signature="e#389#390#0" expanded="true" />
             <element signature="e#463#464#0" expanded="true" />
-            <element signature="e#2055#2056#0" expanded="true" />
-            <element signature="e#2110#2111#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/socketServer/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="e#300#301#0" expanded="true" />
-            <element signature="e#334#335#0" expanded="true" />
-            <element signature="e#389#390#0" expanded="true" />
-            <element signature="e#463#464#0" expanded="true" />
-            <element signature="e#2055#2056#0" expanded="true" />
-            <element signature="e#2110#2111#0" expanded="true" />
+            <element signature="e#1121#1122#0" expanded="true" />
+            <element signature="e#1176#1177#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -887,7 +891,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -904,9 +910,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4455#4456#0" expanded="true" />
-            <element signature="e#4524#4525#0" expanded="true" />
+            <element signature="e#4675#4676#0" expanded="true" />
+            <element signature="e#4727#4728#0" expanded="true" />
+            <element signature="e#5367#5368#0" expanded="true" />
+            <element signature="e#5416#5417#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -915,10 +922,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
-          <folding>
-            <element signature="e#341#342#0" expanded="true" />
-            <element signature="e#366#367#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -931,8 +935,8 @@
             <element signature="e#334#335#0" expanded="true" />
             <element signature="e#389#390#0" expanded="true" />
             <element signature="e#463#464#0" expanded="true" />
-            <element signature="e#2055#2056#0" expanded="true" />
-            <element signature="e#2110#2111#0" expanded="true" />
+            <element signature="e#1121#1122#0" expanded="true" />
+            <element signature="e#1176#1177#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -956,7 +960,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -984,8 +990,8 @@
             <element signature="e#334#335#0" expanded="true" />
             <element signature="e#389#390#0" expanded="true" />
             <element signature="e#463#464#0" expanded="true" />
-            <element signature="e#2055#2056#0" expanded="true" />
-            <element signature="e#2110#2111#0" expanded="true" />
+            <element signature="e#1121#1122#0" expanded="true" />
+            <element signature="e#1176#1177#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1002,7 +1008,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1032,13 +1040,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33294663">
           <caret line="506" column="18" selection-start-line="506" selection-start-column="18" selection-end-line="506" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1119,62 +1120,35 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#344#345#0" expanded="false" />
-            <element signature="e#427#428#0" expanded="true" />
-            <element signature="e#465#466#0" expanded="true" />
-            <element signature="e#852#853#0" expanded="false" />
-            <element signature="e#1183#1184#0" expanded="false" />
-            <element signature="e#1367#1368#0" expanded="false" />
+            <element signature="e#194#195#0" expanded="false" />
+            <element signature="e#226#227#0" expanded="false" />
+            <element signature="e#267#268#0" expanded="false" />
+            <element signature="e#303#304#0" expanded="false" />
+            <element signature="e#346#347#0" expanded="false" />
+            <element signature="e#384#385#0" expanded="false" />
+            <element signature="e#543#544#0" expanded="false" />
+            <element signature="e#569#570#0" expanded="false" />
+            <element signature="e#596#597#0" expanded="false" />
+            <element signature="e#622#623#0" expanded="false" />
+            <element signature="e#722#723#0" expanded="false" />
+            <element signature="e#752#753#0" expanded="false" />
+            <element signature="e#787#788#0" expanded="false" />
+            <element signature="e#817#818#0" expanded="false" />
+            <element signature="e#854#855#0" expanded="false" />
+            <element signature="e#886#887#0" expanded="false" />
+            <element signature="e#1073#1074#0" expanded="false" />
+            <element signature="e#1100#1101#0" expanded="false" />
+            <element signature="e#1128#1129#0" expanded="false" />
+            <element signature="e#1155#1156#0" expanded="false" />
+            <element signature="e#1185#1186#0" expanded="false" />
+            <element signature="e#1214#1215#0" expanded="false" />
+            <element signature="e#1245#1246#0" expanded="false" />
+            <element signature="e#1275#1276#0" expanded="false" />
+            <element signature="e#1306#1307#0" expanded="false" />
+            <element signature="e#1336#1337#0" expanded="false" />
+            <element signature="e#1369#1370#0" expanded="false" />
             <element signature="e#1398#1399#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/game/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-          <folding>
-            <element signature="e#341#342#0" expanded="true" />
-            <element signature="e#366#367#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/game/Bank.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="131" column="44" selection-start-line="131" selection-start-column="44" selection-end-line="131" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/database/DBConnector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="93" column="55" selection-start-line="93" selection-start-column="55" selection-end-line="93" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/game/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="148" column="41" selection-start-line="148" selection-start-column="41" selection-end-line="148" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4455#4456#0" expanded="true" />
-            <element signature="e#4524#4525#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/socketServer/SocketServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1182,7 +1156,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="43" column="21" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#3070#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/util/function/Function.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.653847">
+          <caret line="27" column="65" selection-start-line="27" selection-start-column="65" selection-end-line="27" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.5/gson-2.5-sources.jar!/com/google/gson/internal/LinkedTreeMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.5/gson-2.5-sources.jar!/com/google/gson/JsonObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="151" column="0" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
+          <folding>
+            <element signature="e#5009#5010#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1194,26 +1205,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/socketServer/Message.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/game/Client.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
-          <folding>
-            <element signature="e#300#301#0" expanded="true" />
-            <element signature="e#334#335#0" expanded="true" />
-            <element signature="e#389#390#0" expanded="true" />
-            <element signature="e#463#464#0" expanded="true" />
-            <element signature="e#2055#2056#0" expanded="true" />
-            <element signature="e#2110#2111#0" expanded="true" />
-          </folding>
+          <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/database/DBConnector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="221" column="22" selection-start-line="221" selection-start-column="22" selection-end-line="221" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/socketServer/ResponseProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15289983">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="53" selection-start-line="46" selection-start-column="53" selection-end-line="46" selection-end-column="53" />
+          <folding>
+            <element signature="e#4084#4085#0" expanded="true" />
+            <element signature="e#4146#4147#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/game/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="154" column="35" selection-start-line="154" selection-start-column="35" selection-end-line="154" selection-end-column="35" />
+          <folding>
+            <element signature="e#4675#4676#0" expanded="true" />
+            <element signature="e#4727#4728#0" expanded="true" />
+            <element signature="e#5367#5368#0" expanded="true" />
+            <element signature="e#5416#5417#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/game/Bank.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="276" column="19" selection-start-line="276" selection-start-column="19" selection-end-line="276" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/socketServer/SocketServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="50" column="33" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
+          <folding>
+            <element signature="e#303#304#0" expanded="true" />
+            <element signature="e#351#352#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/socketServer/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.61335677">
+          <caret line="44" column="16" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
+          <folding>
+            <element signature="e#300#301#0" expanded="true" />
+            <element signature="e#334#335#0" expanded="true" />
+            <element signature="e#389#390#0" expanded="true" />
+            <element signature="e#463#464#0" expanded="true" />
+            <element signature="e#1121#1122#0" expanded="true" />
+            <element signature="e#1176#1177#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -29,7 +29,7 @@ public class SocketClientHandler implements Runnable {
         StringBuilder userInput = new StringBuilder();
         BufferedReader stdIn = new BufferedReader(new InputStreamReader(client.getInputStream()));
         String tmp;
-        while ((tmp = stdIn.readLine()) != null) {
+        if ((tmp = stdIn.readLine()) != null) {
             userInput.append(tmp);
         }
         ResponseProcessor.getInstance().processResponse(client, new Message(userInput.toString()));

@@ -12,6 +12,10 @@ public class SocketServer {
         this.port = port;
     }
 
+    public void setServerSocket(ServerSocket serverSocket) {
+        this.serverSocket = serverSocket;
+    }
+
     private int port = 1234;
 
     public void start() throws IOException {
@@ -41,6 +45,9 @@ public class SocketServer {
         try {
             // initializing the Socket Server
             SocketServer socketServer = new SocketServer();
+            if (args.length > 0) {
+                socketServer.setPort(Integer.parseInt(args[0]));
+            }
             socketServer.start();
         } catch (IOException e) {
             e.printStackTrace();

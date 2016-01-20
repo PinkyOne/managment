@@ -17,6 +17,20 @@
                     <target>1.7</target>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>2.6</version>
+                <configuration>
+                    <archive>
+                        <index>true</index>
+                        <manifestEntries>
+                            <Main-Class>socketServer.SocketServer</Main-Class>
+                        </manifestEntries>
+                    </archive>
+                </configuration>
+
+            </plugin>
         </plugins>
     </build>
 
@@ -84,6 +98,7 @@
             <artifactId>log4j</artifactId>
             <version>1.2.9</version>
         </dependency>
+
         <dependency>
             <groupId>ehcache</groupId>
             <artifactId>ehcache</artifactId>
@@ -102,5 +117,5 @@
             <version>3.6.0</version>
         </dependency>
     </dependencies>
-
+    <packaging>jar</packaging>
 </project>

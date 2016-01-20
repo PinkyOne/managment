@@ -23,7 +23,7 @@ public class Message {
 
     public Message() {
         jsonObject = new JsonObject();
-        setMessageType(null);
+        setMessageType("");
     }
 
     public Message(String input) {
@@ -56,7 +56,9 @@ public class Message {
     }
 
     public Map<String, String> getGameDetails() {
-        Set<Map.Entry<String, JsonElement>> details = jsonObject.get("gameDetails").getAsJsonObject().entrySet();
+        JsonElement gameDetails = jsonObject.get("gameDetails");
+        if (gameDetails == null) return null;
+        Set<Map.Entry<String, JsonElement>> details = gameDetails.getAsJsonObject().entrySet();
         Map<String, String> detailsAsMap = new HashMap<>();
         for (Map.Entry<String, JsonElement> detail : details) {
             detailsAsMap.put(detail.getKey(), detail.getValue().getAsJsonPrimitive().toString());
@@ -81,7 +83,7 @@ public class Message {
     }
 
     public enum MessageType {
-        CONNECT("connect"), TURN("turn"), CREATE_GAME("create"), UNKNOWN("unknown"), GET_DECISION("shutdown");
+        CONNECT("connect"), TURN("turn"), CREATE_GAME("create"), UNKNOWN("unknown"),GET_BANK_STATE("state"), GET_DECISION("shutdown");
         private final String type;
 
         MessageType(String type) {
@@ -101,6 +103,9 @@ public class Message {
                 }
                 case "shutdown": {
                     return GET_DECISION;
+                }
+                case "state": {
+                    return GET_BANK_STATE;
                 }
                 default: {
                     return UNKNOWN;

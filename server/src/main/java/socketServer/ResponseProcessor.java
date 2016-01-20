@@ -1,6 +1,7 @@
 package socketServer;
 
 import com.google.gson.JsonObject;
+import game.Bank;
 import game.Client;
 import game.Game;
 import org.apache.commons.lang3.tuple.ImmutablePair;
@@ -40,6 +41,10 @@ public class ResponseProcessor {
             break;
             case GET_DECISION: {
                 getDecision(message);
+            }
+            break;
+            case GET_BANK_STATE: {
+                answer = Game.getInstance().getBankState();
             }
             break;
             default: {
@@ -89,8 +94,8 @@ public class ResponseProcessor {
 
     private synchronized Message connect(Message message) {
         String name = message.getString("name");
-        Game.getInstance().connectClient(new Client(name));
-        return message;
+        Message response = Game.getInstance().connectClient(new Client(name));
+        return response;
     }
 
     public static class ResponseProcessorHolder {

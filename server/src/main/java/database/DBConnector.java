@@ -24,43 +24,58 @@ public class DBConnector {
         Statement stmt = null;
         try {
             connect();
-            stmt = c.createStatement();
-            String sql = "CREATE TABLE IF NOT EXIST CLIENT " +
-                    "(ID INT PRIMARY KEY     AUTOINCREMENT," +
-                    " NAME           TEXT    NOT NULL)";
-            stmt.executeUpdate(sql);
-            stmt.close();
+            String sql;
+            try {
+                stmt = c.createStatement();
 
-            stmt = c.createStatement();
-            sql = "CREATE TABLE IF NOT EXIST GAME_MAP " +
-                    "(ID INT PRIMARY KEY     AUTOINCREMENT," +
-                    " GAME_ID        INT     NOT NULL," +
-                    " CLIENT_ID      INT     NOT NULL)";
-            stmt.executeUpdate(sql);
+                sql = "CREATE TABLE CLIENT " +
+                        "(ID INTEGER PRIMARY KEY     AUTOINCREMENT," +
+                        " NAME           TEXT    NOT NULL);";
+                stmt.executeUpdate(sql);
+            } catch (Exception e) {
+                System.err.println(e.getClass().getName() + ": " + e.getMessage());
+            }
             stmt.close();
-
-            stmt = c.createStatement();
-            sql = "CREATE TABLE IF NOT EXIST GAME " +
-                    "(ID INT PRIMARY KEY     AUTOINCREMENT," +
-                    " START_DATE     DATETIME DEFAULT CURRENT_TIMESTAMP)";
-            stmt.executeUpdate(sql);
+            try {
+                stmt = c.createStatement();
+                sql = "CREATE TABLE GAME_MAP " +
+                        "(ID INTEGER PRIMARY KEY     AUTOINCREMENT," +
+                        " GAME_ID        INTEGER     NOT NULL," +
+                        " CLIENT_ID      INTEGER     NOT NULL)";
+                stmt.executeUpdate(sql);
+            } catch (Exception e) {
+                System.err.println(e.getClass().getName() + ": " + e.getMessage());
+            }
             stmt.close();
-
-            stmt = c.createStatement();
-            sql = "CREATE TABLE IF NOT EXIST TURN " +
-                    "(ID INT PRIMARY KEY     AUTOINCREMENT," +
-                    " CASH           INT     NOT NULL," +
-                    " ESM            INT     NOT NULL," +
-                    " EGP            INT     NOT NULL," +
-                    " LOAN           INT             ," +
-                    " FABRIC_COUNT   INT     NOT NULL," +
-                    " A_FABRIC_COUNT INT     NOT NULL," +
-                    " U_FABRIC_COUNT INT     NOT NULL," +
-                    " TURN           INT     NOT NULL," +
-                    " CLIENT_ID      INT     NOT NULL," +
-                    " GAME_ID        INT     NOT NULL," +
-                    " SAVE_ID        INT             )";
-            stmt.executeUpdate(sql);
+            try {
+                stmt = c.createStatement();
+                sql = "CREATE TABLE GAME " +
+                        "(ID INTEGER PRIMARY KEY     AUTOINCREMENT," +
+                        " START_DATE     DATETIME DEFAULT CURRENT_TIMESTAMP)";
+                stmt.executeUpdate(sql);
+            } catch (Exception e) {
+                System.err.println(e.getClass().getName() + ": " + e.getMessage());
+            }
+            stmt.close();
+            try {
+                stmt = c.createStatement();
+                sql = "CREATE TABLE TURN " +
+                        "(ID INTEGER PRIMARY KEY     AUTOINCREMENT," +
+                        " CASH           INTEGER     NOT NULL," +
+                        " ESM            INTEGER     NOT NULL," +
+                        " EGP            INTEGER     NOT NULL," +
+                        " LOAN           INTEGER             ," +
+                        " FABRIC_COUNT   INTEGER     NOT NULL," +
+                        " A_FABRIC_COUNT INTEGER     NOT NULL," +
+                        " U_FABRIC_COUNT INTEGER     NOT NULL," +
+                        " TURN           INTEGER     NOT NULL," +
+                        " CLIENT_ID      INTEGER     NOT NULL," +
+                        " GAME_ID        INTEGER     NOT NULL," +
+                        " SAVE_ID        INTEGER             )";
+                stmt.executeUpdate(sql);
+            } catch (Exception e) {
+                System.err.println(e.getClass().getName() + ": " + e.getMessage());
+            }
             stmt.close();
             disconnect();
         } catch (Exception e) {
@@ -271,7 +286,8 @@ public class DBConnector {
             c.setAutoCommit(false);
             stmt = c.createStatement();
             String sql = "INSERT INTO GAME (START_DATE) " +
-                    "VALUES (" + null + " );";
+                    "VALUES (datetime());";
+            System.out.print(sql);
             stmt.executeUpdate(sql);
             stmt.close();
             c.commit();
@@ -294,9 +310,10 @@ public class DBConnector {
             stmt = c.createStatement();
             ResultSet rs = stmt.executeQuery("SELECT max(ID) FROM GAME;");
 
-            while (rs.next()) {
-                i = rs.getInt(0);
-            }
+            rs.next();
+
+            i = rs.getInt("max(ID)");
+
             rs.close();
             stmt.close();
             disconnect();
